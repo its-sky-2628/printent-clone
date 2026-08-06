@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Printent - Printing Services">
+  <title>Printent — Printing Services</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/cropped-Favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="theme-color" content="#171717">
+
+<style id="second-hero-exact-css">
+
+/* =========================================================
+   PRINTENT SECOND HERO — DIGITAL PRINTING
+   ========================================================= */
+
+.exact-printent-hero{
+  position:relative;
+  overflow:hidden;
+}
+
+/* second slide fills exact hero */
+.hero-second-slide{
+  position:absolute;
+  inset:0;
+  z-index:20;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .65s ease, visibility .65s ease;
+  overflow:hidden;
+  background:#050303;
+}
+
+.hero-second-slide.is-active{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+}
+
+
+/* BACKGROUND */
+
+.hero-second-bg{
+  position:absolute;
+  inset:0;
+
+  background-image:url("assets/images/hero-slide-2.jpg");
+  background-repeat:no-repeat;
+
+  /*
+    Reference:
+    women stay on right,
+    machine remains behind left text.
+  */
+  background-size:cover;
+  background-position:center center;
+
+  z-index:0;
+}
+
+
+/* DARK LEFT OVERLAY */
+
+.hero-second-shade{
+  position:absolute;
+  inset:0;
+  z-index:1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.82) 0%,
+      rgba(0,0,0,.70) 24%,
+      rgba(0,0,0,.42) 43%,
+      rgba(0,0,0,.10) 65%,
+      rgba(0,0,0,0) 82%
+    );
+}
+
+
+/* MAIN CONTENT */
+
+.hero-second-content{
+  position:absolute;
+  z-index:3;
+
+  left:14.5%;
+  top:50%;
+
+  transform:translateY(-43%);
+
+  width:720px;
+}
+
+
+/* Produce the */
+
+.hero-second-small{
+  margin:0 0 4px 0;
+
+  font-family:"Lora", Georgia, serif;
+  font-size:68px;
+  line-height:1.05;
+  font-weight:400;
+
+  color:#fff;
+  white-space:nowrap;
+}
+
+
+/* Digital printing */
+
+.hero-second-big{
+  font-family:"Lora", Georgia, serif;
+
+  font-size:112px;
+  line-height:.98;
+  font-weight:400;
+
+  white-space:nowrap;
+
+  background:linear-gradient(
+    90deg,
+    #ff922f 0%,
+    #ff8141 38%,
+    #ff6860 76%,
+    #ff5e69 100%
+  );
+
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  color:transparent;
+}
+
+
+/* BOTTOM ROW */
+
+.hero-second-bottom{
+  display:flex;
+  align-items:center;
+
+  margin-top:52px;
+
+  height:104px;
+}
+
+
+/* paragraph */
+
+.hero-second-description{
+  width:440px;
+
+  font-family:Arial, Helvetica, sans-serif;
+
+  font-size:17px;
+  line-height:1.65;
+  font-weight:400;
+
+  color:#fff;
+}
+
+
+/* divider */
+
+.hero-second-divider{
+  width:1px;
+  height:102px;
+
+  margin-left:26px;
+  margin-right:42px;
+
+  background:rgba(255,255,255,.42);
+
+  flex:none;
+}
+
+
+/* More Services button */
+
+.hero-second-button{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  min-width:174px;
+  height:51px;
+
+  padding:0 30px;
+
+  border-radius:40px;
+
+  background:linear-gradient(
+    90deg,
+    #ff962e,
+    #ff5f68
+  );
+
+  color:#fff !important;
+
+  font-family:Georgia, "Times New Roman", serif;
+  font-size:16px;
+  font-weight:600;
+
+  text-decoration:none !important;
+
+  white-space:nowrap;
+
+  transition:transform .2s ease;
+}
+
+.hero-second-button:hover{
+  transform:translateY(-2px);
+}
+
+
+/* arrows must stay above both slides */
+
+.exact-slider-arrow{
+  z-index:100 !important;
+}
+
+
+/* ---------------------------------------------------------
+   LARGE DESKTOP
+--------------------------------------------------------- */
+
+@media (min-width:1500px){
+
+  .hero-second-content{
+    left:14.5%;
+    width:850px;
+  }
+
+  .hero-second-small{
+    font-size:68px;
+  }
+
+  .hero-second-big{
+    font-size:112px;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   LAPTOP
+--------------------------------------------------------- */
+
+@media (max-width:1300px){
+
+  .hero-second-content{
+    left:11%;
+    width:700px;
+  }
+
+  .hero-second-small{
+    font-size:58px;
+  }
+
+  .hero-second-big{
+    font-size:92px;
+  }
+
+  .hero-second-description{
+    width:370px;
+    font-size:15px;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   TABLET / ORIGINAL RESPONSIVE FEEL
+--------------------------------------------------------- */
+
+@media (max-width:900px){
+
+  .hero-second-bg{
+    background-position:58% center;
+  }
+
+  .hero-second-shade{
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0,0,0,.78),
+        rgba(0,0,0,.30)
+      );
+  }
+
+  .hero-second-content{
+    left:14%;
+    top:48%;
+    width:72%;
+    transform:translateY(-45%);
+  }
+
+  .hero-second-small{
+    font-size:48px;
+  }
+
+  .hero-second-big{
+    font-size:70px;
+  }
+
+  .hero-second-bottom{
+    margin-top:32px;
+  }
+
+  .hero-second-description{
+    display:none;
+  }
+
+  .hero-second-divider{
+    display:none;
+  }
+
+  .hero-second-button{
+    height:48px;
+    min-width:160px;
+  }
+
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width:600px){
+
+  .hero-second-bg{
+    background-position:62% center;
+  }
+
+  .hero-second-content{
+    left:14%;
+    top:47%;
+    width:82%;
+  }
+
+  .hero-second-small{
+    font-size:39px;
+  }
+
+  .hero-second-big{
+    font-size:53px;
+    line-height:1;
+  }
+
+  .hero-second-bottom{
+    margin-top:28px;
+    height:auto;
+  }
+
+  .hero-second-button{
+    min-width:150px;
+    height:47px;
+    font-size:15px;
+  }
+
+}
+
+</style>
+
+
+<style id="FINAL-ONLY-HERO-ARROWS">
+
+.exact-printent-hero{
+    position:relative !important;
+}
+
+/* remove EVERY generated arrow */
+.exact-slider-arrow::before,
+.exact-slider-arrow::after{
+    content:none !important;
+    display:none !important;
+}
+
+/* actual button itself */
+.exact-slider-arrow{
+    position:absolute !important;
+    top:50% !important;
+    transform:translateY(-50%) !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    width:55px !important;
+    height:80px !important;
+
+    padding:0 !important;
+    margin:0 !important;
+
+    background:transparent !important;
+    border:0 !important;
+    outline:0 !important;
+    box-shadow:none !important;
+
+    color:white !important;
+
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-size:52px !important;
+    font-weight:200 !important;
+    line-height:1 !important;
+
+    opacity:1 !important;
+    visibility:visible !important;
+
+    cursor:pointer !important;
+    z-index:99999 !important;
+}
+
+.exact-slider-left{
+    left:18px !important;
+}
+
+.exact-slider-right{
+    left:auto !important;
+    right:18px !important;
+}
+
+.exact-slider-arrow:hover,
+.exact-slider-arrow:focus,
+.exact-slider-arrow:active{
+    background:transparent !important;
+    border:0 !important;
+    box-shadow:none !important;
+    opacity:1 !important;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+<div class="printent-topbar">
+
+  <div class="printent-topbar-inner">
+
+    <div class="printent-topbar-left">
+      <span class="shipping-fire">♨</span>
+      <span>Free shipping on all orders $50+</span>
+
+      <a href="#services" class="topbar-shop">
+        Shop Now!
+      </a>
+    </div>
+
+    <div class="printent-topbar-right">
+      <span class="questions-text">Any Questions</span>
+
+      <span class="topbar-whatsapp">
+        <img src="assets/images/whatsup-icon.png" alt="WhatsApp">
+      </span>
+
+      <a href="tel:+12345678900">
+        +123 456 78900
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  <div class="navbar">
+
+    <a href="#home" class="brand">
+      <img
+        src="assets/images/logo-light.svg"
+        alt="Printent"
+        decoding="async"
+      >
+    </a>
+
+    <nav class="desktop-nav" id="desktopNav">
+
+      <!-- HOME -->
+      <div class="nav-item has-dropdown home-preview-parent">
+
+        <a href="#home" class="nav-link active">
+          Home
+          <span class="nav-plus">↘</span>
+        </a>
+
+        <div class="home-preview-menu">
+
+          <a href="#home" class="home-demo-card">
+            <div class="home-demo-image">
+              <img
+                src="assets/images/03.jpg"
+                alt="Home 01"
+                loading="eager"
+                decoding="async"
+              >
+              <span class="home-demo-hover">
+                VIEW DEMO ↗
+              </span>
+            </div>
+
+            <span class="home-demo-name">
+              Home-01
+            </span>
+          </a>
+
+
+          <a href="#home" class="home-demo-card">
+            <div class="home-demo-image">
+              <img
+                src="assets/images/mega-02.jpg"
+                alt="Home 02"
+                loading="eager"
+                decoding="async"
+              >
+              <span class="home-demo-hover">
+                VIEW DEMO ↗
+              </span>
+            </div>
+
+            <span class="home-demo-name">
+              Home-02
+            </span>
+          </a>
+
+
+          <a href="#home" class="home-demo-card">
+            <div class="home-demo-image">
+              <img
+                src="assets/images/mega-03.jpg"
+                alt="Home 03"
+                loading="eager"
+                decoding="async"
+              >
+              <span class="home-demo-hover">
+                VIEW DEMO ↗
+              </span>
+            </div>
+
+            <span class="home-demo-name">
+              Home-03
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PAGES -->
+      <div class="nav-item has-dropdown">
+        <a href="#about" class="nav-link">
+          Pages
+          <span class="nav-plus">↘</span>
+        </a>
+
+        <div class="nav-dropdown nav-dropdown-small">
+          <a href="#about">About Us <b>↗</b></a>
+          <a href="#services">Our Services <b>↗</b></a>
+          <a href="#pricing">Pricing Plans <b>↗</b></a>
+          <a href="#contact">Contact Us <b>↗</b></a>
+          <a href="#blog">Our Blog <b>↗</b></a>
+        </div>
+      </div>
+
+
+      <!-- SERVICES -->
+      <div class="nav-item has-dropdown mega-parent">
+
+        <a href="#services" class="nav-link">
+          Services
+          <span class="nav-plus">↘</span>
+        </a>
+
+        <div class="nav-mega">
+
+          <div class="mega-intro">
+            <span class="mega-label">WHAT WE DO</span>
+
+            <h3>
+              Creative printing
+              <br>
+              solutions.
+            </h3>
+
+            <p>
+              High-quality printing services created
+              to make brands stand out.
+            </p>
+
+            <a href="#services" class="mega-view">
+              VIEW ALL SERVICES
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="mega-links">
+
+            <a href="#services">
+              <span class="mega-num">01</span>
+              <div>
+                <strong data-fixed-client-count="true">2,845+</strong>
+                <small>Fast, flexible and high quality</small>
+              </div>
+              <b>↗</b>
+            </a>
+
+            <a href="#services">
+              <span class="mega-num">02</span>
+              <div>
+                <strong>Offset Printing</strong>
+                <small>Premium large-volume printing</small>
+              </div>
+              <b>↗</b>
+            </a>
+
+            <a href="#services">
+              <span class="mega-num">03</span>
+              <div>
+                <strong>Packaging</strong>
+                <small>Packaging that gets noticed</small>
+              </div>
+              <b>↗</b>
+            </a>
+
+            <a href="#services">
+              <span class="mega-num">04</span>
+              <div>
+                <strong>Brand Materials</strong>
+                <small>Professional branded collateral</small>
+              </div>
+              <b>↗</b>
+            </a>
+
+          </div>
+
+          <div class="mega-feature">
+
+            <div class="mega-feature-image">
+              <img
+                src="assets/images/menu-01.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <span>FEATURED SERVICE</span>
+
+            <h4>
+              Printing that
+              makes an impact.
+            </h4>
+
+            <a href="#contact">
+              START A PROJECT ↗
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- PORTFOLIO -->
+      <div class="nav-item has-dropdown">
+
+        <a href="#projects" class="nav-link">
+          Portfolio
+          <span class="nav-plus">↘</span>
+        </a>
+
+        <div class="nav-dropdown nav-dropdown-small">
+          <a href="#projects">Portfolio Grid <b>↗</b></a>
+          <a href="#projects">Portfolio Masonry <b>↗</b></a>
+          <a href="#projects">Project Details <b>↗</b></a>
+        </div>
+
+      </div>
+
+
+      <!-- BLOG -->
+      <div class="nav-item has-dropdown">
+
+        <a href="#blog" class="nav-link">
+          Blog
+          <span class="nav-plus">↘</span>
+        </a>
+
+        <div class="nav-dropdown nav-dropdown-small">
+          <a href="#blog">Blog Classic <b>↗</b></a>
+          <a href="#blog">Blog Grid <b>↗</b></a>
+          <a href="#blog">Blog Details <b>↗</b></a>
+        </div>
+
+      </div>
+
+
+      <div class="nav-item has-dropdown contact-dropdown-parent">
+
+        <a href="#contact" class="nav-link">
+          Contact Us
+          <span class="nav-plus">↘</span>
+        </a>
+
+        <div class="nav-dropdown nav-dropdown-small contact-dropdown">
+          <a href="#contact">
+            Contact Us <b>↗</b>
+          </a>
+
+          <a href="#contact">
+            Contact Us -2 <b>↗</b>
+          </a>
+        </div>
+
+      </div>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <!-- SEARCH -->
+      <button
+        class="search-btn"
+        id="navSearchButton"
+        type="button"
+        aria-label="Search"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="27"
+          height="27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <circle
+            cx="11"
+            cy="11"
+            r="7"
+            stroke="currentColor"
+            stroke-width="1.7"
+          />
+          <path
+            d="M16.2 16.2L21 21"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+
+      <!-- CART -->
+      <button
+        class="cart-btn"
+        type="button"
+        aria-label="Shopping cart"
+      >
+        <svg
+          viewBox="0 0 32 32"
+          width="29"
+          height="29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M3 5H7L9.5 20H24.5L28 9H8"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 20C9 20 8.3 20.8 8.3 21.8C8.3 22.8 9.1 23.5 10.1 23.5H25"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+          <circle cx="12" cy="27" r="1.5" fill="currentColor"/>
+          <circle cx="24" cy="27" r="1.5" fill="currentColor"/>
+        </svg>
+
+        <small class="cart-count">0</small>
+      </button>
+
+      <a href="#contact" class="quote-btn">
+        GET A QUOTE
+        <b>↗</b>
+      </a>
+
+      <button
+        class="menu-btn"
+        aria-label="Menu"
+        type="button"
+      >
+        <i></i>
+        <i></i>
+        <i></i>
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- SEARCH OVERLAY -->
+
+<div
+  class="nav-search-overlay"
+  id="navSearchOverlay"
+  aria-hidden="true"
+>
+
+  <button
+    class="nav-search-close"
+    id="navSearchClose"
+    aria-label="Close search"
+    type="button"
+  >
+    ×
+  </button>
+
+  <div class="nav-search-inner">
+
+    <span>WHAT ARE YOU LOOKING FOR?</span>
+
+    <form
+      onsubmit="event.preventDefault()"
+      class="nav-search-form"
+    >
+      <input
+        type="search"
+        placeholder="Search..."
+        aria-label="Search"
+      >
+
+      <button
+        type="submit"
+        aria-label="Submit search"
+      >
+        ↗
+      </button>
+    </form>
+
+  </div>
+
+</div>
+
+
+
+<main>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+
+<section id="home" class="hero exact-printent-hero">
+
+        <!-- ================= SECOND HERO SLIDE ================= -->
+        <div class="hero-second-slide" aria-hidden="true">
+
+          <div class="hero-second-bg"></div>
+          <div class="hero-second-shade"></div>
+
+          <div class="hero-second-content">
+
+            <div class="hero-second-title">
+              <div class="hero-second-small">Produce the</div>
+
+              <div class="hero-second-big">
+                Digital printing
+              </div>
+            </div>
+
+            <div class="hero-second-bottom">
+
+              <div class="hero-second-description">
+                Screen printing is accomplished in two ways, using<br>
+                either flat or rotary screens We can help you<br>
+                develop and execute transparent.
+              </div>
+
+              <div class="hero-second-divider"></div>
+
+              <a href="#services" class="hero-second-button">
+                More Services!
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="exact-hero-bg"></div>
+
+        <div class="exact-hero-shade"></div>
+
+        <div class="exact-hero-inner">
+          <div class="exact-hero-title">
+            <div
+  class="hero-line hero-line-one"
+  style="
+    position:relative !important;
+    left:320px !important;
+    transform:none !important;
+    margin-left:0 !important;
+    font-size:90px !important;
+    line-height:1 !important;
+  "
+>Breathing life</div>
+
+            <div class="hero-line hero-line-two">
+              into <span>your print</span>
+            </div>
+          </div>
+
+          <div class="exact-hero-info">
+            <div class="hero-info-copy">
+              Better quality, higher service, and higher
+              <br />
+              turnaround time, simply higher.
+            </div>
+
+            <div class="hero-info-divider"></div>
+
+            <div class="hero-client">
+              <strong data-fixed-client-count="true">2,845+</strong>
+
+              <span> Satisfied Clients </span>
+            </div>
+          </div>
+
+          <a href="#contact" class="exact-hero-contact">
+            <span>Contact Us</span>
+            <b>↗</b>
+          </a>
+        </div>
+
+        <button
+          class="exact-slider-arrow exact-slider-left"
+          type="button"
+          aria-label="Previous Slide"
+        >&lt;</button>
+
+        <button
+          class="exact-slider-arrow exact-slider-right"
+          type="button"
+          aria-label="Next Slide"
+        >&gt;</button>
+      </section>
+
+
+
+<!-- ================= MOVING SERVICES SHOWCASE ================= -->
+
+<section class="moving-services-showcase" id="about">
+
+  <div class="moving-services-head">
+
+    <h2>
+      Printent creates things for<br>
+      your <em>success</em> future
+    </h2>
+
+    <div class="moving-services-copy">
+      <p>
+        We can help you develop and execute transparent and traditional
+        strategy with closely related environmental and business priorities.
+      </p>
+
+      <a href="#services">
+        Awesome Services <span>↘</span>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="moving-services-viewport">
+
+    <div class="moving-services-track">
+
+      <!-- SET 1 -->
+
+      <article class="moving-service-card">
+        <div class="moving-service-image">
+          <img src="assets/images/Service-1-600x700.png" alt="Pamphlet design">
+        </div>
+        <div class="moving-service-bottom">
+          <h3>Pamphlet design</h3>
+          <p class="moving-service-description">We offer a complete range of digital printing services, created with quality, precision and professional finishing.</p>
+          <span>↘</span>
+        </div>
+      </article>
+
+      <article class="moving-service-card">
+        <div class="moving-service-image">
+          <img src="assets/images/Service-2-414x514.jpg" alt="Stickers printing design">
+        </div>
+        <div class="moving-service-bottom">
+          <h3>Stickers printing design</h3>
+          <p class="moving-service-description">Premium sticker printing solutions with sharp details, vibrant colours and durable professional finishing.</p>
+          <span>↘</span>
+        </div>
+      </article>
+
+      <article class="moving-service-card">
+        <div class="moving-service-image">
+          <img src="assets/images/Service-3-414x514.jpg" alt="Bag printing design">
+        </div>
+        <div class="moving-service-bottom">
+          <h3>Bag printing design</h3>
+          <p class="moving-service-description">Creative custom bag printing designed to make your brand stand out with a strong and memorable identity.</p>
+          <span>↘</span>
+        </div>
+      </article>
+
+      <article class="moving-service-card">
+        <div class="moving-service-image">
+          <img src="assets/images/Service-4-600x700.jpg" alt="Business card design">
+        </div>
+        <div class="moving-service-bottom">
+          <h3>Business card design</h3>
+          <p class="moving-service-description">We offer a complete range of digital printing services, and we handle your business cards with premium quality.</p>
+          <span>↘</span>
+        </div>
+      </article>
+
+      <!-- SET 2 - duplicate for seamless loop -->
+
+      <article class="moving-service-card" aria-hidden="true">
+        <div class="moving-service-image">
+          <img src="assets/images/Service-1-600x700.png" alt="">
+        </div>
+        <div class="moving-service-bottom">
+          <h3>Pamphlet design</h3>
+          <p class="moving-service-description">We offer a complete range of digital printing services, created with quality, precision and professional finishing.</p>
+          <span>↘</span>
+        </div>
+      </article>
+
+      <article class="moving-service-card" aria-hidden="true">
+        <div class="moving-service-image">
+          <img src="assets/images/Service-2-414x514.jpg" alt="">
+        </div>
+        <div class="moving-service-bottom">
+          <h3>Stickers printing design</h3>
+          <p class="moving-service-description">Premium sticker printing solutions with sharp details, vibrant colours and durable professional finishing.</p>
+          <span>↘</span>
+        </div>
+      </article>
+
+      <article class="moving-service-card" aria-hidden="true">
+        <div class="moving-service-image">
+          <img src="assets/images/Service-3-414x514.jpg" alt="">
+        </div>
+        <div class="moving-service-bottom">
+          <h3>Bag printing design</h3>
+          <p class="moving-service-description">Creative custom bag printing designed to make your brand stand out with a strong and memorable identity.</p>
+          <span>↘</span>
+        </div>
+      </article>
+
+      <article class="moving-service-card" aria-hidden="true">
+        <div class="moving-service-image">
+          <img src="assets/images/Service-4-600x700.jpg" alt="">
+        </div>
+        <div class="moving-service-bottom">
+          <h3>Business card design</h3>
+          <p class="moving-service-description">We offer a complete range of digital printing services, and we handle your business cards with premium quality.</p>
+          <span>↘</span>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SINCE 1996 SHOWCASE ================= -->
+
+<section class="since-1996-showcase">
+
+  <div class="since-1996-text">
+    Since-1996
+  </div>
+
+</section>
+
+
+
+<!-- ================= EXACT ABOUT / SUCCESS SECTION ================= -->
+
+<section class="printent-about-exact">
+
+  <div class="pae-main">
+
+    <!-- LEFT IMAGE -->
+    <div class="pae-image">
+      <img
+        src="assets/images/col-01.jpg"
+        alt="Printing services"
+        loading="lazy"
+        decoding="async"
+      >
+    </div>
+
+
+    <!-- RIGHT CONTENT -->
+    <div class="pae-content">
+
+      <h2>
+        <span class="pae-heading-line">We create some things</span>
+        <span class="pae-heading-line">your <span class="pae-success">success</span> future</span>
+      </h2>
+
+
+      <div class="pae-service-row">
+
+        <div class="pae-service-title">
+          <div>
+            <b>#</b>
+            Best printing services
+          </div>
+          <i></i>
+        </div>
+
+        <div class="pae-service-copy">
+          <p>
+            Receive a certificate from a university, class
+            or from a vocational school
+          </p>
+
+          <a href="#services">
+            Read More <span>↘</span>
+          </a>
+        </div>
+
+      </div>
+
+
+      <div class="pae-service-row">
+
+        <div class="pae-service-title">
+          <div>
+            <b>#</b>
+            Best services in town
+          </div>
+          <i></i>
+        </div>
+
+        <div class="pae-service-copy">
+          <p>
+            Get With a Dedicated Production Manager
+            for various Pro Security Products
+          </p>
+
+          <a href="#services">
+            Read More <span>↘</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- STATS -->
+
+  <div class="pae-stats">
+
+    <div class="pae-stat">
+      <strong>2845<sup>+</sup></strong>
+      <span>Satisfied Clients</span>
+    </div>
+
+    <div class="pae-stat">
+      <strong>1565<sup>+</sup></strong>
+      <span>Completed Delivery</span>
+    </div>
+
+    <div class="pae-stat">
+      <strong>4568<sup>+</sup></strong>
+      <span>Awards Winner</span>
+    </div>
+
+    <div class="pae-stat">
+      <strong>3845<sup>+</sup></strong>
+      <span>Team Members</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= COMPLETED PROJECTS EXACT ================= -->
+
+<section class="completed-projects-exact" id="completed-projects">
+
+  <div class="cpe-top">
+
+    <h2>
+      Successfully completed<br>
+      <span>projects</span> for our customers.
+    </h2>
+
+    <div class="cpe-count">
+      <strong>250+</strong>
+
+      <div class="cpe-count-label">
+        Completed<br>
+        Projects
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="cpe-grid">
+
+    <a href="#projects" class="cpe-card"
+       style="--project-image:url('../images/p3-1024x683.png')">
+
+      <div class="cpe-card-content">
+        <h3>Mug design printing</h3>
+
+        <p>
+          A printer draws an image or design on special paper to
+          cover is applied to slide.
+        </p>
+
+        <span class="cpe-arrow">↘</span>
+
+        <span class="cpe-view-project">
+          VIEW FULL PROJECT <b>↗</b>
+        </span>
+      </div>
+
+    </a>
+
+
+    <a href="#projects" class="cpe-card"
+       style="--project-image:url('../images/p8-1024x683.png')">
+
+      <div class="cpe-card-content">
+        <h3>Poster flyer printing</h3>
+
+        <p>
+          Support digital transformation initiatives are a material
+          used to improve productivity.
+        </p>
+
+        <span class="cpe-arrow">↘</span>
+
+        <span class="cpe-view-project">
+          VIEW FULL PROJECT <b>↗</b>
+        </span>
+      </div>
+
+    </a>
+
+
+    <a href="#projects" class="cpe-card"
+       style="--project-image:url('../images/p9-1024x683.png')">
+
+      <div class="cpe-card-content">
+        <h3>Magazines and journal</h3>
+
+        <p>
+          Newspapers and magazines are printed that are
+          published regularly from time to time.
+        </p>
+
+        <span class="cpe-arrow">↘</span>
+
+        <span class="cpe-view-project">
+          VIEW FULL PROJECT <b>↗</b>
+        </span>
+      </div>
+
+    </a>
+
+
+    <a href="#projects" class="cpe-card"
+       style="--project-image:url('../images/Service-4-1024x683.jpg')">
+
+      <div class="cpe-card-content">
+        <h3>Digital printing</h3>
+
+        <p>
+          Used mostly for borders and murals, digital printing is
+          defined as one several technologies.
+        </p>
+
+        <span class="cpe-arrow">↘</span>
+
+        <span class="cpe-view-project">
+          VIEW FULL PROJECT <b>↗</b>
+        </span>
+      </div>
+
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- ================= HAPPY CUSTOMER TESTIMONIAL ================= -->
+
+<section class="happy-customer-section" id="testimonials">
+
+  <!-- FLOATING CUSTOMERS -->
+
+  <div class="happy-face happy-face-1" data-depth="1.00">
+    <img src="assets/images/customer-1.jpg" alt="Happy customer">
+  </div>
+
+  <div class="happy-face happy-face-2" data-depth=".75">
+    <img src="assets/images/customer-2.jpg" alt="Happy customer">
+  </div>
+
+  <div class="happy-face happy-face-3" data-depth=".55">
+    <img src="assets/images/customer-3.jpg" alt="Happy customer">
+  </div>
+
+  <div class="happy-face happy-face-4" data-depth=".85">
+    <img src="assets/images/customer-4.jpg" alt="Happy customer">
+  </div>
+
+  <div class="happy-face happy-face-5" data-depth=".65">
+    <img src="assets/images/customer-5.jpg" alt="Happy customer">
+  </div>
+
+  <div class="happy-face happy-face-6" data-depth="1.10">
+    <img src="assets/images/customer-6.jpg" alt="Happy customer">
+  </div>
+
+
+  <!-- MAIN CONTENT -->
+
+  <div class="happy-customer-inner">
+
+    <h2 class="happy-customer-title">
+      Hear from happy <span>customer</span>
+    </h2>
+
+
+    <div class="happy-main-avatar">
+      <img
+        src="assets/images/customer-1.jpg"
+        alt="Natalie Kameron"
+      >
+    </div>
+
+
+    <blockquote class="happy-quote">
+      “For all your printing prerequisites. Offer to make and print
+      their pamphlets, business cards, solicitations, and occasion
+      programs. More than ink.. Solutions.”
+    </blockquote>
+
+
+    <div class="happy-author">
+
+      <strong>Natalie Kameron</strong>
+
+      <i></i>
+
+      <span>Ceo / Manager</span>
+
+    </div>
+
+
+    <div class="happy-slider-indicator">
+      <span></span>
+      <span class="active"></span>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- SHIPPING RATES EXACT -->
+
+<section class="shipping-rates-exact">
+
+  <div class="sre-image">
+    <img
+      src="assets/images/shipping-print.jpg"
+      alt="Print on demand services"
+      loading="lazy"
+      decoding="async"
+    >
+  </div>
+
+  <div class="sre-content">
+
+    <h2>
+      Best shipping rates<br>
+      forprint-on demnd<br>
+      best services
+    </h2>
+
+    <div class="sre-bottom">
+
+      <a href="#contact" class="sre-button">
+        Contact Us!
+      </a>
+
+      <p>
+        The ability to provide a complete solution<br>
+        to your valuable customers
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PPE PRICING EXACT -->
+
+<section class="ppe-pricing" id="pricing">
+
+  <div class="ppe-wrap">
+
+    <div class="ppe-head">
+
+      <h2>
+        Choose the best<br>
+        <span class="ppe-package">package</span> for your business
+      </h2>
+
+      <div class="ppe-plan-count">
+        <strong>20+</strong>
+
+        <div class="ppe-plan-label">
+          <span>Best Price</span>
+          <span>Plans</span>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="ppe-grid">
+
+      <article class="ppe-card">
+
+        <div class="ppe-card-body">
+
+          <div class="ppe-price">
+            <sup>$</sup>
+            <strong>49</strong>
+            <span>month</span>
+          </div>
+
+          <h3>Basic plans</h3>
+
+          <div class="ppe-line"></div>
+
+          <ul>
+            <li><span>Check project</span><b class="yes">✓</b></li>
+            <li><span>Prepare documentation</span><b class="yes">✓</b></li>
+            <li><span>Working process</span><b class="no">×</b></li>
+            <li><span>Project transfer</span><b class="no">×</b></li>
+            <li><span>25 GB Storages</span><b class="no">×</b></li>
+          </ul>
+
+        </div>
+
+        <a href="#contact" class="ppe-start">
+          <span>Get Started</span>
+          <b>↘</b>
+        </a>
+
+      </article>
+
+
+      <article class="ppe-card ppe-featured">
+
+        <div class="ppe-card-body">
+
+          <div class="ppe-price">
+            <sup>$</sup>
+            <strong>99</strong>
+            <span>month</span>
+          </div>
+
+          <h3>Optimal plans</h3>
+
+          <div class="ppe-line"></div>
+
+          <ul>
+            <li><span>Check project</span><b class="yes">✓</b></li>
+            <li><span>Prepare documentation</span><b class="yes">✓</b></li>
+            <li><span>Working process</span><b class="yes">✓</b></li>
+            <li><span>Project transfer</span><b class="yes">✓</b></li>
+            <li><span>25 GB Storages</span><b class="yes">✓</b></li>
+          </ul>
+
+        </div>
+
+        <a href="#contact" class="ppe-start">
+          <span>Get Started</span>
+          <b>↘</b>
+        </a>
+
+      </article>
+
+
+      <article class="ppe-card">
+
+        <div class="ppe-card-body">
+
+          <div class="ppe-price">
+            <sup>$</sup>
+            <strong>89</strong>
+            <span>month</span>
+          </div>
+
+          <h3>Premium plans</h3>
+
+          <div class="ppe-line"></div>
+
+          <ul>
+            <li><span>Check project</span><b class="yes">✓</b></li>
+            <li><span>Prepare documentation</span><b class="yes">✓</b></li>
+            <li><span>Working process</span><b class="yes">✓</b></li>
+            <li><span>Project transfer</span><b class="yes">✓</b></li>
+            <li><span>25 GB Storages</span><b class="no">×</b></li>
+          </ul>
+
+        </div>
+
+        <a href="#contact" class="ppe-start">
+          <span>Get Started</span>
+          <b>↘</b>
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PRINTENT EXACT DARK FOOTER -->
+
+<footer class="printent-exact-footer" id="contact">
+
+  <div class="pef-wrap">
+
+    <div class="pef-top">
+
+      <div class="pef-top-left">
+
+        <h2>
+          Making your job easier<br>
+          many print projects.
+        </h2>
+
+        <p>
+          For further info &amp; support
+          <a href="#contact">Contact Us</a>
+        </p>
+
+      </div>
+
+
+      <div class="pef-contact-box">
+
+        <h3>We’ll contact you shortly</h3>
+
+        <form class="pef-form" action="#" method="post">
+
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            aria-label="Enter Your Email"
+          >
+
+          <button type="submit">
+            Send
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+    <div class="pef-columns">
+
+      <div class="pef-column pef-about">
+
+        <h3>About Us</h3>
+
+        <p>
+          Starting a printing business takes a blend of handy
+          print involvement, deals and abilities
+        </p>
+
+        <div class="pef-socials">
+
+          <a href="#" aria-label="Facebook">f</a>
+
+          <a href="#" aria-label="X">
+            <span>𝕏</span>
+          </a>
+
+          <a href="#" aria-label="Discord">◉</a>
+
+          <a href="#" aria-label="LinkedIn">in</a>
+
+        </div>
+
+        <div class="pef-copyright">
+          © 2022 Printing Theme by Preyantechnosys
+        </div>
+
+      </div>
+
+
+      <div class="pef-column">
+
+        <h3>Quick Links</h3>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">Learn About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="pef-column">
+
+        <h3>Services</h3>
+
+        <ul>
+          <li><a href="#">T-shirt Printing</a></li>
+          <li><a href="#about">Learn About Us</a></li>
+          <li><a href="#">Mug Designs</a></li>
+          <li><a href="#">Tshirt Printing</a></li>
+          <li><a href="#">Books Printing</a></li>
+          <li><a href="#">Canvas Designs</a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="pef-column pef-touch">
+
+        <h3>Get in touch</h3>
+
+        <p>
+          Our Locations: 405 main Bolins Stret New<br>
+          Jersey Town Road KY 7007
+        </p>
+
+        <p>
+          Call Us : + 96 123 456 7890
+        </p>
+
+        <p>
+          Mail1 : info.support@domain.com<br>
+          Mail2 : info.support@domain.com
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+<!-- =====================================================
+     SERVICES PREVIEW
+===================================================== -->
+
+
+
+
+
+<!-- =====================================================
+     PROJECTS / PORTFOLIO
+===================================================== -->
+
+
+
+
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+
+
+
+
+
+<!-- =====================================================
+     TESTIMONIAL
+===================================================== -->
+
+
+
+
+
+
+<!-- =====================================================
+     CTA
+===================================================== -->
+
+
+
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+
+
+
+
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/service-card-expand.js" defer></script>
+
+
+<script>
+(function () {
+
+  function startStatCounters() {
+
+    const targets = [2845, 1565, 4568, 3845];
+
+    const allStrong = Array.from(document.querySelectorAll("strong"));
+
+    const counters = allStrong.filter(el => {
+      if (el.dataset.fixedClientCount === "true") return false;
+      const n = parseInt(el.textContent.replace(/\D/g, ""), 10);
+      return targets.includes(n);
+    });
+
+    console.log("STAT COUNTERS FOUND:", counters.length);
+
+    if (!counters.length) return;
+
+    counters.forEach(el => {
+      const target = parseInt(
+        el.textContent.replace(/\D/g, ""),
+        10
+      );
+
+      el.dataset.counterTarget = target;
+      el.innerHTML = '0<sup>+</sup>';
+    });
+
+
+    function animate(el) {
+
+      if (el.dataset.animated === "true") return;
+
+      el.dataset.animated = "true";
+
+      const target = Number(el.dataset.counterTarget);
+
+      const duration = 2200;
+      const start = performance.now();
+
+      function frame(now) {
+
+        const progress =
+          Math.min((now - start) / duration, 1);
+
+        const ease =
+          1 - Math.pow(1 - progress, 3);
+
+        const value =
+          Math.floor(target * ease);
+
+        el.innerHTML =
+          value.toLocaleString() +
+          '<sup>+</sup>';
+
+        if (progress < 1) {
+          requestAnimationFrame(frame);
+        } else {
+          el.innerHTML =
+            target.toLocaleString() +
+            '<sup>+</sup>';
+        }
+      }
+
+      requestAnimationFrame(frame);
+    }
+
+
+    const observer = new IntersectionObserver(entries => {
+
+      entries.forEach(entry => {
+
+        if (!entry.isIntersecting) return;
+
+        const el = entry.target;
+
+        setTimeout(() => {
+          animate(el);
+        }, Number(el.dataset.delay || 0));
+
+        observer.unobserve(el);
+
+      });
+
+    }, {
+      threshold: 0.15
+    });
+
+
+    counters.forEach((el, i) => {
+      el.dataset.delay = i * 100;
+      observer.observe(el);
+    });
+
+  }
+
+
+  if (document.readyState === "loading") {
+    document.addEventListener(
+      "DOMContentLoaded",
+      startStatCounters
+    );
+  } else {
+    startStatCounters();
+  }
+
+})();
+</script>
+
+
+<!-- FLOATING BUY BOX START -->
+
+<a href="#" class="floating-buy-box">
+
+  <div class="floating-buy-top">
+
+    <div class="floating-bag-icon">
+      <span class="bag-handle"></span>
+    </div>
+
+    <strong>Buy now</strong>
+    <b>$39</b>
+
+  </div>
+
+  <div class="floating-buy-bottom">
+
+    <strong>650+</strong>
+
+    <span>
+      Demos in<br>
+      One Bundle
+    </span>
+
+  </div>
+
+</a>
+
+<!-- FLOATING BUY BOX END -->
+
+
+<script id="exact-two-slide-js">
+document.addEventListener("DOMContentLoaded", function () {
+
+  const hero = document.querySelector(".exact-printent-hero");
+  if (!hero) return;
+
+  const second = hero.querySelector(".hero-second-slide");
+  const left = hero.querySelector(".exact-slider-left");
+  const right = hero.querySelector(".exact-slider-right");
+
+  if (!second || !left || !right) return;
+
+  let currentSlide = 1;
+
+  function showSlide(number) {
+
+    currentSlide = number;
+
+    if (number === 2) {
+      second.classList.add("is-active");
+      second.setAttribute("aria-hidden", "false");
+    } else {
+      second.classList.remove("is-active");
+      second.setAttribute("aria-hidden", "true");
+    }
+
+  }
+
+  right.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    showSlide(currentSlide === 1 ? 2 : 1);
+  });
+
+  left.addEventListener("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    showSlide(currentSlide === 1 ? 2 : 1);
+  });
+
+});
+</script>
+
+
+
+<!-- FLOATING BUY CARD ONLY -->
+<div class="floating-buy-card">
+
+    <div class="buy-top">
+        
+<div class="buy-icon">
+    <svg viewBox="0 0 24 24" fill="none">
+        <path d="M6 8H18L19 21H5L6 8Z"
+        stroke="white"
+        stroke-width="1.8"
+        stroke-linejoin="round"/>
+
+        <path d="M9 8V6C9 4.9 9.9 4 11 4H13C14.1 4 15 4.9 15 6V8"
+        stroke="white"
+        stroke-width="1.8"
+        stroke-linecap="round"/>
+    </svg>
+</div>
+
+
+        <h3>
+            Buy now<br>
+            $39
+        </h3>
+    </div>
+
+
+    <div class="buy-bottom">
+
+        <strong>650+</strong>
+
+        <p>
+            Demos in<br>
+            One Bundle
+        </p>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
+
+<style>
+/* Second slide description — bigger + bold */
+.hero-second-description{
+  font-size: 21px !important;
+  line-height: 1.55 !important;
+  font-weight: 700 !important;
+  width: 520px !important;
+}
+
+/* More Services button text — bigger + bold */
+.hero-second-button{
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  min-width: 190px !important;
+  height: 58px !important;
+}
+</style>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hero = document.querySelector(".exact-printent-hero");
+  const second = document.querySelector(".hero-second-slide");
+
+  if (!hero || !second) return;
+
+  let autoSlide = 1;
+
+  setInterval(function () {
+    autoSlide = autoSlide === 1 ? 2 : 1;
+
+    if (autoSlide === 2) {
+      second.classList.add("is-active");
+      second.setAttribute("aria-hidden", "false");
+    } else {
+      second.classList.remove("is-active");
+      second.setAttribute("aria-hidden", "true");
+    }
+  }, 5000); // 5000 = 5 seconds
+});
+</script>
+
+
+<style id="hero-arrow-final-fix">
+
+/* Hero itself is the positioning boundary */
+.exact-printent-hero{
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* BOTH ARROWS — reference style */
+.exact-slider-arrow{
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+
+  width: 55px !important;
+  height: 80px !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+
+  color: white !important;
+
+  font-family: Arial, sans-serif !important;
+  font-size: 0 !important;
+
+  cursor: pointer !important;
+
+  z-index: 999 !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* LEFT */
+.exact-slider-left{
+  left: 20px !important;
+}
+
+/* RIGHT */
+.exact-slider-right{
+  right: 20px !important;
+}
+
+/* Make exact < > looking arrows */
+.exact-slider-left::before,
+.exact-slider-right::before{
+  content: "" !important;
+
+  width: 21px !important;
+  height: 21px !important;
+
+  display: block !important;
+
+  border-top: 3px solid #fff !important;
+  border-right: 3px solid #fff !important;
+}
+
+.exact-slider-left::before{
+  transform: rotate(-135deg) !important;
+}
+
+.exact-slider-right::before{
+  transform: rotate(45deg) !important;
+}
+
+/* no weird hover box */
+.exact-slider-arrow:hover{
+  background: transparent !important;
+  opacity: .8 !important;
+}
+
+/* mobile */
+@media(max-width: 700px){
+
+  .exact-slider-left{
+    left: 8px !important;
+  }
+
+  .exact-slider-right{
+    right: 8px !important;
+  }
+
+  .exact-slider-left::before,
+  .exact-slider-right::before{
+    width: 17px !important;
+    height: 17px !important;
+  }
+}
+
+</style>
+
+
+<style id="hero-arrow-only-angle">
+
+.exact-printent-hero{
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* ONLY < and > */
+.exact-slider-arrow{
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  padding: 10px !important;
+
+  color: #fff !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 0 !important;
+  font-weight: 300 !important;
+
+  z-index: 9999 !important;
+  cursor: pointer !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* REMOVE OLD CSS ARROWS */
+.exact-slider-arrow::before,
+.exact-slider-arrow::after{
+  display: none !important;
+  content: none !important;
+}
+
+/* LEFT < */
+.exact-slider-left{
+  left: 28px !important;
+}
+
+.exact-slider-left::after{
+  content: none !important;
+}
+
+/* RIGHT > */
+.exact-slider-right{
+  right: 28px !important;
+}
+
+/* create ONLY literal characters */
+.exact-slider-left{
+  font-size: 0 !important;
+}
+
+.exact-slider-left span{
+  display:none !important;
+}
+
+.exact-slider-left::before{
+  display:block !important;
+  content:"<" !important;
+  font-size:52px !important;
+  line-height:1 !important;
+  font-weight:300 !important;
+  color:#fff !important;
+}
+
+.exact-slider-right::before{
+  display:block !important;
+  content:">" !important;
+  font-size:52px !important;
+  line-height:1 !important;
+  font-weight:300 !important;
+  color:#fff !important;
+}
+
+.exact-slider-arrow:hover{
+  background:none !important;
+  opacity:.75 !important;
+}
+
+</style>
+
+
+<style id="ABSOLUTE-FINAL-SINGLE-ARROW-FIX">
+
+/* KILL ALL EXTRA GENERATED ARROWS */
+.exact-printent-hero .exact-slider-arrow::before,
+.exact-printent-hero .exact-slider-arrow::after,
+.exact-printent-hero .exact-slider-left::before,
+.exact-printent-hero .exact-slider-left::after,
+.exact-printent-hero .exact-slider-right::before,
+.exact-printent-hero .exact-slider-right::after {
+    content: none !important;
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    border: 0 !important;
+}
+
+/* ONLY REAL HTML < AND > */
+.exact-printent-hero .exact-slider-arrow {
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 50px !important;
+    height: 70px !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    color: #fff !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 55px !important;
+    font-weight: 200 !important;
+    line-height: 1 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 9999 !important;
+    cursor: pointer !important;
+}
+
+.exact-printent-hero .exact-slider-left {
+    left: 18px !important;
+    right: auto !important;
+}
+
+.exact-printent-hero .exact-slider-right {
+    right: 18px !important;
+    left: auto !important;
+}
+
+</style>
+
+
+<style id="HERO-ARROW-HOVER-VISIBILITY">
+
+/* Default = hidden */
+.exact-printent-hero .exact-slider-arrow {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: opacity 0.25s ease, visibility 0.25s ease !important;
+}
+
+/* Mouse hero section par aaye = show arrows */
+.exact-printent-hero:hover .exact-slider-arrow {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+}
+
+/* Arrow par hover karte waqt bhi visible */
+.exact-printent-hero .exact-slider-arrow:hover {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+</style>
+
