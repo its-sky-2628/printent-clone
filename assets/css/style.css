@@ -12372,7 +12372,7 @@ right:21% !important;
 }
 
 .hero-info-divider{
-    height:90px !important;
+    height:110px !important;
 }
 
 .hero-client strong{
@@ -19583,3 +19583,3244 @@ body{
 }
 
 
+
+
+/* =========================================================
+   ABSOLUTE FINAL NAVBAR CONTROLS
+   EDIT ONLY THIS BLOCK
+========================================================= */
+
+/* ===== NAVBAR TEXT ===== */
+#desktopNav .nav-item > a.nav-link {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+}
+
+/* ===== REMOVE ALL GENERATED/PSEUDO ARROWS ===== */
+#desktopNav .nav-item > a.nav-link::after,
+#desktopNav .nav-item > a.nav-link::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* ===== REAL HTML ARROW: <span class="nav-plus">↘</span> ===== */
+#desktopNav .nav-item > a.nav-link > span.nav-plus {
+    display: inline-block !important;
+
+    /* ARROW SIZE */
+    font-size: 18px !important;
+
+    /* ARROW WEIGHT */
+    font-weight: 900 !important;
+
+    /* ARROW EXTRA THICKNESS */
+    -webkit-text-stroke: 0.5px currentColor !important;
+
+    /* GAP BETWEEN TEXT AND ARROW */
+    margin-left: 2px !important;
+
+    /* ARROW SHAPE */
+    font-family: Arial, Helvetica, sans-serif !important;
+
+    /* ↘ already exists in HTML, so no generated character needed */
+    line-height: 1 !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    color: currentColor !important;
+
+    /* ANGLE */
+    transform: rotate(0deg) !important;
+
+    transition: transform .25s ease, color .25s ease !important;
+}
+
+/* ===== ARROW HOVER ===== */
+#desktopNav .nav-item:hover > a.nav-link > span.nav-plus {
+    transform: translate(2px, 2px) !important;
+    color: #ff6848 !important;
+}
+
+/* ===== NAV TEXT HOVER ===== */
+#desktopNav .nav-item:hover > a.nav-link,
+#desktopNav .nav-item > a.nav-link:hover {
+    color: #ff6848 !important;
+}
+
+
+/* FINAL SMALL NAVBAR ARROW */
+#desktopNav .nav-item > a.nav-link > span.nav-plus {
+    display: inline-block !important;
+    font-size: 9px !important;
+    font-weight: 1200 !important;
+    -webkit-text-stroke: 0 !important;
+    margin-left: 5px !important;
+    line-height: 1 !important;
+    width: auto !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: currentColor !important;
+    transform: none !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#desktopNav .nav-item:hover > a.nav-link > span.nav-plus {
+    transform: translate(1px, 1px) !important;
+}
+
+
+/* FINAL ➘ SMALL SHORT-TAIL NAVBAR ARROW */
+
+#desktopNav .nav-item > a.nav-link > span.nav-plus {
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    -webkit-text-stroke: 0 !important;
+
+    margin-left: 2px !important;
+
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+
+    line-height: 1 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    color: currentColor !important;
+
+    /* makes ➘ visually more compact / shorter */
+    transform: scaleX(.78) scaleY(.90) !important;
+    transform-origin: center !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* Replace existing ↘ visually with ➘ */
+#desktopNav .nav-item > a.nav-link > span.nav-plus {
+    font-size: 0 !important;
+}
+
+#desktopNav .nav-item > a.nav-link > span.nav-plus::after {
+    content: "➘" !important;
+
+    display: inline-block !important;
+
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    -webkit-text-stroke: 0 !important;
+
+    line-height: 1 !important;
+
+    transform: scaleX(.78) scaleY(.90) !important;
+    transform-origin: center !important;
+}
+
+/* hover */
+#desktopNav .nav-item:hover > a.nav-link > span.nav-plus::after {
+    transform: scaleX(.78) scaleY(.90) translate(1px,1px) !important;
+}
+
+
+/* ===== FINAL NAV ARROW GAP + ROTATION ===== */
+
+/* text + arrow closer */
+#desktopNav .nav-item > .nav-link{
+    gap: 2px !important;
+}
+
+/* real arrow */
+#desktopNav .nav-item > .nav-link > .nav-plus{
+    display: inline-block !important;
+
+    /* text ke bilkul paas */
+    margin-left: 1px !important;
+
+    /* arrow size */
+    font-size: 10px !important;
+
+    /* arrow thin */
+    font-weight: 400 !important;
+    -webkit-text-stroke: 0 !important;
+
+    line-height: 1 !important;
+
+    /* normal position = diagonal ➘ */
+    transform: rotate(0deg) !important;
+    transform-origin: center center !important;
+
+    transition:
+        transform .30s ease,
+        color .30s ease !important;
+}
+
+/* HOVER = arrow vertically downward */
+#desktopNav .nav-item:hover > .nav-link > .nav-plus{
+    transform: rotate(45deg) !important;
+}
+
+/* IMPORTANT: previous ::after arrow remove */
+#desktopNav .nav-item > .nav-link > .nav-plus::after{
+    content: none !important;
+    display: none !important;
+}
+
+/* =========================================
+   FINAL ARROW — KEEP ORIGINAL LOOK
+   ONLY GAP + HOVER ROTATION
+========================================= */
+
+/* arrow ko text ke paas rakho */
+#desktopNav .nav-item > a.nav-link {
+    gap: 2px !important;
+}
+
+#desktopNav .nav-item > a.nav-link > span.nav-plus {
+
+    /* ONLY spacing */
+    margin-left: 1px !important;
+
+    /* normal diagonal position */
+    transform: rotate(0deg) !important;
+    transform-origin: center center !important;
+
+    /* smooth rotation */
+    transition: transform .35s ease !important;
+}
+
+/* HOVER: ➘ rotate hoke vertical ↓ direction me */
+#desktopNav .nav-item:hover > a.nav-link > span.nav-plus,
+#desktopNav .nav-item > a.nav-link:hover > span.nav-plus {
+    transform: rotate(45deg) !important;
+}
+
+
+/* =========================================================
+   FINAL HERO TWO-SLIDE CONTENT VISIBILITY FIX
+========================================================= */
+
+/* First slide content normally visible */
+.exact-printent-hero .exact-hero-inner{
+    opacity:1 !important;
+    visibility:visible !important;
+    pointer-events:auto !important;
+}
+
+/* Second slide active -> first slide content completely hide */
+.exact-printent-hero:has(.hero-second-slide.is-active) .exact-hero-inner{
+    opacity:0 !important;
+    visibility:hidden !important;
+    pointer-events:none !important;
+}
+
+/* Second slide inactive */
+.exact-printent-hero .hero-second-slide{
+    opacity:0 !important;
+    visibility:hidden !important;
+    pointer-events:none !important;
+}
+
+/* Second slide active */
+.exact-printent-hero .hero-second-slide.is-active{
+    opacity:1 !important;
+    visibility:visible !important;
+    pointer-events:auto !important;
+}
+
+
+/* =====================================================
+   FINAL HERO VERTICAL POSITION
+   MATCH ORIGINAL PRINTENT
+   Navbar / arrows untouched
+===================================================== */
+
+/* Move complete hero content upward together */
+.exact-printent-hero .exact-hero-inner {
+    transform: translateY(-55px) !important;
+}
+
+/* Keep title internally stable */
+.exact-printent-hero .exact-hero-title {
+    margin-top: 0 !important;
+}
+
+/* Keep information row aligned */
+.exact-printent-hero .exact-hero-info {
+    margin-top: 0 !important;
+}
+
+/* Contact button follows same hero layout */
+.exact-printent-hero .exact-hero-contact {
+    margin-top: 0 !important;
+}
+
+
+/* ==========================================================
+   FINAL HERO POSITION FIX — DESKTOP
+   MATCH ORIGINAL PRINTENT
+========================================================== */
+
+@media (min-width: 1200px) {
+
+    /* reset previous whole-wrapper movement */
+    .exact-printent-hero .exact-hero-inner {
+        transform: none !important;
+    }
+
+    /* ---------------------------------
+       MAIN HEADING
+       Breathing life
+       into your print
+    --------------------------------- */
+    .exact-printent-hero .exact-hero-title {
+        position: absolute !important;
+
+        top: 145px !important;
+        right: 95px !important;
+
+        margin: 0 !important;
+        transform: none !important;
+    }
+
+    /* ---------------------------------
+       DESCRIPTION + DIVIDER + 2845+
+    --------------------------------- */
+    .exact-printent-hero .exact-hero-info {
+        position: absolute !important;
+
+        top: 395px !important;
+        right: 95px !important;
+
+        margin: 0 !important;
+        transform: none !important;
+
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* ---------------------------------
+       CONTACT BUTTON
+    --------------------------------- */
+    .exact-printent-hero .exact-hero-contact {
+        position: absolute !important;
+
+        top: 510px !important;
+        right: 300px !important;
+
+        margin: 0 !important;
+        transform: none !important;
+    }
+}
+
+
+/* FINAL FIX — ONLY HERO HEADING DOWN */
+@media (min-width: 1200px) {
+
+    .exact-printent-hero .exact-hero-title {
+        top: 205px !important;
+    }
+
+}
+
+
+/* =====================================================
+   FINAL HERO SECOND LINE POSITION
+   "into your print" ONLY
+===================================================== */
+
+@media (min-width: 1200px) {
+
+    /* Second line: into your print */
+    .exact-printent-hero .exact-hero-title .hero-line-two {
+        position: relative !important;
+
+        /* LEFT ki taraf le jao */
+        left: -245px !important;
+
+        /* vertical position same rahe */
+        top: 0 !important;
+
+        margin: 0 !important;
+        transform: none !important;
+
+        white-space: nowrap !important;
+    }
+
+}
+
+
+/* =====================================================
+   FINAL EXACT HERO TITLE ALIGNMENT
+===================================================== */
+
+@media (min-width: 1200px) {
+
+    /* Breathing life */
+    .exact-printent-hero .exact-hero-title {
+        top: 205px !important;
+        right: 95px !important;
+    }
+
+    /* into your print */
+    .exact-printent-hero .exact-hero-title .hero-line-two {
+        position: relative !important;
+
+        /* previous -245px FIX */
+        left: -105px !important;
+        top: 0 !important;
+
+        margin: 0 !important;
+        transform: none !important;
+        white-space: nowrap !important;
+    }
+
+}
+
+
+/* FINAL — ONLY "into your print" DOWN */
+@media (min-width: 1200px) {
+
+    .exact-printent-hero .exact-hero-title .hero-line-two {
+        top: 45px !important;
+    }
+
+}
+
+
+/* FINAL — "into your print" MORE DOWN */
+@media (min-width: 1200px) {
+    .exact-printent-hero .exact-hero-title .hero-line-two {
+        top: 80px !important;
+    }
+}
+
+
+/* FINAL — "into your print" LITTLE MORE DOWN */
+@media (min-width: 1200px) {
+    .exact-printent-hero .exact-hero-title .hero-line-two {
+        top: 105px !important;
+    }
+}
+
+
+/* FINAL — "into your print" SLIGHTLY MORE DOWN */
+@media (min-width: 1200px) {
+    .exact-printent-hero .exact-hero-title .hero-line-two {
+        top: 108px !important;
+    }
+}
+
+
+/* FINAL TINY DOWN ADJUSTMENT — into your print */
+@media (min-width: 1200px) {
+    .exact-printent-hero .exact-hero-title .hero-line-two {
+        top: 108px !important;
+        transform: translateY(15px) !important;
+    }
+}
+
+
+/* =====================================================
+   FINAL FIX — INTO YOUR PRINT POSITION
+===================================================== */
+
+@media (min-width: 1200px) {
+
+    .exact-printent-hero .exact-hero-title .hero-line-two {
+        position: relative !important;
+
+        /* horizontal position */
+        left: -105px !important;
+
+        /* vertical position — CHANGE ONLY THIS */
+        top: 115px !important;
+
+        margin-top: 0 !important;
+
+        transform: none !important;
+        translate: none !important;
+
+        white-space: nowrap !important;
+    }
+
+}
+
+
+/* ===== HERO IMAGE BIGGER / MORE FOCUSED ===== */
+
+@media (min-width: 1200px) {
+
+    .exact-printent-hero .exact-hero-bg {
+        background-size: cover !important;
+
+        /* image ko zoom karo */
+        transform: scale(1.10) !important;
+
+        /* zoom ka focus LEFT/CENTER area par */
+        transform-origin: 35% 50% !important;
+    }
+}
+
+
+/* =====================================================
+   FINAL HERO BACKGROUND IMAGE ZOOM
+   NO TRANSFORM — DIRECT BACKGROUND ZOOM
+===================================================== */
+
+@media (min-width:1200px){
+
+    .exact-printent-hero .exact-hero-bg{
+
+        /* left image area */
+        width:78% !important;
+        left:0 !important;
+        right:auto !important;
+
+        /* IMAGE ZOOM — main control */
+        background-size:115% auto !important;
+
+        /* focus poster / center-left area */
+        background-position:35% center !important;
+
+        background-repeat:no-repeat !important;
+
+        /* existing transform locks don't matter now */
+        transform:none !important;
+        animation:none !important;
+    }
+}
+
+
+/* ===== FINAL SECOND SLIDE IMAGE SIZE/POSITION ===== */
+
+.exact-printent-hero .hero-second-bg{
+    background-size: cover !important;
+
+    /* IMAGE KO BADA */
+    transform: scale(1.18) !important;
+
+    /* image ka focus LEFT side ki taraf */
+    transform-origin: left center !important;
+
+    /* position adjust */
+    background-position: 35% center !important;
+}
+
+
+/* =========================================================
+   FINAL — HERO RIGHT SIDE EXACT ALIGNMENT
+   EDIT ONLY THIS BLOCK FOR HERO TEXT POSITION
+========================================================= */
+
+@media (min-width:1200px){
+
+    /* -----------------------------------------
+       MAIN TITLE WRAPPER
+       Breathing life position
+    ----------------------------------------- */
+    #home.exact-printent-hero .exact-hero-title{
+        position:absolute !important;
+
+        top:145px !important;
+        right:90px !important;
+
+        left:auto !important;
+        bottom:auto !important;
+
+        width:760px !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* -----------------------------------------
+       BREATHING LIFE
+    ----------------------------------------- */
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-one{
+
+        position:relative !important;
+
+        top:0 !important;
+        left:155px !important;
+
+        margin:0 !important;
+
+        font-size:76px !important;
+        line-height:.95 !important;
+
+        white-space:nowrap !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* -----------------------------------------
+       INTO YOUR PRINT
+    ----------------------------------------- */
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-two{
+
+        position:relative !important;
+
+        /* left side image ke andar thoda touch */
+        left:-95px !important;
+
+        /* Breathing life ke neeche */
+        top:35px !important;
+
+        margin:0 !important;
+        margin-top:0 !important;
+
+        font-size:105px !important;
+        line-height:.92 !important;
+        letter-spacing:-4px !important;
+
+        white-space:nowrap !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* orange "your print" */
+    #home.exact-printent-hero
+    .hero-line-two span{
+        color:#ff704d !important;
+    }
+
+
+    /* -----------------------------------------
+       DESCRIPTION + 2845+
+    ----------------------------------------- */
+    #home.exact-printent-hero .exact-hero-info{
+
+        position:absolute !important;
+
+        top:430px !important;
+        right:80px !important;
+
+        bottom:auto !important;
+        left:auto !important;
+
+        width:600px !important;
+
+        display:flex !important;
+        align-items:center !important;
+        justify-content:flex-end !important;
+
+        margin:0 !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* DESCRIPTION */
+    #home.exact-printent-hero .hero-info-copy{
+
+        width:365px !important;
+
+        text-align:right !important;
+
+        font-size:17px !important;
+        line-height:1.65 !important;
+
+        margin:0 !important;
+        padding-right:30px !important;
+
+        transform:none !important;
+    }
+
+
+    /* VERTICAL DIVIDER */
+    #home.exact-printent-hero .hero-info-divider{
+
+        width:1px !important;
+        height:105px !important;
+
+        margin:0 28px 0 0 !important;
+
+        background:rgba(255,255,255,.30) !important;
+
+        flex:0 0 1px !important;
+    }
+
+
+    /* -----------------------------------------
+       2845+ CLIENTS
+    ----------------------------------------- */
+    #home.exact-printent-hero .hero-client{
+
+        position:relative !important;
+
+        width:170px !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        text-align:left !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    #home.exact-printent-hero .hero-client strong{
+
+        display:block !important;
+
+        font-size:57px !important;
+        line-height:1 !important;
+
+        font-weight:400 !important;
+
+        white-space:nowrap !important;
+    }
+
+
+    #home.exact-printent-hero .hero-client span{
+
+        display:block !important;
+
+        margin-top:10px !important;
+
+        font-size:16px !important;
+        line-height:1.2 !important;
+
+        white-space:nowrap !important;
+    }
+
+
+    /* -----------------------------------------
+       CONTACT BUTTON
+    ----------------------------------------- */
+    #home.exact-printent-hero .exact-hero-contact{
+
+        position:absolute !important;
+
+        top:555px !important;
+        right:300px !important;
+
+        left:auto !important;
+        bottom:auto !important;
+
+        width:155px !important;
+        height:52px !important;
+
+        margin:0 !important;
+
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+}
+
+
+/* =========================================================
+   HERO RIGHT SIDE — FINAL POSITION CORRECTION
+========================================================= */
+
+@media (min-width:1200px){
+
+    /* =========================
+       TITLE WRAPPER
+    ========================= */
+
+    #home.exact-printent-hero .exact-hero-title{
+        position:absolute !important;
+
+        top:155px !important;
+        left:43% !important;
+        right:auto !important;
+
+        width:57% !important;
+        height:auto !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* =========================
+       BREATHING LIFE
+    ========================= */
+
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-one{
+
+        position:relative !important;
+
+        top:0 !important;
+        left:245px !important;
+
+        width:auto !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        font-size:76px !important;
+        line-height:1 !important;
+        letter-spacing:-2px !important;
+
+        white-space:nowrap !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* =========================
+       INTO YOUR PRINT
+    ========================= */
+
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-two{
+
+        position:relative !important;
+
+        top:55px !important;
+        left:-5px !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        font-size:105px !important;
+        line-height:.95 !important;
+        letter-spacing:-4px !important;
+
+        white-space:nowrap !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-two span{
+        color:#ff704d !important;
+    }
+
+
+    /* =========================
+       DESCRIPTION + CLIENTS
+    ========================= */
+
+    #home.exact-printent-hero .exact-hero-info{
+
+        position:absolute !important;
+
+        top:465px !important;
+        left:58% !important;
+        right:auto !important;
+        bottom:auto !important;
+
+        width:610px !important;
+
+        display:flex !important;
+        align-items:center !important;
+        justify-content:flex-start !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* description */
+    #home.exact-printent-hero .hero-info-copy{
+
+        width:355px !important;
+
+        margin:0 !important;
+        padding:0 30px 0 0 !important;
+
+        text-align:right !important;
+
+        font-size:16px !important;
+        line-height:1.7 !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* divider */
+    #home.exact-printent-hero .hero-info-divider{
+
+        display:block !important;
+
+        width:1px !important;
+        min-width:1px !important;
+        height:110px !important;
+
+        margin:0 28px 0 0 !important;
+
+        background:rgba(255,255,255,.30) !important;
+    }
+
+
+    /* =========================
+       2845+
+    ========================= */
+
+    #home.exact-printent-hero .hero-client{
+
+        position:relative !important;
+
+        width:190px !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        text-align:left !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    #home.exact-printent-hero .hero-client strong{
+
+        display:block !important;
+
+        margin:0 !important;
+
+        font-size:58px !important;
+        font-weight:400 !important;
+        line-height:1 !important;
+
+        white-space:nowrap !important;
+    }
+
+
+    #home.exact-printent-hero .hero-client span{
+
+        display:block !important;
+
+        margin-top:10px !important;
+
+        font-size:16px !important;
+        line-height:1.2 !important;
+
+        white-space:nowrap !important;
+    }
+
+
+    /* =========================
+       CONTACT BUTTON
+    ========================= */
+
+    #home.exact-printent-hero .exact-hero-contact{
+
+        position:absolute !important;
+
+        top:585px !important;
+        left:70% !important;
+        right:auto !important;
+        bottom:auto !important;
+
+        width:155px !important;
+        height:50px !important;
+
+        margin:0 !important;
+
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+}
+
+
+/* =========================================================
+   FINAL RIGHT HERO FIX
+   hero-line-two / INTO YOUR PRINT IS NOT TOUCHED
+========================================================= */
+
+@media (min-width:1200px){
+
+    /* BREATHING LIFE ONLY */
+    #home.exact-printent-hero .exact-hero-title .hero-line-one{
+        position:relative !important;
+
+        left:245px !important;
+        top:0 !important;
+
+        margin:0 !important;
+
+        font-size:76px !important;
+        line-height:1 !important;
+        letter-spacing:-2px !important;
+
+        white-space:nowrap !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* DESCRIPTION + CLIENT NUMBER WHOLE ROW */
+    #home.exact-printent-hero .exact-hero-info{
+        position:absolute !important;
+
+        top:455px !important;
+        left:auto !important;
+        right:90px !important;
+        bottom:auto !important;
+
+        width:610px !important;
+        height:115px !important;
+
+        display:flex !important;
+        flex-direction:row !important;
+        align-items:center !important;
+        justify-content:flex-start !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* DESCRIPTION */
+    #home.exact-printent-hero .hero-info-copy{
+        position:relative !important;
+
+        width:355px !important;
+        flex:0 0 355px !important;
+
+        margin:0 !important;
+        padding:0 30px 0 0 !important;
+
+        text-align:right !important;
+
+        color:#fff !important;
+
+        font-size:16px !important;
+        line-height:1.65 !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+
+        transform:none !important;
+    }
+
+
+    /* VERTICAL LINE */
+    #home.exact-printent-hero .hero-info-divider{
+        display:block !important;
+
+        width:1px !important;
+        min-width:1px !important;
+        height:105px !important;
+
+        flex:0 0 1px !important;
+
+        margin:0 28px 0 0 !important;
+
+        background:rgba(255,255,255,.35) !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+    }
+
+
+    /* 2,845+ BLOCK */
+    #home.exact-printent-hero .hero-client{
+        position:relative !important;
+
+        width:190px !important;
+        flex:0 0 190px !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        text-align:left !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    #home.exact-printent-hero .hero-client strong{
+        display:block !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        color:#fff !important;
+
+        font-size:58px !important;
+        font-weight:400 !important;
+        line-height:1 !important;
+
+        white-space:nowrap !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+    }
+
+
+    #home.exact-printent-hero .hero-client span{
+        display:block !important;
+
+        margin-top:10px !important;
+
+        color:#fff !important;
+
+        font-size:16px !important;
+        line-height:1.2 !important;
+
+        white-space:nowrap !important;
+
+        opacity:.8 !important;
+        visibility:visible !important;
+    }
+
+
+    /* CONTACT BUTTON */
+    #home.exact-printent-hero .exact-hero-contact{
+        position:absolute !important;
+
+        top:575px !important;
+        left:auto !important;
+        right:300px !important;
+        bottom:auto !important;
+
+        width:155px !important;
+        height:50px !important;
+
+        margin:0 !important;
+
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+}
+
+
+/* ==========================================================
+   HERO DESKTOP — FINAL ALIGNMENT
+   IMPORTANT: INTO YOUR PRINT POSITION UNTOUCHED
+========================================================== */
+
+@media (min-width:1200px){
+
+  /* ---------------------------------
+     BREATHING LIFE
+     into your print ke upar align
+  --------------------------------- */
+  #home.exact-printent-hero
+  .exact-hero-title
+  .hero-line-one{
+
+    position:absolute !important;
+
+    top:25px !important;
+    left:190px !important;
+
+    width:max-content !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    font-size:76px !important;
+    line-height:1 !important;
+    letter-spacing:-2px !important;
+
+    white-space:nowrap !important;
+
+    transform:none !important;
+    translate:none !important;
+  }
+
+
+  /* ---------------------------------
+     INFO ROW
+     description | divider | 2845+
+  --------------------------------- */
+  #home.exact-printent-hero .exact-hero-info{
+
+    position:absolute !important;
+
+    top:430px !important;
+    left:auto !important;
+    right:100px !important;
+    bottom:auto !important;
+
+    width:520px !important;
+    height:105px !important;
+
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    opacity:1 !important;
+    visibility:visible !important;
+
+    transform:none !important;
+    translate:none !important;
+  }
+
+
+  /* ---------------------------------
+     DESCRIPTION
+  --------------------------------- */
+  #home.exact-printent-hero .hero-info-copy{
+
+    position:static !important;
+
+    width:300px !important;
+    min-width:300px !important;
+    flex:0 0 300px !important;
+
+    margin:0 !important;
+    padding:0 25px 0 0 !important;
+
+    color:#fff !important;
+
+    text-align:right !important;
+
+    font-size:15px !important;
+    line-height:1.65 !important;
+
+    opacity:.78 !important;
+    visibility:visible !important;
+
+    transform:none !important;
+    translate:none !important;
+  }
+
+
+  /* ---------------------------------
+     VERTICAL DIVIDER
+  --------------------------------- */
+  #home.exact-printent-hero .hero-info-divider{
+
+    position:static !important;
+
+    display:block !important;
+
+    width:1px !important;
+    min-width:1px !important;
+    flex:0 0 1px !important;
+
+    height:95px !important;
+
+    margin:0 28px 0 0 !important;
+    padding:0 !important;
+
+    background:rgba(255,255,255,.28) !important;
+
+    opacity:1 !important;
+    visibility:visible !important;
+
+    transform:none !important;
+  }
+
+
+  /* ---------------------------------
+     2845+
+  --------------------------------- */
+  #home.exact-printent-hero .hero-client{
+
+    position:static !important;
+
+    width:175px !important;
+    min-width:175px !important;
+    flex:0 0 175px !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    text-align:left !important;
+
+    opacity:1 !important;
+    visibility:visible !important;
+
+    transform:none !important;
+    translate:none !important;
+  }
+
+
+  #home.exact-printent-hero .hero-client strong{
+
+    display:block !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    color:#fff !important;
+
+    font-size:52px !important;
+    font-weight:400 !important;
+    line-height:1 !important;
+
+    white-space:nowrap !important;
+  }
+
+
+  #home.exact-printent-hero .hero-client span{
+
+    display:block !important;
+
+    margin:8px 0 0 !important;
+    padding:0 !important;
+
+    color:rgba(255,255,255,.72) !important;
+
+    font-size:15px !important;
+    line-height:1.2 !important;
+
+    white-space:nowrap !important;
+  }
+
+
+  /* ---------------------------------
+     CONTACT US
+     description ke neeche
+  --------------------------------- */
+  #home.exact-printent-hero .exact-hero-contact{
+
+    position:absolute !important;
+
+    top:580px !important;
+    left:auto !important;
+    right:325px !important;
+    bottom:auto !important;
+
+    width:150px !important;
+    height:48px !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    opacity:1 !important;
+    visibility:visible !important;
+
+    transform:none !important;
+    translate:none !important;
+  }
+
+}
+
+
+/* =========================================================
+   PRINTENT HERO — FINAL CLEAN DESKTOP ALIGNMENT
+   Each element positioned independently
+========================================================= */
+
+@media (min-width:1200px){
+
+    /* HERO becomes positioning boundary */
+    #home.exact-printent-hero{
+        position:relative !important;
+        overflow:hidden !important;
+    }
+
+    #home.exact-printent-hero .exact-hero-inner{
+        position:absolute !important;
+        inset:0 !important;
+
+        width:100% !important;
+        height:100% !important;
+        max-width:none !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* =====================================
+       TITLE CONTAINER
+    ===================================== */
+
+    #home.exact-printent-hero .exact-hero-title{
+        position:absolute !important;
+        inset:0 !important;
+
+        width:100% !important;
+        height:100% !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* =====================================
+       1. BREATHING LIFE
+       Upper-right
+    ===================================== */
+
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-one{
+
+        position:absolute !important;
+
+        top:125px !important;
+        right:95px !important;
+        left:auto !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        width:max-content !important;
+
+        font-size:76px !important;
+        font-weight:400 !important;
+        line-height:1 !important;
+        letter-spacing:-2px !important;
+
+        white-space:nowrap !important;
+
+        transform:none !important;
+        translate:none !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+    }
+
+
+    /* =====================================
+       2. INTO YOUR PRINT
+       Independent second line
+    ===================================== */
+
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-two{
+
+        position:absolute !important;
+
+        top:275px !important;
+        left:39% !important;
+        right:auto !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        width:max-content !important;
+
+        font-size:105px !important;
+        font-weight:400 !important;
+        line-height:.92 !important;
+        letter-spacing:-4px !important;
+
+        white-space:nowrap !important;
+
+        transform:none !important;
+        translate:none !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+    }
+
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-two span{
+        color:#ff704d !important;
+    }
+
+
+    /* =====================================
+       3. DESCRIPTION + DIVIDER + CLIENTS
+    ===================================== */
+
+    #home.exact-printent-hero .exact-hero-info{
+
+        position:absolute !important;
+
+        top:435px !important;
+        right:85px !important;
+        left:auto !important;
+        bottom:auto !important;
+
+        width:585px !important;
+        height:105px !important;
+
+        display:flex !important;
+        flex-direction:row !important;
+        align-items:center !important;
+        justify-content:flex-start !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        transform:none !important;
+        translate:none !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+    }
+
+
+    /* DESCRIPTION */
+
+    #home.exact-printent-hero .hero-info-copy{
+
+        position:static !important;
+
+        width:330px !important;
+        min-width:330px !important;
+        flex:0 0 330px !important;
+
+        margin:0 !important;
+        padding:0 28px 0 0 !important;
+
+        text-align:right !important;
+
+        color:#fff !important;
+
+        font-size:16px !important;
+        font-weight:400 !important;
+        line-height:1.65 !important;
+
+        opacity:.78 !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* DIVIDER */
+
+    #home.exact-printent-hero .hero-info-divider{
+
+        position:static !important;
+
+        display:block !important;
+
+        width:1px !important;
+        min-width:1px !important;
+        flex:0 0 1px !important;
+
+        height:100px !important;
+
+        margin:0 30px 0 0 !important;
+        padding:0 !important;
+
+        background:rgba(255,255,255,.30) !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+    }
+
+
+    /* =====================================
+       4. 2,845+
+    ===================================== */
+
+    #home.exact-printent-hero .hero-client{
+
+        position:static !important;
+
+        width:190px !important;
+        min-width:190px !important;
+        flex:0 0 190px !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        text-align:left !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+    #home.exact-printent-hero .hero-client strong{
+
+        display:block !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        color:#fff !important;
+
+        font-size:56px !important;
+        font-weight:400 !important;
+        line-height:1 !important;
+
+        white-space:nowrap !important;
+
+        opacity:1 !important;
+    }
+
+    #home.exact-printent-hero .hero-client span{
+
+        display:block !important;
+
+        margin:9px 0 0 !important;
+        padding:0 !important;
+
+        color:rgba(255,255,255,.72) !important;
+
+        font-size:15px !important;
+        line-height:1.2 !important;
+
+        white-space:nowrap !important;
+    }
+
+
+    /* =====================================
+       5. CONTACT US
+       Under description
+    ===================================== */
+
+    #home.exact-printent-hero .exact-hero-contact{
+
+        position:absolute !important;
+
+        top:555px !important;
+        right:335px !important;
+        left:auto !important;
+        bottom:auto !important;
+
+        width:150px !important;
+        height:50px !important;
+
+        margin:0 !important;
+        padding:0 !important;
+
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+        gap:7px !important;
+
+        opacity:1 !important;
+        visibility:visible !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+}
+
+
+/* =========================================================
+   HERO — FINAL POSITION CORRECTION
+========================================================= */
+
+@media (min-width:1200px){
+
+    /* BREATHING LIFE — upar + right */
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-one{
+        position:absolute !important;
+
+        top:55px !important;
+        right:140px !important;
+        left:auto !important;
+
+        margin:0 !important;
+
+        font-size:76px !important;
+        line-height:1 !important;
+        white-space:nowrap !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* INTO YOUR PRINT — current horizontal position,
+       bas proper vertical gap */
+    #home.exact-printent-hero
+    .exact-hero-title
+    .hero-line-two{
+        position:absolute !important;
+
+        top:190px !important;
+        left:38.5% !important;
+        right:auto !important;
+
+        margin:0 !important;
+
+        font-size:105px !important;
+        line-height:.95 !important;
+        white-space:nowrap !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* DESCRIPTION + CLIENT COUNT */
+    #home.exact-printent-hero .exact-hero-info{
+        position:absolute !important;
+
+        top:365px !important;
+        right:110px !important;
+        left:auto !important;
+        bottom:auto !important;
+
+        width:590px !important;
+
+        display:flex !important;
+        align-items:center !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+
+    /* DESCRIPTION */
+    #home.exact-printent-hero .hero-info-copy{
+        width:340px !important;
+        flex:0 0 340px !important;
+
+        padding-right:30px !important;
+
+        text-align:right !important;
+
+        font-size:16px !important;
+        line-height:1.6 !important;
+    }
+
+
+    /* VERTICAL LINE */
+    #home.exact-printent-hero .hero-info-divider{
+        display:block !important;
+
+        width:1px !important;
+        height:105px !important;
+
+        margin-right:30px !important;
+
+        background:rgba(255,255,255,.28) !important;
+    }
+
+
+    /* 2845+ */
+    #home.exact-printent-hero .hero-client{
+        width:190px !important;
+        flex:0 0 190px !important;
+
+        text-align:left !important;
+    }
+
+    #home.exact-printent-hero .hero-client strong{
+        font-size:56px !important;
+        line-height:1 !important;
+        white-space:nowrap !important;
+    }
+
+    #home.exact-printent-hero .hero-client span{
+        display:block !important;
+
+        margin-top:9px !important;
+
+        font-size:15px !important;
+        white-space:nowrap !important;
+    }
+
+
+    /* CONTACT US — description ke niche */
+    #home.exact-printent-hero .exact-hero-contact{
+        position:absolute !important;
+
+        top:475px !important;
+        right:350px !important;
+        left:auto !important;
+        bottom:auto !important;
+
+        width:150px !important;
+        height:50px !important;
+
+        transform:none !important;
+        translate:none !important;
+    }
+
+}
+
+
+/* =========================================================
+   HERO FINAL V2 — MATCH ORIGINAL REFERENCE
+========================================================= */
+
+@media (min-width:1200px){
+
+  /* TITLE CONTAINER — THIS IS THE POSITIONING AREA */
+  #home.exact-printent-hero .exact-hero-title{
+      position:absolute !important;
+
+      top:120px !important;
+      left:38% !important;
+      right:auto !important;
+
+      width:900px !important;
+      height:300px !important;
+
+      margin:0 !important;
+      padding:0 !important;
+
+      transform:none !important;
+      translate:none !important;
+  }
+
+
+  /* =========================================
+     BREATHING LIFE
+  ========================================= */
+
+  #home.exact-printent-hero
+  .exact-hero-title
+  .hero-line-one{
+
+      position:absolute !important;
+
+      top:0 !important;
+      left:310px !important;
+      right:auto !important;
+
+      margin:0 !important;
+      padding:0 !important;
+
+      font-size:76px !important;
+      line-height:1 !important;
+      letter-spacing:-2px !important;
+
+      white-space:nowrap !important;
+
+      transform:none !important;
+      translate:none !important;
+  }
+
+
+  /* =========================================
+     INTO YOUR PRINT
+  ========================================= */
+
+  #home.exact-printent-hero
+  .exact-hero-title
+  .hero-line-two{
+
+      position:absolute !important;
+
+      top:95px !important;
+      left:0 !important;
+      right:auto !important;
+
+      margin:0 !important;
+      padding:0 !important;
+
+      font-size:105px !important;
+      line-height:.95 !important;
+      letter-spacing:-4px !important;
+
+      white-space:nowrap !important;
+
+      transform:none !important;
+      translate:none !important;
+  }
+
+
+  #home.exact-printent-hero
+  .exact-hero-title
+  .hero-line-two span{
+      color:#ff704d !important;
+  }
+
+
+  /* =========================================
+     DESCRIPTION + CLIENTS
+  ========================================= */
+
+  #home.exact-printent-hero .exact-hero-info{
+
+      position:absolute !important;
+
+      top:385px !important;
+      left:48% !important;
+      right:auto !important;
+      bottom:auto !important;
+
+      width:610px !important;
+
+      display:flex !important;
+      align-items:center !important;
+      justify-content:flex-start !important;
+
+      margin:0 !important;
+      padding:0 !important;
+
+      transform:none !important;
+      translate:none !important;
+  }
+
+
+  /* DESCRIPTION */
+
+  #home.exact-printent-hero .hero-info-copy{
+
+      width:355px !important;
+      flex:0 0 355px !important;
+
+      margin:0 !important;
+      padding:0 30px 0 0 !important;
+
+      text-align:right !important;
+
+      font-size:16px !important;
+      line-height:1.55 !important;
+  }
+
+
+  /* DIVIDER */
+
+  #home.exact-printent-hero .hero-info-divider{
+
+      display:block !important;
+
+      width:1px !important;
+      min-width:1px !important;
+      height:105px !important;
+
+      margin:0 30px 0 0 !important;
+
+      background:rgba(255,255,255,.28) !important;
+  }
+
+
+  /* 2845+ */
+
+  #home.exact-printent-hero .hero-client{
+
+      position:relative !important;
+
+      width:190px !important;
+      flex:0 0 190px !important;
+
+      margin:0 !important;
+      padding:0 !important;
+
+      text-align:left !important;
+
+      transform:none !important;
+      translate:none !important;
+  }
+
+
+  #home.exact-printent-hero .hero-client strong{
+
+      display:block !important;
+
+      margin:0 !important;
+      padding:0 !important;
+
+      font-size:56px !important;
+      font-weight:400 !important;
+      line-height:1 !important;
+
+      white-space:nowrap !important;
+  }
+
+
+  #home.exact-printent-hero .hero-client span{
+
+      display:block !important;
+
+      margin-top:10px !important;
+
+      font-size:15px !important;
+      line-height:1.2 !important;
+
+      white-space:nowrap !important;
+  }
+
+
+  /* =========================================
+     CONTACT BUTTON
+  ========================================= */
+
+  #home.exact-printent-hero .exact-hero-contact{
+
+      position:absolute !important;
+
+      top:480px !important;
+      left:67% !important;
+      right:auto !important;
+      bottom:auto !important;
+
+      width:150px !important;
+      height:50px !important;
+
+      margin:0 !important;
+      padding:0 !important;
+
+      display:flex !important;
+      align-items:center !important;
+      justify-content:center !important;
+
+      transform:none !important;
+      translate:none !important;
+  }
+
+}
+
+
+/* ===== HERO FINAL — MOVE CONTENT DOWN ===== */
+@media (min-width:1200px){
+
+  /* Breathing life + into your print */
+  #home.exact-printent-hero .exact-hero-title{
+    top: 395px !important;
+  }
+
+  /* description + divider + 2845 */
+  #home.exact-printent-hero .exact-hero-info{
+    top: 600px !important;
+  }
+
+  /* Contact Us */
+  #home.exact-printent-hero .exact-hero-contact{
+    top: 775px !important;
+  }
+
+}
+
+
+/* Breathing life — SIZE ONLY */
+@media (min-width:1200px){
+  #home.exact-printent-hero .exact-hero-title .hero-line-one{
+    font-size:86px !important;
+  }
+}
+
+
+/* =================================================
+   HERO INFO TEXT + CLIENT COUNT — SIZE ONLY
+================================================= */
+
+@media (min-width:1200px){
+
+  /* Better quality... text */
+  #home.exact-printent-hero .hero-info-copy{
+    font-size:18px !important;
+    line-height:1.55 !important;
+    font-weight:400 !important;
+  }
+
+  /* 2,845+ */
+  #home.exact-printent-hero .hero-client strong{
+    font-size:64px !important;
+    line-height:1 !important;
+    font-weight:400 !important;
+  }
+
+  /* Satisfied Clients */
+  #home.exact-printent-hero .hero-client span{
+    font-size:17px !important;
+    line-height:1.2 !important;
+    margin-top:8px !important;
+  }
+
+}
+
+
+/* FINAL — HERO DESCRIPTION TEXT SIZE */
+@media (min-width: 1200px) {
+  #home.exact-printent-hero .hero-info-copy {
+    font-size: 18px !important;
+    line-height: 1.55 !important;
+  }
+}
+
+
+
+
+/* FINAL — HERO DESCRIPTION TEXT SIZE */
+
+@media (min-width: 1200px) {
+
+  #home.exact-printent-hero .hero-info-copy {
+
+    font-size: 24px !important;
+
+    line-height: 1.55 !important;
+
+  }
+
+}
+
+
+
+
+
+
+/* FINAL — HERO DESCRIPTION TEXT SIZE */
+
+@media (min-width: 1200px) {
+
+  #home.exact-printent-hero .hero-info-copy {
+
+    font-size: 20px !important;
+
+    line-height: 1.55 !important;
+
+  }
+
+}
+
+
+
+
+
+
+/* FINAL — HERO DESCRIPTION TEXT SIZE */
+
+@media (min-width: 1200px) {
+
+  #home.exact-printent-hero .hero-info-copy {
+
+    font-size: 19px !important;
+
+    line-height: 1.55 !important;
+
+  }
+
+}
+
+
+
+
+
+
+/* FINAL — HERO DESCRIPTION TEXT SIZE */
+
+@media (min-width: 1200px) {
+
+  #home.exact-printent-hero .hero-info-copy {
+
+    font-size: 20px !important;
+
+    line-height: 1.55 !important;
+
+  }
+
+}
+
+
+
+
+/* FINAL — CONTACT US BUTTON UP */
+@media (min-width: 1200px) {
+  #home.exact-printent-hero .exact-hero-contact {
+    top: 715px !important;
+  }
+}
+
+
+/* FINAL — CONTACT US BELOW DESCRIPTION */
+@media (min-width: 1200px) {
+  #home.exact-printent-hero .exact-hero-contact {
+    position: absolute !important;
+    top: 715px !important;
+    left: 52% !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    translate: none !important;
+  }
+}
+
+
+/* =========================================================
+   PROJECT CARD — VIEW FULL PROJECT EXACT STYLE
+========================================================= */
+
+#projects .project-view-btn,
+#projects .view-project-btn,
+#projects .view-full-project,
+#projects a[class*="view"] {
+    text-transform: none !important;
+}
+
+/* orange bottom bar */
+#projects .project-card .project-view-btn,
+#projects .project-card .view-project-btn,
+#projects .project-card .view-full-project {
+    height: 52px !important;
+    min-height: 52px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: none !important;
+
+    position: relative !important;
+}
+
+/* text */
+#projects .project-card .project-view-btn span,
+#projects .project-card .view-project-btn span,
+#projects .project-card .view-full-project span {
+    position: relative !important;
+    display: inline-block !important;
+
+    padding-bottom: 3px !important;
+
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+
+    text-transform: none !important;
+
+    transition: transform .3s ease !important;
+}
+
+/* underline */
+#projects .project-card .project-view-btn span::after,
+#projects .project-card .view-project-btn span::after,
+#projects .project-card .view-full-project span::after {
+    content: "" !important;
+
+    position: absolute !important;
+    left: 0 !important;
+    bottom: 0 !important;
+
+    width: 100% !important;
+    height: 1px !important;
+
+    background: currentColor !important;
+
+    transform: scaleX(1) !important;
+    transform-origin: left center !important;
+
+    transition: transform .3s ease !important;
+}
+
+/* hover movement */
+#projects .project-card:hover .project-view-btn span,
+#projects .project-card:hover .view-project-btn span,
+#projects .project-card:hover .view-full-project span {
+    transform: translateX(3px) !important;
+}
+
+/* underline animation */
+#projects .project-card:hover .project-view-btn span::after,
+#projects .project-card:hover .view-project-btn span::after,
+#projects .project-card:hover .view-full-project span::after {
+    transform: scaleX(.75) !important;
+}
+
+
+/* VIEW FULL PROJECT — move text lower inside orange box */
+#projects .project-card .project-view-btn,
+#projects .project-card .view-project-btn,
+#projects .project-card .view-full-project {
+    align-items: flex-end !important;
+    padding-bottom: 0px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   PROJECT CARD — SMOOTH ORIGINAL-LIKE HOVER
+========================================================= */
+
+/* image container */
+#projects .project-card,
+#projects .project-item,
+#projects .project-image {
+    overflow: hidden !important;
+}
+
+/* IMAGE — remove weird zoom/jump */
+#projects .project-card img,
+#projects .project-item img,
+#projects .project-image img {
+    transform: scale(1) !important;
+    transition: transform 0.65s cubic-bezier(.22,.61,.36,1) !important;
+    will-change: transform;
+}
+
+/* Hover — VERY subtle zoom only */
+#projects .project-card:hover img,
+#projects .project-item:hover img,
+#projects .project-image:hover img {
+    transform: scale(1) !important;
+}
+
+/* orange content panel smooth movement */
+#projects .project-card .project-content,
+#projects .project-item .project-content,
+#projects .project-card .project-overlay {
+    transition:
+        transform 0.55s cubic-bezier(.22,.61,.36,1),
+        height 0.55s cubic-bezier(.22,.61,.36,1),
+        opacity 0.4s ease !important;
+}
+
+
+/* ===== FINAL PROJECT HOVER — SMOOTH IMAGE REVEAL ===== */
+
+.completed-projects-exact .cpe-card::before{
+    transform: scale(1) !important;
+    opacity: 0 !important;
+
+    transition:
+        opacity .55s cubic-bezier(.22,.61,.36,1) !important;
+}
+
+.completed-projects-exact .cpe-card:hover::before,
+.completed-projects-exact .cpe-card:focus-visible::before{
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
+
+/* smooth dark overlay */
+.completed-projects-exact .cpe-card::after{
+    transition: opacity .55s cubic-bezier(.22,.61,.36,1) !important;
+}
+
+/* View Full Project bar smooth slide */
+.completed-projects-exact .cpe-view-project{
+    transition:
+        transform .45s cubic-bezier(.22,.61,.36,1),
+        opacity .35s ease !important;
+}
+
+
+/* ===== FINAL PROJECT HOVER — SMOOTH IMAGE REVEAL ===== */
+
+.completed-projects-exact .cpe-card::before{
+    transform: scale(1) !important;
+    opacity: 0 !important;
+
+    transition:
+        opacity .55s cubic-bezier(.22,.61,.36,1) !important;
+}
+
+.completed-projects-exact .cpe-card:hover::before,
+.completed-projects-exact .cpe-card:focus-visible::before{
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
+
+/* smooth dark overlay */
+.completed-projects-exact .cpe-card::after{
+    transition: opacity .55s cubic-bezier(.22,.61,.36,1) !important;
+}
+
+/* View Full Project bar smooth slide */
+.completed-projects-exact .cpe-view-project{
+    transition:
+        transform .45s cubic-bezier(.22,.61,.36,1),
+        opacity .35s ease !important;
+}
+
+
+/* =========================================================
+   EXACT ORIGINAL-LIKE PROJECT HOVER
+   ONLY ORANGE PANEL EXPANDS — PAGE/LAYOUT DOES NOT MOVE
+========================================================= */
+
+.completed-projects-exact .cpe-card{
+    position: relative !important;
+    overflow: hidden !important;
+
+    /* hover par card ki height/position kabhi change nahi hogi */
+    height: 100% !important;
+    transform: none !important;
+    margin-bottom: 0 !important;
+}
+
+/* image bilkul fixed */
+.completed-projects-exact .cpe-card::before{
+    transform: none !important;
+    transition: none !important;
+}
+
+/* TEXT/CONTENT PANEL */
+.completed-projects-exact .cpe-card-content{
+    position: absolute !important;
+
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    box-sizing: border-box !important;
+
+    /* normal orange strip */
+    height: 72px !important;
+    min-height: 72px !important;
+
+    overflow: hidden !important;
+
+    transform: none !important;
+
+    transition:
+        height .45s cubic-bezier(.22,.61,.36,1),
+        padding .45s cubic-bezier(.22,.61,.36,1) !important;
+
+    z-index: 5 !important;
+}
+
+/* HOVER:
+   bottom wahi rahega,
+   orange box SIRF UPAR ki taraf expand hoga */
+.completed-projects-exact .cpe-card:hover .cpe-card-content,
+.completed-projects-exact .cpe-card:focus-visible .cpe-card-content{
+    height: 145px !important;
+    min-height: 145px !important;
+
+    transform: none !important;
+}
+
+/* card/title ko niche-upar move mat hone dena */
+.completed-projects-exact .cpe-card:hover,
+.completed-projects-exact .cpe-card:focus-visible{
+    transform: none !important;
+    margin: 0 !important;
+}
+
+/* VIEW FULL PROJECT:
+   orange panel ke andar hi rahe */
+.completed-projects-exact .cpe-view-project{
+    position: absolute !important;
+
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+
+    width: 100% !important;
+    height: 48px !important;
+
+    margin: 0 !important;
+
+    transform: translateY(48px) !important;
+    opacity: 0 !important;
+
+    transition:
+        transform .45s cubic-bezier(.22,.61,.36,1),
+        opacity .30s ease !important;
+
+    z-index: 6 !important;
+}
+
+.completed-projects-exact .cpe-card:hover .cpe-view-project,
+.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+/* IMPORTANT:
+   hover se parent grid/section ki height change nahi hogi */
+.completed-projects-exact,
+.completed-projects-exact .cpe-grid,
+.completed-projects-exact .cpe-card-wrap{
+    transform: none !important;
+}
+
+
+/* ===== FINAL: IMAGE 100% STATIC — ONLY ORANGE PANEL ANIMATES ===== */
+
+.completed-projects-exact .cpe-card::before,
+.completed-projects-exact .cpe-card:hover::before,
+.completed-projects-exact .cpe-card:focus-visible::before{
+    transform: scale(1) !important;
+    transform-origin: center center !important;
+    transition: none !important;
+}
+
+/* Agar actual img tag use ho raha ho to usko bhi lock */
+.completed-projects-exact .cpe-card img,
+.completed-projects-exact .cpe-card:hover img,
+.completed-projects-exact .cpe-card:focus-visible img{
+    transform: scale(1) !important;
+    transition: none !important;
+}
+
+/* Card khud bhi move/zoom nahi kare */
+.completed-projects-exact .cpe-card,
+.completed-projects-exact .cpe-card:hover,
+.completed-projects-exact .cpe-card:focus-visible{
+    transform: none !important;
+}
+
+/* ONLY orange View Full Project panel animate kare */
+.completed-projects-exact .cpe-view-project{
+    transform: translateY(100%) !important;
+    opacity: 0 !important;
+    transition:
+        transform .45s cubic-bezier(.22,.61,.36,1),
+        opacity .25s ease !important;
+}
+
+.completed-projects-exact .cpe-card:hover .cpe-view-project,
+.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+
+/* ===== VIEW FULL PROJECT BAR — BIGGER ===== */
+
+.completed-projects-exact .cpe-view-project{
+    height:110px !important;
+    min-height:110px !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+
+    padding:0 28px !important;
+    box-sizing:border-box !important;
+
+    font-size:14px !important;
+
+    transform:translateY(110px) !important;
+}
+
+.completed-projects-exact .cpe-card:hover .cpe-view-project,
+.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+    transform:translateY(0) !important;
+}
+
+/* ===== FINAL: IMAGE 100% STATIC — ONLY ORANGE PANEL ANIMATES ===== */
+.completed-projects-exact .cpe-card::before,
+.completed-projects-exact .cpe-card:hover::before,
+.completed-projects-exact .cpe-card:focus-visible::before{
+    transform: scale(1) !important;
+    transform-origin: center center !important;
+    transition: none !important;
+}
+.completed-projects-exact .cpe-card img,
+.completed-projects-exact .cpe-card:hover img,
+.completed-projects-exact .cpe-card:focus-visible img{
+    transform: scale(1) !important;
+    transition: none !important;
+}
+.completed-projects-exact .cpe-card,
+.completed-projects-exact .cpe-card:hover,
+.completed-projects-exact .cpe-card:focus-visible{
+    transform: none !important;
+}
+.completed-projects-exact .cpe-view-project{
+    transform: translateY(100%) !important;
+    opacity: 0 !important;
+    transition:
+        transform .45s cubic-bezier(.22,.61,.36,1),
+        opacity .25s ease !important;
+}
+.completed-projects-exact .cpe-card:hover .cpe-view-project,
+.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+/* ===== PROJECTS — ALL BOX DIMENSIONS BIGGER ===== */
+
+@media (min-width:1025px){
+
+    .completed-projects-exact .cpe-grid{
+        min-height:620px !important;
+    }
+
+    .completed-projects-exact .cpe-card{
+        min-height:620px !important;
+        height:620px !important;
+    }
+
+    .completed-projects-exact .cpe-card-wrap{
+        min-height:620px !important;
+        height:620px !important;
+    }
+
+    /* orange VIEW FULL PROJECT box */
+    .completed-projects-exact .cpe-view-project{
+        height:110px !important;
+        min-height:110px !important;
+        padding:0 30px !important;
+        transform:translateY(110px) !important;
+    }
+
+    .completed-projects-exact .cpe-card:hover .cpe-view-project,
+    .completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+        transform:translateY(0) !important;
+    }
+
+}
+
+
+/* ===== PROJECT CARD WHITE TEXT — UP + BOLD ===== */
+
+.completed-projects-exact .cpe-card-content{
+    padding-top: 20px !important;
+}
+
+.completed-projects-exact .cpe-card-content h3,
+.completed-projects-exact .cpe-card-content h4{
+    position: relative !important;
+    top: -35px !important;
+
+    font-weight: 700 !important;
+}
+
+.completed-projects-exact .cpe-card-content p{
+    position: relative !important;
+    top: -35px !important;
+
+    font-weight: 600 !important;
+}
+
+
+/* ===== FIX PROJECT TEXT CUTTING ===== */
+
+.completed-projects-exact .cpe-card-content{
+    overflow: visible !important;
+}
+
+/* previous -35px movement cancel */
+.completed-projects-exact .cpe-card-content h3,
+.completed-projects-exact .cpe-card-content h4,
+.completed-projects-exact .cpe-card-content p{
+    top: 0 !important;
+}
+
+/* heading */
+.completed-projects-exact .cpe-card-content h3,
+.completed-projects-exact .cpe-card-content h4{
+    font-weight:700 !important;
+}
+
+/* description */
+.completed-projects-exact .cpe-card-content p{
+    font-weight:600 !important;
+}
+
+
+/* ===== FINAL PROJECT CARD TEXT POSITION ===== */
+
+.completed-projects-exact .cpe-card-content{
+    position: absolute !important;
+    left: 20px !important;
+    right: 20px !important;
+    bottom: 55px !important;
+    top: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+    transform: none !important;
+}
+
+/* PROJECT TITLE */
+.completed-projects-exact .cpe-card-content h3,
+.completed-projects-exact .cpe-card-content h4{
+    position: static !important;
+    margin: 0 0 12px 0 !important;
+
+    font-size: 21px !important;
+    line-height: 1.2 !important;
+    font-weight: 700 !important;
+
+    color: #fff !important;
+}
+
+/* DESCRIPTION */
+.completed-projects-exact .cpe-card-content p{
+    position: static !important;
+    margin: 0 !important;
+
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    font-weight: 400 !important;
+
+    color: #fff !important;
+}
+
+/* ARROW */
+.completed-projects-exact .cpe-card-content a{
+    margin-top: 15px !important;
+}
+
+
+/* PROJECT CARD TEXT — BIGGER + BOLDER */
+
+.completed-projects-exact .cpe-card-content h3,
+.completed-projects-exact .cpe-card-content h4{
+    font-size: 25px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+}
+
+.completed-projects-exact .cpe-card-content p{
+    font-size: 17px !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+}
+
+
+/* ===== PROJECT CARD ARROW — RIGHT SIDE ===== */
+
+.completed-projects-exact .cpe-card-content a{
+    position: absolute !important;
+    right: 18px !important;
+    bottom: 0 !important;
+    left: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 0 !important;
+    line-height: 1 !important;
+
+    transform: none !important;
+}
+
+/* Short tail right arrow */
+.completed-projects-exact .cpe-card-content a::after{
+    content: "→" !important;
+
+    display: block !important;
+    color: #fff !important;
+
+    font-size: 25px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+}
+
+
+/* PROJECT CARD TEXT — 30PX UP */
+.completed-projects-exact .cpe-card-content h3,
+.completed-projects-exact .cpe-card-content h4,
+.completed-projects-exact .cpe-card-content p{
+    position: relative !important;
+    top: -30px !important;
+}
+
+
+/* ===== PROJECT TEXT — BIGGER ===== */
+
+.completed-projects-exact .cpe-card-content h3,
+.completed-projects-exact .cpe-card-content h4{
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    line-height: 1.15 !important;
+}
+
+.completed-projects-exact .cpe-card-content p{
+    font-size: 19px !important;
+    font-weight: 600 !important;
+    line-height: 1.45 !important;
+}
+
+
+/* ===== REPLACE PROJECT ARROW WITH ⬊ ===== */
+
+.completed-projects-exact .cpe-card-content a{
+    font-size: 0 !important;
+}
+
+.completed-projects-exact .cpe-card-content a::after{
+    content: "⬊" !important;
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    color: #fff !important;
+    line-height: 1 !important;
+}
+
+
+/* VIEW FULL PROJECT — MOVE DOWN ONLY */
+.completed-projects-exact .cpe-featured .cpe-project-link{
+    position: absolute !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    transform: none !important;
+    margin: 0 !important;
+}
+
+
+/* ===== CPE VIEW FULL PROJECT — MOVE DOWN ONLY ===== */
+#projects .cpe-card .cpe-view-project{
+    transform: translateY(40px) !important;
+}
+
+#projects .cpe-card:hover .cpe-view-project{
+    transform: translateY(40px) !important;
+}
+
+
+/* ===== FINAL — VIEW FULL PROJECT 35PX LOWER ===== */
+
+#projects.completed-projects-exact .cpe-card .cpe-view-project{
+    position:absolute !important;
+    left:0 !important;
+    right:0 !important;
+
+    bottom:-50px !important;
+
+    height:110px !important;
+    min-height:110px !important;
+
+    transform:translateY(110px) !important;
+    opacity:0 !important;
+}
+
+#projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+    bottom:-50px !important;
+
+    transform:translateY(0) !important;
+    opacity:1 !important;
+}
+
+
+/* =====================================================
+   ABSOLUTE FINAL — ORANGE BAR FORCE LOWER
+   WHITE TEXT UNTOUCHED
+===================================================== */
+
+#projects.completed-projects-exact .cpe-card{
+    position:relative !important;
+}
+
+/* cpe-card-content ko positioning parent mat banao */
+#projects.completed-projects-exact .cpe-card-content{
+    position:static !important;
+}
+
+/* orange bar direct card bottom par */
+#projects.completed-projects-exact .cpe-card .cpe-view-project{
+    position:absolute !important;
+
+    left:0 !important;
+    right:0 !important;
+
+    top:auto !important;
+    bottom:-45px !important;
+
+    width:100% !important;
+    height:110px !important;
+    min-height:110px !important;
+
+    margin:0 !important;
+
+    transform:translateY(110px) !important;
+    opacity:0 !important;
+
+    z-index:50 !important;
+}
+
+/* hover */
+#projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+    top:auto !important;
+    bottom:-45px !important;
+
+    transform:translateY(0) !important;
+    opacity:1 !important;
+}
+
+
+/* =====================================================
+   REAL FINAL FIX — ORANGE BAR LOWER ONLY
+===================================================== */
+
+/* White text ki existing position restore/keep */
+#projects.completed-projects-exact .cpe-card-content{
+    position:absolute !important;
+    left:20px !important;
+    right:20px !important;
+    bottom:55px !important;
+    top:auto !important;
+
+    overflow:visible !important;
+}
+
+/* Orange bar */
+#projects.completed-projects-exact .cpe-card .cpe-view-project{
+    position:absolute !important;
+
+    left:-20px !important;
+    right:-20px !important;
+
+    top:100% !important;
+    bottom:auto !important;
+
+    width:auto !important;
+    height:110px !important;
+    min-height:110px !important;
+
+    margin-top:25px !important;
+
+    transform:translateY(110px) !important;
+    opacity:0 !important;
+
+    z-index:50 !important;
+}
+
+/* Hover — sirf orange bar reveal */
+#projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+    top:100% !important;
+    bottom:auto !important;
+
+    margin-top:25px !important;
+
+    transform:translateY(0) !important;
+    opacity:1 !important;
+}
+
+
+/* =====================================================
+   REAL FINAL FIX — ORANGE BAR LOWER ONLY
+===================================================== */
+
+/* White text ki existing position restore/keep */
+#projects.completed-projects-exact .cpe-card-content{
+    position:absolute !important;
+    left:20px !important;
+    right:20px !important;
+    bottom:55px !important;
+    top:auto !important;
+
+    overflow:visible !important;
+}
+
+/* Orange bar */
+#projects.completed-projects-exact .cpe-card .cpe-view-project{
+    position:absolute !important;
+
+    left:-20px !important;
+    right:-20px !important;
+
+    top:100% !important;
+    bottom:auto !important;
+
+    width:auto !important;
+    height:110px !important;
+    min-height:110px !important;
+
+    margin-top:25px !important;
+
+    transform:translateY(110px) !important;
+    opacity:0 !important;
+
+    z-index:50 !important;
+}
+
+/* Hover — sirf orange bar reveal */
+#projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+    top:100% !important;
+    bottom:auto !important;
+
+    margin-top:25px !important;
+
+    transform:translateY(0) !important;
+    opacity:1 !important;
+}
+
+
+/* =====================================================
+   VIEW FULL PROJECT — INDEPENDENT BOTTOM BAR
+===================================================== */
+
+#projects.completed-projects-exact .cpe-card{
+    position:relative !important;
+    overflow:hidden !important;
+}
+
+/* Orange bar now direct child of card */
+#projects.completed-projects-exact .cpe-card > .cpe-view-project{
+    position:absolute !important;
+
+    left:0 !important;
+    right:0 !important;
+    bottom:-50px !important;
+    top:auto !important;
+
+    width:100% !important;
+    height:110px !important;
+    min-height:110px !important;
+
+    padding:0 30px !important;
+    margin:0 !important;
+    box-sizing:border-box !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+
+    background:#ff6848 !important;
+    color:#fff !important;
+
+    opacity:0 !important;
+    transform:translateY(110px) !important;
+
+    transition:
+        transform .45s cubic-bezier(.22,.61,.36,1),
+        opacity .25s ease !important;
+
+    z-index:50 !important;
+}
+
+#projects.completed-projects-exact .cpe-card:hover > .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible > .cpe-view-project{
+    opacity:1 !important;
+    transform:translateY(0) !important;
+}
+
+
+/* =========================================================
+   FINAL FIX — VIEW FULL PROJECT BELOW IMAGE LIKE ORIGINAL
+========================================================= */
+
+/* Card ko orange bar bahar dikhane dena */
+#projects.completed-projects-exact .cpe-card{
+    position: relative !important;
+    overflow: visible !important;
+}
+
+/* Grid bhi bar ko cut na kare */
+#projects.completed-projects-exact .cpe-grid,
+#projects.completed-projects-exact .cpe-card-wrap{
+    overflow: visible !important;
+}
+
+/* VIEW FULL PROJECT */
+#projects.completed-projects-exact .cpe-card > .cpe-view-project{
+    position: absolute !important;
+
+    left: 0 !important;
+    right: 0 !important;
+
+    /* IMPORTANT: poora orange box card ke NICHE */
+    top: 100% !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    height: 64px !important;
+    min-height: 64px !important;
+
+    margin: 0 !important;
+    padding: 0 30px !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+
+    background: linear-gradient(90deg,#ff9138,#ff5e67) !important;
+    color: #fff !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    z-index: 100 !important;
+
+    /* hidden position = niche */
+    opacity: 0 !important;
+    transform: translateY(64px) !important;
+
+    transition:
+        transform .45s cubic-bezier(.22,.61,.36,1),
+        opacity .25s ease !important;
+}
+
+
+/* HOVER — NICHE SE UP AAYE, LEKIN IMAGE KO COVER NA KARE */
+#projects.completed-projects-exact .cpe-card:hover > .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible > .cpe-view-project{
+    top: 100% !important;
+    bottom: auto !important;
+
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+
+/* Image bilkul static */
+#projects.completed-projects-exact .cpe-card::before,
+#projects.completed-projects-exact .cpe-card:hover::before,
+#projects.completed-projects-exact .cpe-card:focus-visible::before,
+#projects.completed-projects-exact .cpe-card img,
+#projects.completed-projects-exact .cpe-card:hover img{
+    transform: none !important;
+    transition: none !important;
+}
+
+
+/* White title/description ki position bilkul touch nahi hogi */
+#projects.completed-projects-exact .cpe-card-content{
+    transform: none !important;
+}
+
+
+/* Orange bar ke arrow ko right side */
+#projects.completed-projects-exact .cpe-view-project b{
+    position: absolute !important;
+    right: 28px !important;
+
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+
+
+/* Featured/second card ke neeche orange bar ke liye space */
+#projects.completed-projects-exact{
+    padding-bottom: 64px !important;
+}
+
+
+/* ===== PROJECT DESCRIPTION — MAXIMUM 2 LINES ===== */
+
+#projects.completed-projects-exact .cpe-card-content p{
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+
+    overflow: hidden !important;
+
+    max-width: 100% !important;
+    line-height: 1.35 !important;
+}
+
+
+/* ===== FORCE PROJECT DESCRIPTION INTO 2 LINES ===== */
+#projects.completed-projects-exact .cpe-card .cpe-card-content p{
+    width:100% !important;
+    max-width:none !important;
+
+    font-size:13px !important;
+    line-height:1.35 !important;
+    font-weight:600 !important;
+
+    white-space:normal !important;
+    overflow:visible !important;
+
+    display:block !important;
+}
+
+
+/* ===== PROJECT ARROW — RIGHT SIDE ===== */
+
+
+/* ===== CLEAN PROJECT ARROW POSITION ===== */
+
+#projects.completed-projects-exact .cpe-card .cpe-arrow{
+    position:absolute !important;
+    right:30px !important;
+    left:auto !important;
+
+    top:460px !important;
+    bottom:auto !important;
+
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+
+    color:#fff !important;
+    font-size:30px !important;
+    line-height:1 !important;
+
+    transform:none !important;
+    z-index:100 !important;
+}
+
+
+
+/* ===== FINAL PROJECT CARD ARROWS ===== */
+
+#projects.completed-projects-exact .cpe-card{
+    position: relative !important;
+}
+
+#projects.completed-projects-exact .cpe-card .cpe-arrow{
+    position: absolute !important;
+
+    right: 30px !important;
+    top: auto !important;
+    bottom: 28px !important;
+    left: auto !important;
+
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    font-size: 30px !important;
+    line-height: 1 !important;
+    color: #fff !important;
+
+    transform: none !important;
+    z-index: 20 !important;
+}
