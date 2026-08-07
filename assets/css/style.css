@@ -23777,3 +23777,21 @@ html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-conte
 
 }
 
+
+/* ===== MOBILE HERO HEIGHT MATCH ORIGINAL ===== */
+
+@media (max-width:768px){
+
+#home.exact-printent-hero{
+    height:62vh !important;
+    min-height:62vh !important;
+    max-height:62vh !important;
+}
+
+#home.exact-printent-hero .exact-hero-bg,
+#home.exact-printent-hero .exact-hero-shade{
+    height:62vh !important;
+}
+
+}
+
