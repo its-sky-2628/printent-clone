@@ -90,7 +90,7 @@
   z-index:3;
 
   left:14.5%;
-  top: 53%;
+  top:50%;
 
   transform:translateY(-43%);
 
@@ -119,7 +119,7 @@
   font-family:"Lora", Georgia, serif;
 
   font-size:112px;
-  line-height:1.12;
+  line-height:.98;
   font-weight:400;
 
   white-space:nowrap;
@@ -154,7 +154,6 @@
 /* paragraph */
 
 .hero-second-description{
-  margin-top:-30px;
   width:440px;
 
   font-family:Arial, Helvetica, sans-serif;
@@ -269,7 +268,6 @@
   }
 
   .hero-second-description{
-  margin-top:-30px;
     width:370px;
     font-size:15px;
   }
@@ -316,7 +314,6 @@
   }
 
   .hero-second-description{
-  margin-top:-30px;
     display:none;
   }
 
@@ -1236,7 +1233,7 @@
 
   <div class="cpe-grid">
 
-    <a href="#projects" class="cpe-card cpe-card-first"
+    <a href="#projects" class="cpe-card"
        style="--project-image:url('../images/p3-1024x683.png')">
 
       <div class="cpe-card-content">
@@ -1247,17 +1244,14 @@
           cover is applied to slide.
         </p>
 
-      </div>
-
-
+        <span class="cpe-arrow">↘</span>
 
         <span class="cpe-view-project">
           VIEW FULL PROJECT <b>↗</b>
         </span>
+      </div>
 
-    
-  <span class="cpe-right-arrow">↘</span>
-</a>
+    </a>
 
 
     <a href="#projects" class="cpe-card"
@@ -1270,16 +1264,15 @@
           Support digital transformation initiatives are a material
           used to improve productivity.
         </p>
-      </div>
 
+        <span class="cpe-arrow">↘</span>
 
         <span class="cpe-view-project">
           VIEW FULL PROJECT <b>↗</b>
         </span>
+      </div>
 
-    
-  <span class="cpe-right-arrow">↘</span>
-</a>
+    </a>
 
 
     <a href="#projects" class="cpe-card"
@@ -1292,16 +1285,15 @@
           Newspapers and magazines are printed that are
           published regularly from time to time.
         </p>
-      </div>
 
+        <span class="cpe-arrow">↘</span>
 
         <span class="cpe-view-project">
           VIEW FULL PROJECT <b>↗</b>
         </span>
+      </div>
 
-    
-  <span class="cpe-right-arrow">↘</span>
-</a>
+    </a>
 
 
     <a href="#projects" class="cpe-card"
@@ -1314,16 +1306,15 @@
           Used mostly for borders and murals, digital printing is
           defined as one several technologies.
         </p>
-      </div>
 
+        <span class="cpe-arrow">↘</span>
 
         <span class="cpe-view-project">
           VIEW FULL PROJECT <b>↗</b>
         </span>
+      </div>
 
-    
-  <span class="cpe-right-arrow">↘</span>
-</a>
+    </a>
 
   </div>
 
@@ -2012,7 +2003,6 @@ document.addEventListener("DOMContentLoaded", function () {
 <style>
 /* Second slide description — bigger + bold */
 .hero-second-description{
-  margin-top:-30px;
   font-size: 21px !important;
   line-height: 1.55 !important;
   font-weight: 700 !important;
@@ -2328,46 +2318,5 @@ document.addEventListener("DOMContentLoaded", function () {
     visibility: visible !important;
 }
 
-</style>
-
-
-<style>
-.hero-second-content{
-    top: 50% !important;
-    transform: translateY(-48%) !important;
-}
-</style>
-
-
-<style>
-.hero-second-description{
-    transform: translateY(-20px) !important;
-}
-</style>
-
-
-<style>
-.hero-second-description{
-    transform: translateY(-20px) !important;
-}
-
-.hero-second-button{
-    transform: translateY(-20px) !important;
-}
-</style>
-
-
-<style>
-.hero-second-description{
-    transform: translateY(-30px) !important;
-}
-
-.hero-second-divider{
-    transform: translateY(-30px) !important;
-}
-
-.hero-second-button{
-    transform: translateY(-30px) !important;
-}
 </style>
 

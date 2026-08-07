@@ -7895,24 +7895,24 @@ button.is-pressed{
   color:#fff;
 }
 
-.topbar{
+.site-header .topbar{
   background:#0d0d0d!important;
   color:rgba(255,255,255,.58)!important;
   border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.topbar a{
+.site-header .topbar a{
   color:rgba(255,255,255,.58)!important;
 }
 
-.topbar a:hover{
+.site-header .topbar a:hover{
   color:#f5c400!important;
 }
 
 
 /* NAVBAR */
 
-.navbar{
+.site-header .navbar{
   position:relative;
   height:96px;
   padding:0 max(30px,calc((100vw - 1320px)/2));
@@ -7922,14 +7922,14 @@ button.is-pressed{
   border:0!important;
 }
 
-.brand{
+.site-header .brand{
   width:185px;
   flex:0 0 185px;
   display:flex;
   align-items:center;
 }
 
-.brand img{
+.site-header .brand img{
   display:block;
   width:150px;
   max-height:55px;
@@ -8607,17 +8607,17 @@ button.is-pressed{
 
 @media(max-width:1100px){
 
-  .navbar{
+  .site-header .navbar{
     height:78px;
     padding:0 22px;
   }
 
-  .brand{
+  .site-header .brand{
     width:auto;
     flex:1;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:135px;
   }
 
@@ -9370,7 +9370,7 @@ button.is-pressed{
    TOP ORANGE STRIP
 ========================================================= */
 
-.topbar{
+.site-header .topbar{
   display:block!important;
 
   height:55px!important;
@@ -9388,17 +9388,17 @@ button.is-pressed{
   color:#fff!important;
 }
 
-.topbar-inner{
+.site-header .topbar-inner{
   height:55px!important;
 
   display:flex!important;
   align-items:center!important;
-  justify-content:flex-start!important;
+  justify-content:space-between!important;
 }
 
-.topbar,
-.topbar a,
-.topbar span{
+.site-header .topbar,
+.site-header .topbar a,
+.site-header .topbar span{
   color:#fff!important;
 }
 
@@ -9407,7 +9407,7 @@ button.is-pressed{
    MAIN NAVBAR — BIG LIKE REFERENCE
 ========================================================= */
 
-.navbar{
+.site-header .navbar{
   position:relative!important;
 
   height:94px!important;
@@ -9435,7 +9435,7 @@ button.is-pressed{
    LOGO — BIG
 ========================================================= */
 
-.brand{
+.site-header .brand{
   width:315px!important;
   flex:0 0 315px!important;
 
@@ -9448,7 +9448,7 @@ button.is-pressed{
     1px solid rgba(255,255,255,.10)!important;
 }
 
-.brand img{
+.site-header .brand img{
   width:190px!important;
   height:auto!important;
   max-height:64px!important;
@@ -9462,7 +9462,7 @@ button.is-pressed{
    NAV POSITION
 ========================================================= */
 
-.desktop-nav{
+.site-header .desktop-nav{
   height:100%!important;
 
   margin:
@@ -9479,6 +9479,7 @@ button.is-pressed{
    MENU ITEMS
 ========================================================= */
 
+.site-header
 .desktop-nav
 .nav-link{
   position:relative!important;
@@ -9518,6 +9519,7 @@ button.is-pressed{
    ORANGE ACTIVE TEXT
 ========================================================= */
 
+.site-header
 .desktop-nav
 .nav-link.active{
   color:
@@ -9529,6 +9531,7 @@ button.is-pressed{
    ORANGE UNDERLINE
 ========================================================= */
 
+.site-header
 .desktop-nav
 .nav-link::before{
   content:""!important;
@@ -9556,9 +9559,11 @@ button.is-pressed{
     transform .3s ease!important;
 }
 
+.site-header
 .desktop-nav
 .nav-link:hover::before,
 
+.site-header
 .desktop-nav
 .nav-link.active::before{
   transform:
@@ -9570,6 +9575,7 @@ button.is-pressed{
    HOVER ORANGE
 ========================================================= */
 
+.site-header
 .desktop-nav
 .nav-link:hover{
   color:
@@ -9581,7 +9587,7 @@ button.is-pressed{
    SMALL DOWN ARROW
 ========================================================= */
 
-.nav-plus{
+.site-header .nav-plus{
   color:inherit!important;
 
   font-family:Arial,sans-serif!important;
@@ -9595,6 +9601,7 @@ button.is-pressed{
     transform .25s ease!important;
 }
 
+.site-header
 .has-dropdown:hover
 .nav-plus{
   transform:
@@ -9606,17 +9613,17 @@ button.is-pressed{
    ACTION AREA
 ========================================================= */
 
-.nav-actions{
+.site-header .nav-actions{
   height:100%!important;
 
-  margin-left:-18px!important;
+  margin-left:6px!important;
 
-  padding-left:0!important;
+  padding-left:16px!important;
 
   display:flex!important;
   align-items:center!important;
 
-  gap:12px!important;
+  gap:16px!important;
 
   border-left:
     1px solid rgba(255,255,255,.16)!important;
@@ -9625,7 +9632,7 @@ button.is-pressed{
 
 /* SEARCH */
 
-.search-btn{
+.site-header .search-btn{
   width:35px!important;
   height:45px!important;
 
@@ -9639,7 +9646,7 @@ button.is-pressed{
   color:#fff!important;
 }
 
-.search-btn:hover{
+.site-header .search-btn:hover{
   color:
     var(--printent-orange)!important;
 
@@ -9649,7 +9656,7 @@ button.is-pressed{
 
 /* CART */
 
-.cart-btn{
+.site-header .cart-btn{
   width:42px!important;
   height:45px!important;
 
@@ -9663,14 +9670,14 @@ button.is-pressed{
   color:#fff!important;
 }
 
-.cart-btn:hover{
+.site-header .cart-btn:hover{
   color:
     var(--printent-orange)!important;
 
   background:transparent!important;
 }
 
-.cart-btn small{
+.site-header .cart-btn small{
   right:1px!important;
   top:10px!important;
 
@@ -9686,7 +9693,7 @@ button.is-pressed{
 
 /* REFERENCE DOESN'T HAVE BIG QUOTE BUTTON IN NAV */
 
-.quote-btn{
+.site-header .quote-btn{
   display:none!important;
 }
 
@@ -9696,12 +9703,13 @@ button.is-pressed{
    REMOVE PREVIOUS YELLOW/GOLD
 ========================================================= */
 
-.nav-dropdown{
+.site-header .nav-dropdown{
   border-top:
     3px solid
     var(--printent-orange)!important;
 }
 
+.site-header
 .nav-dropdown a:hover{
   background:
     var(--printent-orange)!important;
@@ -9709,28 +9717,32 @@ button.is-pressed{
   color:#fff!important;
 }
 
-.nav-mega{
+.site-header .nav-mega{
   border-top:
     3px solid
     var(--printent-orange)!important;
 }
 
-.mega-intro{
+.site-header .mega-intro{
   background:
     var(--printent-orange)!important;
 }
 
+.site-header
 .mega-view span{
   background:#111!important;
   color:#fff!important;
 }
 
+.site-header
 .mega-links > a:hover b{
   background:
     var(--printent-orange)!important;
 }
 
+.site-header
 .mega-feature > span,
+.site-header
 .mega-num{
   color:
     var(--printent-orange)!important;
@@ -9807,20 +9819,21 @@ button.is-pressed{
 
 @media(max-width:1250px) and (min-width:1101px){
 
-  .navbar{
+  .site-header .navbar{
     padding:
       0 28px!important;
   }
 
-  .brand{
+  .site-header .brand{
     width:230px!important;
     flex-basis:230px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:165px!important;
   }
 
+  .site-header
   .desktop-nav
   .nav-link{
     padding:
@@ -9834,25 +9847,25 @@ button.is-pressed{
 
 @media(max-width:1100px){
 
-  .navbar{
+  .site-header .navbar{
     height:80px!important;
 
     padding:
       0 22px!important;
   }
 
-  .brand{
+  .site-header .brand{
     width:auto!important;
     flex:1!important;
 
     border-right:0!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:165px!important;
   }
 
-  .nav-actions{
+  .site-header .nav-actions{
     border-left:0!important;
   }
 
@@ -9879,7 +9892,7 @@ button.is-pressed{
    OVERRIDE OLD GOLD RULES INSIDE HEADER
 ========================================================= */
 
-*::selection{
+.site-header *::selection{
   background:
     var(--printent-orange)!important;
 
@@ -9894,12 +9907,12 @@ button.is-pressed{
 @media(min-width:1101px){
 
   /* navbar thoda taller */
-  .navbar{
+  .site-header .navbar{
     height:104px!important;
   }
 
   /* navigation ko available width do */
-  .desktop-nav{
+  .site-header .desktop-nav{
     flex:1!important;
     margin-left:55px!important;
     margin-right:25px!important;
@@ -9912,7 +9925,7 @@ button.is-pressed{
   }
 
   /* EACH MENU ITEM — bigger + more breathing room */
-  .desktop-nav > .nav-item{
+  .site-header .desktop-nav > .nav-item{
     height:100%!important;
 
     display:flex!important;
@@ -9921,7 +9934,7 @@ button.is-pressed{
     flex-shrink:0!important;
   }
 
-  .desktop-nav > .nav-item > .nav-link{
+  .site-header .desktop-nav > .nav-item > .nav-link{
     height:100%!important;
 
     padding-left:25px!important;
@@ -9937,7 +9950,7 @@ button.is-pressed{
   }
 
   /* Contact ko bhi same size */
-  .desktop-nav > .nav-link{
+  .site-header .desktop-nav > .nav-link{
     height:100%!important;
 
     padding-left:25px!important;
@@ -9950,7 +9963,7 @@ button.is-pressed{
   }
 
   /* arrows slightly cleaner */
-  .nav-plus{
+  .site-header .nav-plus{
     margin-left:2px!important;
 
     font-size:11px!important;
@@ -9959,13 +9972,13 @@ button.is-pressed{
   }
 
   /* underline wider */
-  .desktop-nav .nav-link::before{
+  .site-header .desktop-nav .nav-link::before{
     left:20px!important;
     right:20px!important;
   }
 
   /* search/cart ko menu se thoda separate */
-  .nav-actions{
+  .site-header .nav-actions{
     margin-left:18px!important;
     padding-left:22px!important;
 
@@ -9973,12 +9986,12 @@ button.is-pressed{
   }
 
   /* logo side ko thoda aur room */
-  .brand{
+  .site-header .brand{
     width:330px!important;
     flex:0 0 330px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:205px!important;
   }
 
@@ -9989,24 +10002,24 @@ button.is-pressed{
 
 @media(min-width:1101px) and (max-width:1400px){
 
-  .brand{
+  .site-header .brand{
     width:270px!important;
     flex-basis:270px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:190px!important;
   }
 
-  .desktop-nav{
+  .site-header .desktop-nav{
     margin-left:30px!important;
     margin-right:12px!important;
 
     gap:5px!important;
   }
 
-  .desktop-nav > .nav-item > .nav-link,
-  .desktop-nav > .nav-link{
+  .site-header .desktop-nav > .nav-item > .nav-link,
+  .site-header .desktop-nav > .nav-link{
     padding-left:19px!important;
     padding-right:19px!important;
 
@@ -10029,7 +10042,7 @@ button.is-pressed{
 
 /* MAIN BLACK NAVBAR STICKY */
 
-.navbar{
+.site-header .navbar{
   position:sticky!important;
   top:0!important;
 
@@ -10104,9 +10117,9 @@ body.navbar-fixed-active
 
 /* dropdown fixed navbar ke upar properly visible */
 
-.home-preview-menu,
-.nav-dropdown,
-.nav-mega{
+.site-header .home-preview-menu,
+.site-header .nav-dropdown,
+.site-header .nav-mega{
   z-index:1000000!important;
 }
 
@@ -10124,7 +10137,7 @@ body.navbar-fixed-active
 
 /* MAIN BLACK NAVBAR STICKY */
 
-.navbar{
+.site-header .navbar{
   position:sticky!important;
   top:0!important;
 
@@ -10199,9 +10212,9 @@ body.navbar-fixed-active
 
 /* dropdown fixed navbar ke upar properly visible */
 
-.home-preview-menu,
-.nav-dropdown,
-.nav-mega{
+.site-header .home-preview-menu,
+.site-header .nav-dropdown,
+.site-header .nav-mega{
   z-index:1000000!important;
 }
 
@@ -10217,7 +10230,7 @@ body.navbar-fixed-active
      MAIN BLACK BAR
   ========================= */
 
-  .navbar{
+  .site-header .navbar{
     width:100%!important;
     max-width:none!important;
 
@@ -10233,10 +10246,10 @@ body.navbar-fixed-active
 
 
   /* if navbar has inner/container wrapper */
-  .navbar > .container,
-  .navbar > .nav-container,
-  .navbar > .navbar-inner,
-  .navbar > .header-inner{
+  .site-header .navbar > .container,
+  .site-header .navbar > .nav-container,
+  .site-header .navbar > .navbar-inner,
+  .site-header .navbar > .header-inner{
     width:100%!important;
     max-width:none!important;
 
@@ -10252,7 +10265,7 @@ body.navbar-fixed-active
      LOGO — LEFT SIDE
   ========================= */
 
-  .brand{
+  .site-header .brand{
     width:330px!important;
     min-width:330px!important;
     flex:0 0 330px!important;
@@ -10271,7 +10284,7 @@ body.navbar-fixed-active
   }
 
 
-  .brand img{
+  .site-header .brand img{
     width:205px!important;
     max-width:205px!important;
 
@@ -10289,8 +10302,8 @@ body.navbar-fixed-active
      NAVIGATION
   ========================= */
 
-  .desktop-nav{
-    flex:0 0 auto!important;
+  .site-header .desktop-nav{
+    flex:1 1 auto!important;
 
     width:auto!important;
     height:96px!important;
@@ -10300,7 +10313,7 @@ body.navbar-fixed-active
 
     display:flex!important;
     align-items:stretch!important;
-    justify-content:flex-start!important;
+    justify-content:space-between!important;
 
     gap:0!important;
   }
@@ -10308,6 +10321,7 @@ body.navbar-fixed-active
 
   /* dropdown item wrappers */
 
+  .site-header
   .desktop-nav > .nav-item{
     height:96px!important;
 
@@ -10323,7 +10337,9 @@ body.navbar-fixed-active
      BIG MENU TEXT
   ========================= */
 
+  .site-header
   .desktop-nav > .nav-item > .nav-link,
+  .site-header
   .desktop-nav > .nav-link{
 
     height:96px!important;
@@ -10359,9 +10375,11 @@ body.navbar-fixed-active
      ORANGE ACTIVE
   ========================= */
 
+  .site-header
   .desktop-nav
   .nav-link.active,
 
+  .site-header
   .desktop-nav
   .nav-link:hover{
 
@@ -10371,6 +10389,7 @@ body.navbar-fixed-active
 
   /* underline */
 
+  .site-header
   .desktop-nav
   .nav-link::before{
 
@@ -10389,7 +10408,7 @@ body.navbar-fixed-active
      DROPDOWN ARROWS
   ========================= */
 
-  .nav-plus{
+  .site-header .nav-plus{
     margin-left:2px!important;
 
     font-family:Arial,sans-serif!important;
@@ -10407,7 +10426,7 @@ body.navbar-fixed-active
      SEARCH + CART AREA
   ========================= */
 
-  .nav-actions{
+  .site-header .nav-actions{
     flex:0 0 auto!important;
 
     height:96px!important;
@@ -10426,8 +10445,8 @@ body.navbar-fixed-active
   }
 
 
-  .search-btn,
-  .cart-btn{
+  .site-header .search-btn,
+  .site-header .cart-btn{
     width:35px!important;
     height:50px!important;
 
@@ -10439,13 +10458,13 @@ body.navbar-fixed-active
   }
 
 
-  .search-btn svg{
+  .site-header .search-btn svg{
     width:24px!important;
     height:24px!important;
   }
 
 
-  .cart-btn svg{
+  .site-header .cart-btn svg{
     width:25px!important;
     height:25px!important;
   }
@@ -10455,7 +10474,7 @@ body.navbar-fixed-active
      REMOVE QUOTE BUTTON
   ========================= */
 
-  .quote-btn{
+  .site-header .quote-btn{
     display:none!important;
   }
 
@@ -10464,7 +10483,7 @@ body.navbar-fixed-active
      HOME DROPDOWN POSITION
   ========================= */
 
-  .home-preview-menu{
+  .site-header .home-preview-menu{
     top:calc(100% + 3px)!important;
   }
 
@@ -10477,27 +10496,29 @@ body.navbar-fixed-active
 
 @media(min-width:1450px){
 
-  .navbar{
+  .site-header .navbar{
     padding-left:85px!important;
     padding-right:85px!important;
   }
 
-  .brand{
+  .site-header .brand{
     width:360px!important;
     min-width:360px!important;
     flex-basis:360px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:220px!important;
     max-width:220px!important;
   }
 
-  .desktop-nav{
+  .site-header .desktop-nav{
     margin-left:80px!important;
   }
 
+  .site-header
   .desktop-nav > .nav-item > .nav-link,
+  .site-header
   .desktop-nav > .nav-link{
 
     padding-left:25px!important;
@@ -10515,26 +10536,28 @@ body.navbar-fixed-active
 
 @media(min-width:1101px) and (max-width:1300px){
 
-  .navbar{
+  .site-header .navbar{
     padding:
       0 30px!important;
   }
 
-  .brand{
+  .site-header .brand{
     width:240px!important;
     min-width:240px!important;
     flex-basis:240px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:180px!important;
   }
 
-  .desktop-nav{
+  .site-header .desktop-nav{
     margin-left:25px!important;
   }
 
+  .site-header
   .desktop-nav > .nav-item > .nav-link,
+  .site-header
   .desktop-nav > .nav-link{
 
     padding:
@@ -10543,7 +10566,7 @@ body.navbar-fixed-active
     font-size:18px!important;
   }
 
-  .nav-actions{
+  .site-header .nav-actions{
     margin-left:10px!important;
     padding-left:15px!important;
     gap:12px!important;
@@ -10554,8 +10577,8 @@ body.navbar-fixed-active
 
 /* ===== V25 — NAVBAR DROPDOWN ARROWS FIX ===== */
 
-.desktop-nav .has-dropdown > .nav-link::after,
-.desktop-nav .home-preview-parent > .nav-link::after{
+.site-header .desktop-nav .has-dropdown > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent > .nav-link::after{
   content:"⌄"!important;
 
   position:static!important;
@@ -10588,15 +10611,15 @@ body.navbar-fixed-active
 
 /* hover pe arrow subtle rotate */
 
-.desktop-nav .has-dropdown:hover > .nav-link::after,
-.desktop-nav .home-preview-parent:hover > .nav-link::after{
+.site-header .desktop-nav .has-dropdown:hover > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent:hover > .nav-link::after{
   transform:rotate(180deg)!important;
 }
 
 
 /* ACTIVE HOME = ORANGE ARROW TOO */
 
-.desktop-nav .nav-link.active::after{
+.site-header .desktop-nav .nav-link.active::after{
   color:#ff704d!important;
 }
 
@@ -10604,15 +10627,15 @@ body.navbar-fixed-active
 /* Agar purana + span present hai to hide karo,
    warna double symbol dikhega */
 
-.desktop-nav .nav-plus{
+.site-header .desktop-nav .nav-plus{
   display:none!important;
 }
 
 
 /* V26 — EXACT ↓ DROPDOWN SYMBOL */
 
-.desktop-nav .has-dropdown > .nav-link::after,
-.desktop-nav .home-preview-parent > .nav-link::after{
+.site-header .desktop-nav .has-dropdown > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent > .nav-link::after{
   content:"↓"!important;
 
   display:inline-block!important;
@@ -10630,13 +10653,13 @@ body.navbar-fixed-active
 }
 
 /* hover */
-.desktop-nav .has-dropdown:hover > .nav-link::after,
-.desktop-nav .home-preview-parent:hover > .nav-link::after{
+.site-header .desktop-nav .has-dropdown:hover > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent:hover > .nav-link::after{
   transform:translateY(2px)!important;
 }
 
 /* purana symbol hide */
-.desktop-nav .nav-plus{
+.site-header .desktop-nav .nav-plus{
   display:none!important;
 }
 
@@ -10645,8 +10668,8 @@ body.navbar-fixed-active
    V27 — PRINTENT STYLE SMALL DIAGONAL ARROW
 ========================================================= */
 
-.desktop-nav .has-dropdown > .nav-link::after,
-.desktop-nav .home-preview-parent > .nav-link::after{
+.site-header .desktop-nav .has-dropdown > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent > .nav-link::after{
 
   content:"↓"!important;
 
@@ -10686,8 +10709,8 @@ body.navbar-fixed-active
 
 /* hover — tiny movement, no full rotation */
 
-.desktop-nav .has-dropdown:hover > .nav-link::after,
-.desktop-nav .home-preview-parent:hover > .nav-link::after{
+.site-header .desktop-nav .has-dropdown:hover > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent:hover > .nav-link::after{
 
   transform:
     rotate(-38deg)
@@ -10697,22 +10720,22 @@ body.navbar-fixed-active
 
 /* Home orange arrow */
 
-.desktop-nav .nav-link.active::after{
+.site-header .desktop-nav .nav-link.active::after{
   color:#ff704d!important;
 }
 
 
 /* old arrow/span completely hide */
 
-.desktop-nav .nav-plus{
+.site-header .desktop-nav .nav-plus{
   display:none!important;
 }
 
 
 /* V28 — ARROW MORE VISIBLE */
 
-.desktop-nav .has-dropdown > .nav-link::after,
-.desktop-nav .home-preview-parent > .nav-link::after{
+.site-header .desktop-nav .has-dropdown > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent > .nav-link::after{
 
   font-size:13px!important;
   font-weight:700!important;
@@ -10730,8 +10753,8 @@ body.navbar-fixed-active
 
 /* hover */
 
-.desktop-nav .has-dropdown:hover > .nav-link::after,
-.desktop-nav .home-preview-parent:hover > .nav-link::after{
+.site-header .desktop-nav .has-dropdown:hover > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent:hover > .nav-link::after{
 
   transform:
     rotate(-38deg)
@@ -12357,7 +12380,7 @@ right:21% !important;
 }
 
 .hero-client span{
-    font-size:19px !important;
+    font-size:17px !important;
 }
 
 .exact-hero-contact{
@@ -12427,7 +12450,7 @@ right:21% !important;
 /* Description bigger */
 .hero-info-copy{
     width:300px !important;
-    font-size:19px !important;
+    font-size:17px !important;
     line-height:1.7 !important;
 }
 
@@ -12444,7 +12467,7 @@ right:21% !important;
 
 /* Satisfied Clients text */
 .hero-client span{
-    font-size:19px !important;
+    font-size:17px !important;
     margin-top:10px !important;
 }
 
@@ -12468,7 +12491,7 @@ right:21% !important;
 /* Bigger description */
 .hero-info-copy{
     width:360px !important;
-    font-size:19px !important;
+    font-size:20px !important;
     line-height:1.65 !important;
 }
 
@@ -12484,7 +12507,7 @@ right:21% !important;
 
 /* Bigger Satisfied Clients */
 .hero-client span{
-    font-size:19px !important;
+    font-size:20px !important;
     margin-top:10px !important;
 }
 
@@ -12577,7 +12600,7 @@ right:21% !important;
 }
 .exact-hero-promo .promo-buy strong{
     display:block !important;
-    font-size:19px !important;
+    font-size:20px !important;
     margin-top:2px !important;
 }
 .exact-hero-promo .promo-demo{
@@ -12629,7 +12652,7 @@ right:21% !important;
 }
 .exact-hero-promo .promo-buy strong{
     display:block !important;
-    font-size:19px !important;
+    font-size:20px !important;
     margin-top:2px !important;
 }
 .exact-hero-promo .promo-demo{
@@ -12657,7 +12680,7 @@ right:21% !important;
     font-size:58px !important;
 }
 .hero-client span{
-    font-size:19px !important;
+    font-size:17px !important;
 }
 .exact-hero-contact{
     top:70% !important;
@@ -14078,7 +14101,7 @@ input[type="submit"],
 
 /* Description thoda bada */
 .moving-service-description{
-  font-size:19px !important;
+  font-size:17px !important;
   line-height:1.6 !important;
   font-weight:400 !important;
   letter-spacing:0 !important;
@@ -15329,7 +15352,7 @@ input[type="submit"],
 
 /* Completed Projects vertical text */
 .completed-projects-exact .cpe-count-label{
-  font-size:19px !important;
+  font-size:17px !important;
   line-height:1.3 !important;
   font-weight:600 !important;
 }
@@ -15343,7 +15366,7 @@ input[type="submit"],
 
 /* Card description */
 .completed-projects-exact .cpe-card p{
-  font-size:19px !important;
+  font-size:17px !important;
   line-height:1.55 !important;
   max-width:390px !important;
   margin-bottom:24px !important;
@@ -16647,7 +16670,7 @@ section.shipping-rates-exact .sre-content p{
 }
 
 .ppe-card li{
-  font-size:19px !important;
+  font-size:17px !important;
   margin-bottom:15px !important;
 }
 
@@ -16665,7 +16688,7 @@ section.shipping-rates-exact .sre-content p{
 }
 
 .ppe-start b{
-  font-size:19px !important;
+  font-size:20px !important;
 }
 
 @media(max-width:760px){
@@ -16714,7 +16737,7 @@ section.shipping-rates-exact .sre-content p{
 }
 
 .ppe-plan-label{
-  font-size:19px !important;
+  font-size:17px !important;
   height:120px !important;
 }
 
@@ -17931,11 +17954,11 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 .pef-form input{
-  font-size:19px !important;
+  font-size:17px !important;
 }
 
 .pef-form button{
-  font-size:19px !important;
+  font-size:17px !important;
 }
 
 .pef-column h3{
@@ -17952,7 +17975,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 .pef-copyright{
-  font-size:19px !important;
+  font-size:17px !important;
 }
 
 @media(max-width:760px){
@@ -17966,7 +17989,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
   .pef-column p,
   .pef-column li a{
-    font-size:19px !important;
+    font-size:17px !important;
   }
 }
 
@@ -18329,11 +18352,11 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 .pef-form input{
-  font-size:19px !important;
+  font-size:17px !important;
 }
 
 .pef-form button{
-  font-size:19px !important;
+  font-size:17px !important;
 }
 
 .pef-column h3{
@@ -18350,7 +18373,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 .pef-copyright{
-  font-size:19px !important;
+  font-size:17px !important;
 }
 
 @media(max-width:760px){
@@ -18362,7 +18385,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
   }
   .pef-column p,
   .pef-column li a{
-    font-size:19px !important;
+    font-size:17px !important;
   }
 }
 
@@ -18429,7 +18452,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 /* navbar black */
 
-.navbar{
+.site-header .navbar{
     background:#050505 !important;
     height:100px !important;
 }
@@ -18437,40 +18460,40 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 /* logo area */
 
-.brand{
+.site-header .brand{
     background:#050505 !important;
 }
 
 
 /* menu */
 
-.desktop-nav{
+.site-header .desktop-nav{
     background:#050505 !important;
 }
 
 
-.nav-link{
+.site-header .nav-link{
     color:#ffffff !important;
     font-size:18px !important;
     font-weight:700 !important;
 }
 
 
-.nav-plus{
+.site-header .nav-plus{
     color:#ffffff !important;
 }
 
 
 /* icons */
 
-.nav-actions{
+.site-header .nav-actions{
     background:#050505 !important;
 }
 
 
 /* remove quote only */
 
-.quote-btn{
+.site-header .quote-btn{
     display:none !important;
 }
 
@@ -18842,7 +18865,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 .nav-link{
 
-    font-size:19px !important;
+    font-size:20px !important;
 
     font-weight:800 !important;
 
@@ -18920,7 +18943,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
     font-weight:900 !important;
 
-    font-size:19px !important;
+    font-size:17px !important;
 
 }
 
@@ -18980,7 +19003,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 .nav-link{
 
-    font-size:19px !important;
+    font-size:20px !important;
 
     font-weight:700 !important;
 
@@ -19180,7 +19203,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 .questions-text{
 
-    font-size:19px !important;
+    font-size:17px !important;
 
     font-weight:600 !important;
 
@@ -19227,7 +19250,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 .printent-topbar-left,
 .printent-topbar-right{
 
-    font-size:19px !important;
+    font-size:17px !important;
 
 }
 
@@ -19467,7 +19490,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 
-.navbar{
+.site-header .navbar{
 
     transition:all .3s ease;
 
@@ -19605,7 +19628,7 @@ body{
     /* ↘ already exists in HTML, so no generated character needed */
     line-height: 1 !important;
 
-    width: 100% !important;
+    width: auto !important;
     height: auto !important;
 
     opacity: 1 !important;
@@ -19640,7 +19663,7 @@ body{
     -webkit-text-stroke: 0 !important;
     margin-left: 5px !important;
     line-height: 1 !important;
-    width: 100% !important;
+    width: auto !important;
     height: auto !important;
     opacity: 1 !important;
     visibility: visible !important;
@@ -19664,7 +19687,7 @@ body{
     margin-left: 2px !important;
 
     display: inline-block !important;
-    width: 100% !important;
+    width: auto !important;
     height: auto !important;
 
     line-height: 1 !important;
@@ -20198,7 +20221,7 @@ body{
 
         display:flex !important;
         align-items:center !important;
-        justify-content:flex-start !important;
+        justify-content:flex-end !important;
 
         margin:0 !important;
 
@@ -20214,7 +20237,7 @@ body{
 
         text-align:right !important;
 
-        font-size:19px !important;
+        font-size:17px !important;
         line-height:1.65 !important;
 
         margin:0 !important;
@@ -20910,7 +20933,7 @@ body{
 
     position:absolute !important;
 
-    top:580px !important;
+    top:545px !important;
     left:auto !important;
     right:325px !important;
     bottom:auto !important;
@@ -21650,7 +21673,7 @@ body{
 
   /* Satisfied Clients */
   #home.exact-printent-hero .hero-client span{
-    font-size:19px !important;
+    font-size:17px !important;
     line-height:1.2 !important;
     margin-top:8px !important;
   }
@@ -22305,7 +22328,7 @@ body{
 
 .completed-projects-exact .cpe-card-content a{
     position: absolute !important;
-    right: 0 !important;
+    right: 18px !important;
     bottom: 0 !important;
     left: auto !important;
 
@@ -22385,18 +22408,18 @@ body{
 
 
 /* ===== CPE VIEW FULL PROJECT — MOVE DOWN ONLY ===== */
-#completed-projects .cpe-card .cpe-view-project{
+#projects .cpe-card .cpe-view-project{
     transform: translateY(40px) !important;
 }
 
-#completed-projects .cpe-card:hover .cpe-view-project{
+#projects .cpe-card:hover .cpe-view-project{
     transform: translateY(40px) !important;
 }
 
 
 /* ===== FINAL — VIEW FULL PROJECT 35PX LOWER ===== */
 
-#completed-projects.completed-projects-exact .cpe-card .cpe-view-project{
+#projects.completed-projects-exact .cpe-card .cpe-view-project{
     position:absolute !important;
     left:0 !important;
     right:0 !important;
@@ -22410,8 +22433,8 @@ body{
     opacity:0 !important;
 }
 
-#completed-projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
-#completed-projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+#projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
     bottom:-50px !important;
 
     transform:translateY(0) !important;
@@ -22424,17 +22447,17 @@ body{
    WHITE TEXT UNTOUCHED
 ===================================================== */
 
-#completed-projects.completed-projects-exact .cpe-card{
+#projects.completed-projects-exact .cpe-card{
     position:relative !important;
 }
 
 /* cpe-card-content ko positioning parent mat banao */
-#completed-projects.completed-projects-exact .cpe-card-content{
+#projects.completed-projects-exact .cpe-card-content{
     position:static !important;
 }
 
 /* orange bar direct card bottom par */
-#completed-projects.completed-projects-exact .cpe-card .cpe-view-project{
+#projects.completed-projects-exact .cpe-card .cpe-view-project{
     position:absolute !important;
 
     left:0 !important;
@@ -22456,8 +22479,8 @@ body{
 }
 
 /* hover */
-#completed-projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
-#completed-projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+#projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
     top:auto !important;
     bottom:-45px !important;
 
@@ -22471,7 +22494,7 @@ body{
 ===================================================== */
 
 /* White text ki existing position restore/keep */
-#completed-projects.completed-projects-exact .cpe-card-content{
+#projects.completed-projects-exact .cpe-card-content{
     position:absolute !important;
     left:20px !important;
     right:20px !important;
@@ -22482,7 +22505,7 @@ body{
 }
 
 /* Orange bar */
-#completed-projects.completed-projects-exact .cpe-card .cpe-view-project{
+#projects.completed-projects-exact .cpe-card .cpe-view-project{
     position:absolute !important;
 
     left:-20px !important;
@@ -22504,8 +22527,8 @@ body{
 }
 
 /* Hover — sirf orange bar reveal */
-#completed-projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
-#completed-projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+#projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
     top:100% !important;
     bottom:auto !important;
 
@@ -22521,7 +22544,7 @@ body{
 ===================================================== */
 
 /* White text ki existing position restore/keep */
-#completed-projects.completed-projects-exact .cpe-card-content{
+#projects.completed-projects-exact .cpe-card-content{
     position:absolute !important;
     left:20px !important;
     right:20px !important;
@@ -22532,7 +22555,7 @@ body{
 }
 
 /* Orange bar */
-#completed-projects.completed-projects-exact .cpe-card .cpe-view-project{
+#projects.completed-projects-exact .cpe-card .cpe-view-project{
     position:absolute !important;
 
     left:-20px !important;
@@ -22554,8 +22577,8 @@ body{
 }
 
 /* Hover — sirf orange bar reveal */
-#completed-projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
-#completed-projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
+#projects.completed-projects-exact .cpe-card:hover .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-view-project{
     top:100% !important;
     bottom:auto !important;
 
@@ -22570,13 +22593,13 @@ body{
    VIEW FULL PROJECT — INDEPENDENT BOTTOM BAR
 ===================================================== */
 
-#completed-projects.completed-projects-exact .cpe-card{
+#projects.completed-projects-exact .cpe-card{
     position:relative !important;
     overflow:hidden !important;
 }
 
 /* Orange bar now direct child of card */
-#completed-projects.completed-projects-exact .cpe-card > .cpe-view-project{
+#projects.completed-projects-exact .cpe-card > .cpe-view-project{
     position:absolute !important;
 
     left:0 !important;
@@ -22609,8 +22632,8 @@ body{
     z-index:50 !important;
 }
 
-#completed-projects.completed-projects-exact .cpe-card:hover > .cpe-view-project,
-#completed-projects.completed-projects-exact .cpe-card:focus-visible > .cpe-view-project{
+#projects.completed-projects-exact .cpe-card:hover > .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible > .cpe-view-project{
     opacity:1 !important;
     transform:translateY(0) !important;
 }
@@ -22621,19 +22644,19 @@ body{
 ========================================================= */
 
 /* Card ko orange bar bahar dikhane dena */
-#completed-projects.completed-projects-exact .cpe-card{
+#projects.completed-projects-exact .cpe-card{
     position: relative !important;
     overflow: visible !important;
 }
 
 /* Grid bhi bar ko cut na kare */
-#completed-projects.completed-projects-exact .cpe-grid,
-#completed-projects.completed-projects-exact .cpe-card-wrap{
+#projects.completed-projects-exact .cpe-grid,
+#projects.completed-projects-exact .cpe-card-wrap{
     overflow: visible !important;
 }
 
 /* VIEW FULL PROJECT */
-#completed-projects.completed-projects-exact .cpe-card > .cpe-view-project{
+#projects.completed-projects-exact .cpe-card > .cpe-view-project{
     position: absolute !important;
 
     left: 0 !important;
@@ -22676,8 +22699,8 @@ body{
 
 
 /* HOVER — NICHE SE UP AAYE, LEKIN IMAGE KO COVER NA KARE */
-#completed-projects.completed-projects-exact .cpe-card:hover > .cpe-view-project,
-#completed-projects.completed-projects-exact .cpe-card:focus-visible > .cpe-view-project{
+#projects.completed-projects-exact .cpe-card:hover > .cpe-view-project,
+#projects.completed-projects-exact .cpe-card:focus-visible > .cpe-view-project{
     top: 100% !important;
     bottom: auto !important;
 
@@ -22687,24 +22710,24 @@ body{
 
 
 /* Image bilkul static */
-#completed-projects.completed-projects-exact .cpe-card::before,
-#completed-projects.completed-projects-exact .cpe-card:hover::before,
-#completed-projects.completed-projects-exact .cpe-card:focus-visible::before,
-#completed-projects.completed-projects-exact .cpe-card img,
-#completed-projects.completed-projects-exact .cpe-card:hover img{
+#projects.completed-projects-exact .cpe-card::before,
+#projects.completed-projects-exact .cpe-card:hover::before,
+#projects.completed-projects-exact .cpe-card:focus-visible::before,
+#projects.completed-projects-exact .cpe-card img,
+#projects.completed-projects-exact .cpe-card:hover img{
     transform: none !important;
     transition: none !important;
 }
 
 
 /* White title/description ki position bilkul touch nahi hogi */
-#completed-projects.completed-projects-exact .cpe-card-content{
+#projects.completed-projects-exact .cpe-card-content{
     transform: none !important;
 }
 
 
 /* Orange bar ke arrow ko right side */
-#completed-projects.completed-projects-exact .cpe-view-project b{
+#projects.completed-projects-exact .cpe-view-project b{
     position: absolute !important;
     right: 28px !important;
 
@@ -22714,14 +22737,14 @@ body{
 
 
 /* Featured/second card ke neeche orange bar ke liye space */
-#completed-projects.completed-projects-exact{
+#projects.completed-projects-exact{
     padding-bottom: 64px !important;
 }
 
 
 /* ===== PROJECT DESCRIPTION — MAXIMUM 2 LINES ===== */
 
-#completed-projects.completed-projects-exact .cpe-card-content p{
+#projects.completed-projects-exact .cpe-card-content p{
     display: -webkit-box !important;
     -webkit-box-orient: vertical !important;
     -webkit-line-clamp: 2 !important;
@@ -22734,814 +22757,304 @@ body{
 
 
 /* ===== FORCE PROJECT DESCRIPTION INTO 2 LINES ===== */
-#completed-projects.completed-projects-exact .cpe-card .cpe-card-content p{
+#projects.completed-projects-exact .cpe-card .cpe-card-content p{
     width:100% !important;
     max-width:none !important;
 
-    font-size:19px !important;
+    font-size:13px !important;
     line-height:1.35 !important;
     font-weight:600 !important;
 
     white-space:normal !important;
     overflow:visible !important;
 
-    display:-webkit-box !important;
-    -webkit-box-orient:vertical !important;
-    -webkit-line-clamp:2 !important;
-    overflow:hidden !important;
+    display:block !important;
 }
 
 
 /* ===== PROJECT ARROW — RIGHT SIDE ===== */
 
+#projects.completed-projects-exact .cpe-card-content .cpe-arrow{
+    position: absolute !important;
 
-/* ===== CLEAN PROJECT ARROW POSITION ===== */
+    left: auto !important;
+    right: 5px !important;
+    bottom: 0 !important;
 
-#completed-projects.completed-projects-exact .cpe-card .cpe-arrow{
+    margin: 0 !important;
+
+    font-size: 28px !important;
+    line-height: 1 !important;
+
+    transform: none !important;
+}
+
+
+/* ===== FINAL — PROJECT ARROW EXACT RIGHT SIDE ===== */
+
+#projects.completed-projects-exact .cpe-card{
+    position:relative !important;
+}
+
+/* Existing arrow */
+#projects.completed-projects-exact .cpe-card .cpe-arrow{
     position:absolute !important;
-    right:30px !important;
-    left:auto !important;
 
-    top:460px !important;
-    bottom:auto !important;
+    left:auto !important;
+    right:22px !important;
+
+    top:auto !important;
+    bottom:18px !important;
+
+    width:auto !important;
+    height:auto !important;
+
+    margin:0 !important;
+    padding:0 !important;
 
     display:block !important;
     visibility:visible !important;
     opacity:1 !important;
 
     color:#fff !important;
-    font-size:30px !important;
+
+    font-size:28px !important;
+    font-weight:400 !important;
     line-height:1 !important;
 
     transform:none !important;
-    z-index:100 !important;
+
+    z-index:999 !important;
 }
 
 
+/* ===== FINAL ARROW POSITION — BLUE MARK LOCATION ===== */
 
-/* ===== FINAL PROJECT CARD ARROWS ===== */
+#projects.completed-projects-exact .cpe-card{
+    position:relative !important;
+}
 
-#completed-projects.completed-projects-exact .cpe-card{
+#projects.completed-projects-exact .cpe-card .cpe-arrow{
+    position:absolute !important;
+
+    /* blue marked position */
+    left:auto !important;
+    right:28px !important;
+
+    top:auto !important;
+    bottom:52px !important;
+
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+
+    width:auto !important;
+    height:auto !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    color:#fff !important;
+
+    font-size:27px !important;
+    font-weight:400 !important;
+    line-height:1 !important;
+
+    transform:none !important;
+    z-index:999 !important;
+}
+
+/* hover par bhi SAME position */
+#projects.completed-projects-exact .cpe-card:hover .cpe-arrow{
+    right:28px !important;
+    bottom:52px !important;
+    opacity:1 !important;
+    transform:none !important;
+}
+
+
+/* ===== PROJECT WHITE TEXT — MOVE UP ONLY ===== */
+
+#projects.completed-projects-exact .cpe-card-content h3,
+#projects.completed-projects-exact .cpe-card-content h4,
+#projects.completed-projects-exact .cpe-card-content p{
+    position:relative !important;
+    top:-150px !important;
+}
+
+/* Arrow ki position bilkul same */
+#projects.completed-projects-exact .cpe-card-content .cpe-arrow{
+    top:auto !important;
+}
+
+
+/* ===== PROJECT ARROW — MOVE UP ===== */
+
+#projects.completed-projects-exact .cpe-card .cpe-arrow{
+    top:auto !important;
+    bottom:70px !important;
+}
+
+#projects.completed-projects-exact .cpe-card:hover .cpe-arrow{
+    top:auto !important;
+    bottom:70px !important;
+}
+
+
+/* ===== ARROW — FORCE MORE UP ===== */
+#projects.completed-projects-exact .cpe-card .cpe-arrow,
+#projects.completed-projects-exact .cpe-card:hover .cpe-arrow,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-arrow{
+    position:absolute !important;
+    top:auto !important;
+    bottom:120px !important;
+
+    left:auto !important;
+    right:28px !important;
+
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+
+    color:#fff !important;
+    font-size:28px !important;
+    z-index:9999 !important;
+
+    transform:none !important;
+}
+
+
+/* ===== ARROW — MOVE MUCH MORE UP ===== */
+#projects.completed-projects-exact .cpe-card .cpe-arrow,
+#projects.completed-projects-exact .cpe-card:hover .cpe-arrow,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-arrow{
+    position:absolute !important;
+    top:auto !important;
+    bottom:180px !important;
+
+    left:auto !important;
+    right:28px !important;
+
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+
+    color:#fff !important;
+    font-size:28px !important;
+    line-height:1 !important;
+
+    transform:none !important;
+    z-index:99999 !important;
+}
+
+
+/* ==================================================
+   FINAL FIX — PROJECT ARROW VISIBLE IN EMPTY GAP
+================================================== */
+
+#projects.completed-projects-exact .cpe-card{
     position: relative !important;
 }
 
-#completed-projects.completed-projects-exact .cpe-card .cpe-arrow{
+/* ARROW */
+#projects.completed-projects-exact .cpe-card .cpe-arrow{
     position: absolute !important;
 
-    right: 30px !important;
+    /* right side + empty gap ke andar */
+    right: 28px !important;
+    left: auto !important;
+
+    /* bottom se kaafi upar */
+    bottom: 115px !important;
     top: auto !important;
-    bottom: 28px !important;
-    left: auto !important;
 
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
 
-    font-size: 30px !important;
-    line-height: 1 !important;
+    width: auto !important;
+    height: auto !important;
+
     color: #fff !important;
-
-    transform: none !important;
-    z-index: 20 !important;
-}
-
-/* ===== FINAL 4 PROJECT ARROWS POSITION ===== */
-#completed-projects.completed-projects-exact .cpe-card {
-    position: relative !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card .cpe-arrow {
-    position: absolute !important;
-
-    right: 32px !important;
-    top: 96% !important;
-    bottom: auto !important;
-    left: auto !important;
-
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-
-    font-size: 30px !important;
-    line-height: 1 !important;
-    color: #fff !important;
-
-    transform: translateY(-50%) !important;
-    z-index: 999 !important;
-}
-
-/* ===== FINAL — 4 PROJECT ARROWS RIGHT SIDE ===== */
-
-#completed-projects.completed-projects-exact .cpe-card{
-    position: relative !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card .cpe-arrow{
-    position: absolute !important;
-
-    /* RIGHT SIDE EMPTY SPACE */
-    right: 35px !important;
-    left: auto !important;
-
-    /* TEXT AREA KE CENTER KE AAS-PAAS */
-    top: auto !important;
-    bottom: 65px !important;
-
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-
-    color: #ffffff !important;
     font-size: 30px !important;
     font-weight: 400 !important;
     line-height: 1 !important;
 
-    margin: 0 !important;
-    padding: 0 !important;
-
     transform: none !important;
-    z-index: 9999 !important;
+    margin: 0 !important;
+
+    z-index: 999999 !important;
 
     pointer-events: none !important;
 }
 
-/* hover par bhi arrow gayab/move na ho */
-#completed-projects.completed-projects-exact .cpe-card:hover .cpe-arrow{
+/* hover par bhi gayab NAHI hoga */
+#projects.completed-projects-exact .cpe-card:hover .cpe-arrow,
+#projects.completed-projects-exact .cpe-card:focus-visible .cpe-arrow{
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
     transform: none !important;
 }
 
-/* ===== ONE FINAL PROJECT RIGHT ARROW ===== */
-
-#completed-projects.completed-projects-exact .cpe-card {
-    position: relative !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card > .cpe-right-arrow {
-    position: absolute !important;
-
-    /* FORCE arrow to extreme right */
-    left: calc(100% - 58px) !important;
-    right: auto !important;
-
-    /* vertical position */
-    top: 96% !important;
-    bottom: auto !important;
-
-    width: 42px !important;
-    height: 42px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    color: #fff !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 0 !important;
-
-    transform: translateY(-50%) !important;
-
-    visibility: visible !important;
-    opacity: 1 !important;
-
-    z-index: 99999 !important;
-    pointer-events: none !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card > .cpe-right-arrow::after {
-    content: "➜" !important;
-
-    display: block !important;
-
-    color: #fff !important;
-    font-family: Arial, Helvetica, sans-serif !important;
-    font-size: 36px !important;
-    font-weight: 900 !important;
-    line-height: 1 !important;
-
-    transform: rotate(45deg) !important;
-}
-
-
-#completed-projects.completed-projects-exact .cpe-card {
-    position: relative !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card > .cpe-right-arrow {
-    position: absolute !important;
-
-    left: calc(100% - 58px) !important;
-    right: auto !important;
-
-    top: 96% !important;
-    bottom: auto !important;
-
-    width: 42px !important;
-    height: 42px !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    font-size: 0 !important;
-
-    transform: translateY(-50%) !important;
-
-    visibility: visible !important;
-    opacity: 1 !important;
-
-    z-index: 99999 !important;
-}
-
-/* ===== PROJECT CARD TEXT SIZE ===== */
-
-#completed-projects .cpe-card-content h3 {
-    font-size: 26px !important;
-    line-height: 1.15 !important;
-}
-
-#completed-projects .cpe-card-content p {
-    font-size: 15px !important;
-    line-height: 1.45 !important;
-}
-
-
-/* ===== PROJECT TEXT BIGGER + BOLDER ===== */
-
-#completed-projects .cpe-card-content h3 {
-    font-size: 31px !important;
-    font-weight: 800 !important;
-    line-height: 1.12 !important;
-}
-
-#completed-projects .cpe-card-content p {
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    line-height: 1.45 !important;
-}
-
-
-/* ===== PROJECT DESCRIPTION — BIGGER + 2 LINES ===== */
-
-#completed-projects .cpe-card-content p {
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    line-height: 1.35 !important;
-
-    width: 90% !important;
-    max-width: 340px !important;
-
-    margin-top: 10px !important;
-    margin-bottom: 0 !important;
-}
-
-/* Heading ko current size par hi rakho */
-#completed-projects .cpe-card-content h3 {
-    font-size: 31px !important;
-}
-
-
-/* ===== PROJECT DESCRIPTION — BIGGER + MAX 2 LINES ===== */
-
-#completed-projects.completed-projects-exact .cpe-card-content p,
-#projects.completed-projects-exact .cpe-card-content p{
-    font-size: 17px !important;
-    line-height: 1.35 !important;
-    font-weight: 600 !important;
-
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 2 !important;
-
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-
-    max-height: 2.7em !important;
-
-    margin-top: 8px !important;
-    margin-bottom: 0 !important;
-}
-
-/* ===== FINAL FORCE PROJECT DESCRIPTION SIZE ===== */
-html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-content > p {
-    font-size: 20px !important;
-    line-height: 1.25 !important;
-    font-weight: 600 !important;
-
-    display: -webkit-box !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-line-clamp: 2 !important;
-
-    overflow: hidden !important;
-    max-height: 50px !important;
-
-    width: 100% !important;
-    margin: 7px 0 0 0 !important;
-}
-
-/* ===== HIDE RIGHT ARROW WHEN PROJECT CARD OPENS ===== */
-
-#completed-projects.completed-projects-exact
-.cpe-card:hover > .cpe-right-arrow,
-#completed-projects.completed-projects-exact
-.cpe-card:focus-visible > .cpe-right-arrow {
-    opacity: 0 !important;
-    visibility: hidden !important;
-}
-
-/* Normal state = arrow visible */
-#completed-projects.completed-projects-exact
-.cpe-card:not(:hover) > .cpe-right-arrow {
+/* Purana rule arrow ko hide kar raha tha — override */
+#projects.completed-projects-exact
+.cpe-card:hover
+.cpe-card-content
+.cpe-arrow{
     opacity: 1 !important;
     visibility: visible !important;
 }
+
+
 
 
 /* =====================================================
-   PROJECT CARD — REFERENCE STYLE IMAGE REVEAL
-   ===================================================== */
+   FIRST PROJECT ARROW — CLEAN INDEPENDENT POSITION
+===================================================== */
 
-#completed-projects.completed-projects-exact .cpe-card{
+#projects.completed-projects-exact .cpe-card-first{
     position: relative !important;
-    overflow: visible !important;
 }
 
-/* IMAGE — normal state me hidden */
-#completed-projects.completed-projects-exact .cpe-card::before{
-    content: "" !important;
-
+/* First arrow is direct child of .cpe-card-first */
+#projects.completed-projects-exact .cpe-card-first > .cpe-arrow-first{
     position: absolute !important;
 
-    /* image card ke andar */
-    left: 0 !important;
-    right: 0 !important;
-    top: 0 !important;
-    bottom: 0 !important;
+    /* exact independent coordinates */
+    right: 30px !important;
+    top: 500px !important;
 
-    background-image: var(--project-image) !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+    left: auto !important;
+    bottom: auto !important;
 
-    opacity: 0 !important;
-    visibility: hidden !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 
-    transform: scale(.96) !important;
-    transform-origin: center center !important;
+    margin: 0 !important;
+    padding: 0 !important;
 
-    transition:
-        opacity .35s ease,
-        transform .45s cubic-bezier(.22,.61,.36,1),
-        visibility .35s ease !important;
+    color: #fff !important;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
 
-    z-index: 5 !important;
+    transform: none !important;
+    z-index: 999999 !important;
+
     pointer-events: none !important;
 }
 
-/* HOVER = full image reveal */
-#completed-projects.completed-projects-exact .cpe-card:hover::before,
-#completed-projects.completed-projects-exact .cpe-card:focus-visible::before{
-    opacity: 1 !important;
-    visibility: visible !important;
-
-    transform: scale(1) !important;
-}
-
-
-/* ---------------------------------------------
-   VIEW FULL PROJECT BAR
-   --------------------------------------------- */
-
-#completed-projects.completed-projects-exact
-.cpe-card > .cpe-view-project{
-
-    position: absolute !important;
-
-    left: 0 !important;
-    right: 0 !important;
-
-    top: 100% !important;
-    bottom: auto !important;
-
-    width: 100% !important;
-    height: 52px !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    margin: 0 !important;
-    padding: 0 25px !important;
-
-    box-sizing: border-box !important;
-
-    background:
-        linear-gradient(
-            90deg,
-            #ff9638 0%,
-            #ff7855 55%,
-            #ff5d67 100%
-        ) !important;
-
-    color: #fff !important;
-
-    font-size: 14px !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-
-    opacity: 0 !important;
-    visibility: hidden !important;
-
-    transform: translateY(-12px) !important;
-
-    transition:
-        opacity .3s ease,
-        transform .35s ease,
-        visibility .3s ease !important;
-
-    z-index: 20 !important;
-}
-
-
-/* Hover par bar niche se aaye */
-#completed-projects.completed-projects-exact
-.cpe-card:hover > .cpe-view-project,
-#completed-projects.completed-projects-exact
-.cpe-card:focus-visible > .cpe-view-project{
+/* hover par same jagah */
+#projects.completed-projects-exact .cpe-card-first:hover > .cpe-arrow-first,
+#projects.completed-projects-exact .cpe-card-first:focus-visible > .cpe-arrow-first{
+    top: 500px !important;
+    right: 30px !important;
 
     opacity: 1 !important;
     visibility: visible !important;
-
-    transform: translateY(0) !important;
-}
-
-
-/* Bar ka arrow right side */
-#completed-projects.completed-projects-exact
-.cpe-card > .cpe-view-project b{
-
-    position: absolute !important;
-
-    right: 28px !important;
-    top: 50% !important;
-
-    transform: translateY(-50%) !important;
-
-    color: #fff !important;
-
-    font-size: 18px !important;
-    font-weight: 400 !important;
-}
-
-
-/* ---------------------------------------------
-   IMAGE OPEN HOTE HI NORMAL CONTENT HIDE
-   --------------------------------------------- */
-
-#completed-projects.completed-projects-exact
-.cpe-card:hover .cpe-card-content,
-#completed-projects.completed-projects-exact
-.cpe-card:focus-visible .cpe-card-content{
-
-    opacity: 0 !important;
-    visibility: hidden !important;
-
-    transition:
-        opacity .2s ease,
-        visibility .2s ease !important;
-}
-
-
-/* Normal white arrow bhi hide */
-#completed-projects.completed-projects-exact
-.cpe-card:hover > .cpe-right-arrow,
-#completed-projects.completed-projects-exact
-.cpe-card:focus-visible > .cpe-right-arrow{
-
-    opacity: 0 !important;
-
-/* ===== CLEAN PROJECT HOVER ===== */
-
-#completed-projects.completed-projects-exact .cpe-card{
-    position: relative !important;
-    overflow: hidden !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card::before{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background-image:var(--project-image);
-    background-size:cover;
-    background-position:center;
-
-    opacity:0;
-    transform:scale(1.08);
-    transition:all .45s ease;
-
-    z-index:2;
-}
-
-#completed-projects.completed-projects-exact .cpe-card:hover::before{
-    opacity:1;
-    transform:scale(1);
-}
-
-/* Hide content */
-#completed-projects.completed-projects-exact .cpe-card:hover .cpe-card-content{
-    opacity:0 !important;
-    transition:.25s;
-}
-
-/* Hide white arrow */
-#completed-projects.completed-projects-exact .cpe-card:hover>.cpe-right-arrow{
-    opacity:0 !important;
-    visibility:hidden !important;
-}
-
-/* View Full Project */
-#completed-projects.completed-projects-exact .cpe-card>.cpe-view-project{
-
-    position:absolute !important;
-
-    left:0;
-    right:0;
-    bottom:-60px;
-
-    height:56px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    background:linear-gradient(90deg,#ff9638,#ff5d67);
-
-    color:#fff;
-
-    font-weight:700;
-    font-size:14px;
-
-    transition:bottom .35s ease;
-
-    z-index:3;
-}
-
-#completed-projects.completed-projects-exact .cpe-card:hover>.cpe-view-project{
-    bottom:-52px !important;
-    opacity:1 !important;
-    visibility:visible !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card>.cpe-view-project b{
-    position:absolute;
-    right:26px;
-    top:50%;
-    transform:translateY(-50%);
-}
-/* ===== EXACT PRINTENT PROJECT HOVER ===== */
-
-#completed-projects.completed-projects-exact .cpe-grid{
-    overflow: visible !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card{
-    position: relative !important;
-    overflow: visible !important;
-    z-index: 1;
-}
-
-#completed-projects.completed-projects-exact .cpe-card:hover{
-    z-index: 50;
-}
-
-/* image card se bahar niklegi */
-#completed-projects.completed-projects-exact .cpe-card::before{
-
-    left:18px !important;
-    right:18px !important;
-
-    top:24px !important;
-    bottom:-52px !important;   /* <-- ye main difference hai */
-
-    background-size:cover !important;
-    background-position:center !important;
-
-    opacity:0 !important;
-
-    transform:translateY(20px) !important;
-    transition:.45s ease !important;
-
-    z-index:100 !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card:hover::before{
-    opacity:1 !important;
-    transform:translateY(0) !important;
-}
-
-/* orange bar image ke neeche */
-#completed-projects.completed-projects-exact
-.cpe-card>.cpe-view-project{
-
-    left:18px !important;
-    right:18px !important;
-
-    bottom:-52px !important;
-
-    z-index:101 !important;
-}
-/* ===== SPACE FOR PROJECT HOVER ===== */
-
-#completed-projects.completed-projects-exact{
-    padding-bottom: 95px !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-grid{
-    overflow: visible !important;
-}
-
-.happy-customer-section{
-    margin-top: 0 !important;
-}
-/* ===== TEST ===== */
-
-#completed-projects.completed-projects-exact .cpe-card{
-    min-height: 520px !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card:hover{
-    min-height: 580px !important;
-}
-/* ===== TEST ===== */
-
-#completed-projects.completed-projects-exact{
-    margin-bottom:120px !important;
-}
-
-.happy-customer-section{
-    margin-top:120px !important;
-}
-/* ===== FINAL VIEW FULL PROJECT POSITION ===== */
-
-#completed-projects.completed-projects-exact .cpe-card{
-    overflow: visible !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card::before{
-    bottom: 56px !important;   /* image ends just above bar */
-}
-
-#completed-projects.completed-projects-exact .cpe-card > .cpe-view-project{
-    position: absolute !important;
-
-    left: 18px !important;
-    right: 18px !important;
-
-    height: 56px !important;
-
-    bottom: 0 !important;      /* card ke andar */
-    top: auto !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    z-index: 9999 !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card:hover > .cpe-view-project{
-    bottom: 0 !important;
-}
-/* ===== FORCE VIEW FULL PROJECT UP ===== */
-
-#completed-projects.completed-projects-exact .cpe-card{
-    overflow: visible !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card::before{
-    bottom: 58px !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card > .cpe-view-project{
-    top: auto !important;
-    bottom: 58px !important;
-
-    left: 18px !important;
-    right: 18px !important;
-
-    width: auto !important;
-    height: 56px !important;
-
     transform: none !important;
-
-    z-index: 999999 !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card:hover > .cpe-view-project{
-    bottom: 58px !important;
 }
 
 
-/* ===== FORCE VIEW FULL PROJECT UP ===== */
-
-#completed-projects.completed-projects-exact .cpe-card{
-    overflow: visible !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card::before{
-    bottom: 58px !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card > .cpe-view-project{
-    top: auto !important;
-    bottom: 58px !important;
-
-    left: 18px !important;
-    right: 18px !important;
-
-    width: auto !important;
-    height: 56px !important;
-
-    transform: none !important;
-
-    z-index: 999999 !important;
-}
-
-#completed-projects.completed-projects-exact .cpe-card:hover > .cpe-view-project{
-    bottom: 58px !important;
-}
-
-
-/* ===== HERO TEXT DOWN FIX ===== */
-.hero-content,
-.hero-caption,
-.hero-slider-content,
-.hero-text,
-.hero-left-content{
-    padding-top: 20px !important;
-}
-
-
-/* ===== MOVE SEARCH & CART NEXT TO CONTACT ===== */
-
-.site-header{
-    display:flex !important;
-    align-items:center !important;
-}
-
-.desktop-nav{
-    flex:0 0 auto !important;
-    width:auto !important;
-    justify-content:flex-start !important;
-}
-
-.nav-actions{
-    flex:0 0 auto !important;
-    margin-left:10px !important;
-    padding-left:0 !important;
-    border-left:none !important;
-    gap:14px !important;
-}
-
-
-/* ===== FINAL NAVBAR ALIGNMENT ===== */
-
-.desktop-nav{
-    justify-content:flex-start !important;
-    margin-left:20px !important;
-    margin-right:0 !important;
-    flex:0 0 auto !important;
-}
-
-.nav-actions{
-    margin-left:0 !important;
-    padding-left:0 !important;
-    border-left:none !important;
-    gap:12px !important;
-}
-
-
-
-/* ===== FINAL NAVBAR FIX : CONTACT + SEARCH + CART ===== */
-
-.desktop-nav{
-    flex:0 0 auto !important;
-    width:auto !important;
-    justify-content:flex-start !important;
-    gap:42px !important;
-    margin:0 18px 0 65px !important;
-}
-
-.nav-actions{
-    flex:0 0 auto !important;
-    display:flex !important;
-    align-items:center !important;
-    gap:12px !important;
-    margin-left:0 !important;
-}

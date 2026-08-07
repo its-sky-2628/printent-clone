@@ -7895,24 +7895,24 @@ button.is-pressed{
   color:#fff;
 }
 
-.topbar{
+.site-header .topbar{
   background:#0d0d0d!important;
   color:rgba(255,255,255,.58)!important;
   border-bottom:1px solid rgba(255,255,255,.08);
 }
 
-.topbar a{
+.site-header .topbar a{
   color:rgba(255,255,255,.58)!important;
 }
 
-.topbar a:hover{
+.site-header .topbar a:hover{
   color:#f5c400!important;
 }
 
 
 /* NAVBAR */
 
-.navbar{
+.site-header .navbar{
   position:relative;
   height:96px;
   padding:0 max(30px,calc((100vw - 1320px)/2));
@@ -7922,14 +7922,14 @@ button.is-pressed{
   border:0!important;
 }
 
-.brand{
+.site-header .brand{
   width:185px;
   flex:0 0 185px;
   display:flex;
   align-items:center;
 }
 
-.brand img{
+.site-header .brand img{
   display:block;
   width:150px;
   max-height:55px;
@@ -8607,17 +8607,17 @@ button.is-pressed{
 
 @media(max-width:1100px){
 
-  .navbar{
+  .site-header .navbar{
     height:78px;
     padding:0 22px;
   }
 
-  .brand{
+  .site-header .brand{
     width:auto;
     flex:1;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:135px;
   }
 
@@ -9370,7 +9370,7 @@ button.is-pressed{
    TOP ORANGE STRIP
 ========================================================= */
 
-.topbar{
+.site-header .topbar{
   display:block!important;
 
   height:55px!important;
@@ -9388,7 +9388,7 @@ button.is-pressed{
   color:#fff!important;
 }
 
-.topbar-inner{
+.site-header .topbar-inner{
   height:55px!important;
 
   display:flex!important;
@@ -9396,9 +9396,9 @@ button.is-pressed{
   justify-content:flex-start!important;
 }
 
-.topbar,
-.topbar a,
-.topbar span{
+.site-header .topbar,
+.site-header .topbar a,
+.site-header .topbar span{
   color:#fff!important;
 }
 
@@ -9407,7 +9407,7 @@ button.is-pressed{
    MAIN NAVBAR — BIG LIKE REFERENCE
 ========================================================= */
 
-.navbar{
+.site-header .navbar{
   position:relative!important;
 
   height:94px!important;
@@ -9435,7 +9435,7 @@ button.is-pressed{
    LOGO — BIG
 ========================================================= */
 
-.brand{
+.site-header .brand{
   width:315px!important;
   flex:0 0 315px!important;
 
@@ -9448,7 +9448,7 @@ button.is-pressed{
     1px solid rgba(255,255,255,.10)!important;
 }
 
-.brand img{
+.site-header .brand img{
   width:190px!important;
   height:auto!important;
   max-height:64px!important;
@@ -9462,7 +9462,7 @@ button.is-pressed{
    NAV POSITION
 ========================================================= */
 
-.desktop-nav{
+.site-header .desktop-nav{
   height:100%!important;
 
   margin:
@@ -9479,6 +9479,7 @@ button.is-pressed{
    MENU ITEMS
 ========================================================= */
 
+.site-header
 .desktop-nav
 .nav-link{
   position:relative!important;
@@ -9518,6 +9519,7 @@ button.is-pressed{
    ORANGE ACTIVE TEXT
 ========================================================= */
 
+.site-header
 .desktop-nav
 .nav-link.active{
   color:
@@ -9529,6 +9531,7 @@ button.is-pressed{
    ORANGE UNDERLINE
 ========================================================= */
 
+.site-header
 .desktop-nav
 .nav-link::before{
   content:""!important;
@@ -9556,9 +9559,11 @@ button.is-pressed{
     transform .3s ease!important;
 }
 
+.site-header
 .desktop-nav
 .nav-link:hover::before,
 
+.site-header
 .desktop-nav
 .nav-link.active::before{
   transform:
@@ -9570,6 +9575,7 @@ button.is-pressed{
    HOVER ORANGE
 ========================================================= */
 
+.site-header
 .desktop-nav
 .nav-link:hover{
   color:
@@ -9581,7 +9587,7 @@ button.is-pressed{
    SMALL DOWN ARROW
 ========================================================= */
 
-.nav-plus{
+.site-header .nav-plus{
   color:inherit!important;
 
   font-family:Arial,sans-serif!important;
@@ -9595,6 +9601,7 @@ button.is-pressed{
     transform .25s ease!important;
 }
 
+.site-header
 .has-dropdown:hover
 .nav-plus{
   transform:
@@ -9606,7 +9613,7 @@ button.is-pressed{
    ACTION AREA
 ========================================================= */
 
-.nav-actions{
+.site-header .nav-actions{
   height:100%!important;
 
   margin-left:-18px!important;
@@ -9625,7 +9632,7 @@ button.is-pressed{
 
 /* SEARCH */
 
-.search-btn{
+.site-header .search-btn{
   width:35px!important;
   height:45px!important;
 
@@ -9639,7 +9646,7 @@ button.is-pressed{
   color:#fff!important;
 }
 
-.search-btn:hover{
+.site-header .search-btn:hover{
   color:
     var(--printent-orange)!important;
 
@@ -9649,7 +9656,7 @@ button.is-pressed{
 
 /* CART */
 
-.cart-btn{
+.site-header .cart-btn{
   width:42px!important;
   height:45px!important;
 
@@ -9663,14 +9670,14 @@ button.is-pressed{
   color:#fff!important;
 }
 
-.cart-btn:hover{
+.site-header .cart-btn:hover{
   color:
     var(--printent-orange)!important;
 
   background:transparent!important;
 }
 
-.cart-btn small{
+.site-header .cart-btn small{
   right:1px!important;
   top:10px!important;
 
@@ -9686,7 +9693,7 @@ button.is-pressed{
 
 /* REFERENCE DOESN'T HAVE BIG QUOTE BUTTON IN NAV */
 
-.quote-btn{
+.site-header .quote-btn{
   display:none!important;
 }
 
@@ -9696,12 +9703,13 @@ button.is-pressed{
    REMOVE PREVIOUS YELLOW/GOLD
 ========================================================= */
 
-.nav-dropdown{
+.site-header .nav-dropdown{
   border-top:
     3px solid
     var(--printent-orange)!important;
 }
 
+.site-header
 .nav-dropdown a:hover{
   background:
     var(--printent-orange)!important;
@@ -9709,28 +9717,32 @@ button.is-pressed{
   color:#fff!important;
 }
 
-.nav-mega{
+.site-header .nav-mega{
   border-top:
     3px solid
     var(--printent-orange)!important;
 }
 
-.mega-intro{
+.site-header .mega-intro{
   background:
     var(--printent-orange)!important;
 }
 
+.site-header
 .mega-view span{
   background:#111!important;
   color:#fff!important;
 }
 
+.site-header
 .mega-links > a:hover b{
   background:
     var(--printent-orange)!important;
 }
 
+.site-header
 .mega-feature > span,
+.site-header
 .mega-num{
   color:
     var(--printent-orange)!important;
@@ -9807,20 +9819,21 @@ button.is-pressed{
 
 @media(max-width:1250px) and (min-width:1101px){
 
-  .navbar{
+  .site-header .navbar{
     padding:
       0 28px!important;
   }
 
-  .brand{
+  .site-header .brand{
     width:230px!important;
     flex-basis:230px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:165px!important;
   }
 
+  .site-header
   .desktop-nav
   .nav-link{
     padding:
@@ -9834,25 +9847,25 @@ button.is-pressed{
 
 @media(max-width:1100px){
 
-  .navbar{
+  .site-header .navbar{
     height:80px!important;
 
     padding:
       0 22px!important;
   }
 
-  .brand{
+  .site-header .brand{
     width:auto!important;
     flex:1!important;
 
     border-right:0!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:165px!important;
   }
 
-  .nav-actions{
+  .site-header .nav-actions{
     border-left:0!important;
   }
 
@@ -9879,7 +9892,7 @@ button.is-pressed{
    OVERRIDE OLD GOLD RULES INSIDE HEADER
 ========================================================= */
 
-*::selection{
+.site-header *::selection{
   background:
     var(--printent-orange)!important;
 
@@ -9894,12 +9907,12 @@ button.is-pressed{
 @media(min-width:1101px){
 
   /* navbar thoda taller */
-  .navbar{
+  .site-header .navbar{
     height:104px!important;
   }
 
   /* navigation ko available width do */
-  .desktop-nav{
+  .site-header .desktop-nav{
     flex:1!important;
     margin-left:55px!important;
     margin-right:25px!important;
@@ -9912,7 +9925,7 @@ button.is-pressed{
   }
 
   /* EACH MENU ITEM — bigger + more breathing room */
-  .desktop-nav > .nav-item{
+  .site-header .desktop-nav > .nav-item{
     height:100%!important;
 
     display:flex!important;
@@ -9921,7 +9934,7 @@ button.is-pressed{
     flex-shrink:0!important;
   }
 
-  .desktop-nav > .nav-item > .nav-link{
+  .site-header .desktop-nav > .nav-item > .nav-link{
     height:100%!important;
 
     padding-left:25px!important;
@@ -9937,7 +9950,7 @@ button.is-pressed{
   }
 
   /* Contact ko bhi same size */
-  .desktop-nav > .nav-link{
+  .site-header .desktop-nav > .nav-link{
     height:100%!important;
 
     padding-left:25px!important;
@@ -9950,7 +9963,7 @@ button.is-pressed{
   }
 
   /* arrows slightly cleaner */
-  .nav-plus{
+  .site-header .nav-plus{
     margin-left:2px!important;
 
     font-size:11px!important;
@@ -9959,13 +9972,13 @@ button.is-pressed{
   }
 
   /* underline wider */
-  .desktop-nav .nav-link::before{
+  .site-header .desktop-nav .nav-link::before{
     left:20px!important;
     right:20px!important;
   }
 
   /* search/cart ko menu se thoda separate */
-  .nav-actions{
+  .site-header .nav-actions{
     margin-left:18px!important;
     padding-left:22px!important;
 
@@ -9973,12 +9986,12 @@ button.is-pressed{
   }
 
   /* logo side ko thoda aur room */
-  .brand{
+  .site-header .brand{
     width:330px!important;
     flex:0 0 330px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:205px!important;
   }
 
@@ -9989,24 +10002,24 @@ button.is-pressed{
 
 @media(min-width:1101px) and (max-width:1400px){
 
-  .brand{
+  .site-header .brand{
     width:270px!important;
     flex-basis:270px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:190px!important;
   }
 
-  .desktop-nav{
+  .site-header .desktop-nav{
     margin-left:30px!important;
     margin-right:12px!important;
 
     gap:5px!important;
   }
 
-  .desktop-nav > .nav-item > .nav-link,
-  .desktop-nav > .nav-link{
+  .site-header .desktop-nav > .nav-item > .nav-link,
+  .site-header .desktop-nav > .nav-link{
     padding-left:19px!important;
     padding-right:19px!important;
 
@@ -10029,7 +10042,7 @@ button.is-pressed{
 
 /* MAIN BLACK NAVBAR STICKY */
 
-.navbar{
+.site-header .navbar{
   position:sticky!important;
   top:0!important;
 
@@ -10104,9 +10117,9 @@ body.navbar-fixed-active
 
 /* dropdown fixed navbar ke upar properly visible */
 
-.home-preview-menu,
-.nav-dropdown,
-.nav-mega{
+.site-header .home-preview-menu,
+.site-header .nav-dropdown,
+.site-header .nav-mega{
   z-index:1000000!important;
 }
 
@@ -10124,7 +10137,7 @@ body.navbar-fixed-active
 
 /* MAIN BLACK NAVBAR STICKY */
 
-.navbar{
+.site-header .navbar{
   position:sticky!important;
   top:0!important;
 
@@ -10199,9 +10212,9 @@ body.navbar-fixed-active
 
 /* dropdown fixed navbar ke upar properly visible */
 
-.home-preview-menu,
-.nav-dropdown,
-.nav-mega{
+.site-header .home-preview-menu,
+.site-header .nav-dropdown,
+.site-header .nav-mega{
   z-index:1000000!important;
 }
 
@@ -10217,7 +10230,7 @@ body.navbar-fixed-active
      MAIN BLACK BAR
   ========================= */
 
-  .navbar{
+  .site-header .navbar{
     width:100%!important;
     max-width:none!important;
 
@@ -10233,10 +10246,10 @@ body.navbar-fixed-active
 
 
   /* if navbar has inner/container wrapper */
-  .navbar > .container,
-  .navbar > .nav-container,
-  .navbar > .navbar-inner,
-  .navbar > .header-inner{
+  .site-header .navbar > .container,
+  .site-header .navbar > .nav-container,
+  .site-header .navbar > .navbar-inner,
+  .site-header .navbar > .header-inner{
     width:100%!important;
     max-width:none!important;
 
@@ -10252,7 +10265,7 @@ body.navbar-fixed-active
      LOGO — LEFT SIDE
   ========================= */
 
-  .brand{
+  .site-header .brand{
     width:330px!important;
     min-width:330px!important;
     flex:0 0 330px!important;
@@ -10271,7 +10284,7 @@ body.navbar-fixed-active
   }
 
 
-  .brand img{
+  .site-header .brand img{
     width:205px!important;
     max-width:205px!important;
 
@@ -10289,7 +10302,7 @@ body.navbar-fixed-active
      NAVIGATION
   ========================= */
 
-  .desktop-nav{
+  .site-header .desktop-nav{
     flex:0 0 auto!important;
 
     width:auto!important;
@@ -10308,6 +10321,7 @@ body.navbar-fixed-active
 
   /* dropdown item wrappers */
 
+  .site-header
   .desktop-nav > .nav-item{
     height:96px!important;
 
@@ -10323,7 +10337,9 @@ body.navbar-fixed-active
      BIG MENU TEXT
   ========================= */
 
+  .site-header
   .desktop-nav > .nav-item > .nav-link,
+  .site-header
   .desktop-nav > .nav-link{
 
     height:96px!important;
@@ -10359,9 +10375,11 @@ body.navbar-fixed-active
      ORANGE ACTIVE
   ========================= */
 
+  .site-header
   .desktop-nav
   .nav-link.active,
 
+  .site-header
   .desktop-nav
   .nav-link:hover{
 
@@ -10371,6 +10389,7 @@ body.navbar-fixed-active
 
   /* underline */
 
+  .site-header
   .desktop-nav
   .nav-link::before{
 
@@ -10389,7 +10408,7 @@ body.navbar-fixed-active
      DROPDOWN ARROWS
   ========================= */
 
-  .nav-plus{
+  .site-header .nav-plus{
     margin-left:2px!important;
 
     font-family:Arial,sans-serif!important;
@@ -10407,7 +10426,7 @@ body.navbar-fixed-active
      SEARCH + CART AREA
   ========================= */
 
-  .nav-actions{
+  .site-header .nav-actions{
     flex:0 0 auto!important;
 
     height:96px!important;
@@ -10426,8 +10445,8 @@ body.navbar-fixed-active
   }
 
 
-  .search-btn,
-  .cart-btn{
+  .site-header .search-btn,
+  .site-header .cart-btn{
     width:35px!important;
     height:50px!important;
 
@@ -10439,13 +10458,13 @@ body.navbar-fixed-active
   }
 
 
-  .search-btn svg{
+  .site-header .search-btn svg{
     width:24px!important;
     height:24px!important;
   }
 
 
-  .cart-btn svg{
+  .site-header .cart-btn svg{
     width:25px!important;
     height:25px!important;
   }
@@ -10455,7 +10474,7 @@ body.navbar-fixed-active
      REMOVE QUOTE BUTTON
   ========================= */
 
-  .quote-btn{
+  .site-header .quote-btn{
     display:none!important;
   }
 
@@ -10464,7 +10483,7 @@ body.navbar-fixed-active
      HOME DROPDOWN POSITION
   ========================= */
 
-  .home-preview-menu{
+  .site-header .home-preview-menu{
     top:calc(100% + 3px)!important;
   }
 
@@ -10477,27 +10496,29 @@ body.navbar-fixed-active
 
 @media(min-width:1450px){
 
-  .navbar{
+  .site-header .navbar{
     padding-left:85px!important;
     padding-right:85px!important;
   }
 
-  .brand{
+  .site-header .brand{
     width:360px!important;
     min-width:360px!important;
     flex-basis:360px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:220px!important;
     max-width:220px!important;
   }
 
-  .desktop-nav{
+  .site-header .desktop-nav{
     margin-left:80px!important;
   }
 
+  .site-header
   .desktop-nav > .nav-item > .nav-link,
+  .site-header
   .desktop-nav > .nav-link{
 
     padding-left:25px!important;
@@ -10515,26 +10536,28 @@ body.navbar-fixed-active
 
 @media(min-width:1101px) and (max-width:1300px){
 
-  .navbar{
+  .site-header .navbar{
     padding:
       0 30px!important;
   }
 
-  .brand{
+  .site-header .brand{
     width:240px!important;
     min-width:240px!important;
     flex-basis:240px!important;
   }
 
-  .brand img{
+  .site-header .brand img{
     width:180px!important;
   }
 
-  .desktop-nav{
+  .site-header .desktop-nav{
     margin-left:25px!important;
   }
 
+  .site-header
   .desktop-nav > .nav-item > .nav-link,
+  .site-header
   .desktop-nav > .nav-link{
 
     padding:
@@ -10543,7 +10566,7 @@ body.navbar-fixed-active
     font-size:18px!important;
   }
 
-  .nav-actions{
+  .site-header .nav-actions{
     margin-left:10px!important;
     padding-left:15px!important;
     gap:12px!important;
@@ -10554,8 +10577,8 @@ body.navbar-fixed-active
 
 /* ===== V25 — NAVBAR DROPDOWN ARROWS FIX ===== */
 
-.desktop-nav .has-dropdown > .nav-link::after,
-.desktop-nav .home-preview-parent > .nav-link::after{
+.site-header .desktop-nav .has-dropdown > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent > .nav-link::after{
   content:"⌄"!important;
 
   position:static!important;
@@ -10588,15 +10611,15 @@ body.navbar-fixed-active
 
 /* hover pe arrow subtle rotate */
 
-.desktop-nav .has-dropdown:hover > .nav-link::after,
-.desktop-nav .home-preview-parent:hover > .nav-link::after{
+.site-header .desktop-nav .has-dropdown:hover > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent:hover > .nav-link::after{
   transform:rotate(180deg)!important;
 }
 
 
 /* ACTIVE HOME = ORANGE ARROW TOO */
 
-.desktop-nav .nav-link.active::after{
+.site-header .desktop-nav .nav-link.active::after{
   color:#ff704d!important;
 }
 
@@ -10604,15 +10627,15 @@ body.navbar-fixed-active
 /* Agar purana + span present hai to hide karo,
    warna double symbol dikhega */
 
-.desktop-nav .nav-plus{
+.site-header .desktop-nav .nav-plus{
   display:none!important;
 }
 
 
 /* V26 — EXACT ↓ DROPDOWN SYMBOL */
 
-.desktop-nav .has-dropdown > .nav-link::after,
-.desktop-nav .home-preview-parent > .nav-link::after{
+.site-header .desktop-nav .has-dropdown > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent > .nav-link::after{
   content:"↓"!important;
 
   display:inline-block!important;
@@ -10630,13 +10653,13 @@ body.navbar-fixed-active
 }
 
 /* hover */
-.desktop-nav .has-dropdown:hover > .nav-link::after,
-.desktop-nav .home-preview-parent:hover > .nav-link::after{
+.site-header .desktop-nav .has-dropdown:hover > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent:hover > .nav-link::after{
   transform:translateY(2px)!important;
 }
 
 /* purana symbol hide */
-.desktop-nav .nav-plus{
+.site-header .desktop-nav .nav-plus{
   display:none!important;
 }
 
@@ -10645,8 +10668,8 @@ body.navbar-fixed-active
    V27 — PRINTENT STYLE SMALL DIAGONAL ARROW
 ========================================================= */
 
-.desktop-nav .has-dropdown > .nav-link::after,
-.desktop-nav .home-preview-parent > .nav-link::after{
+.site-header .desktop-nav .has-dropdown > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent > .nav-link::after{
 
   content:"↓"!important;
 
@@ -10686,8 +10709,8 @@ body.navbar-fixed-active
 
 /* hover — tiny movement, no full rotation */
 
-.desktop-nav .has-dropdown:hover > .nav-link::after,
-.desktop-nav .home-preview-parent:hover > .nav-link::after{
+.site-header .desktop-nav .has-dropdown:hover > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent:hover > .nav-link::after{
 
   transform:
     rotate(-38deg)
@@ -10697,22 +10720,22 @@ body.navbar-fixed-active
 
 /* Home orange arrow */
 
-.desktop-nav .nav-link.active::after{
+.site-header .desktop-nav .nav-link.active::after{
   color:#ff704d!important;
 }
 
 
 /* old arrow/span completely hide */
 
-.desktop-nav .nav-plus{
+.site-header .desktop-nav .nav-plus{
   display:none!important;
 }
 
 
 /* V28 — ARROW MORE VISIBLE */
 
-.desktop-nav .has-dropdown > .nav-link::after,
-.desktop-nav .home-preview-parent > .nav-link::after{
+.site-header .desktop-nav .has-dropdown > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent > .nav-link::after{
 
   font-size:13px!important;
   font-weight:700!important;
@@ -10730,8 +10753,8 @@ body.navbar-fixed-active
 
 /* hover */
 
-.desktop-nav .has-dropdown:hover > .nav-link::after,
-.desktop-nav .home-preview-parent:hover > .nav-link::after{
+.site-header .desktop-nav .has-dropdown:hover > .nav-link::after,
+.site-header .desktop-nav .home-preview-parent:hover > .nav-link::after{
 
   transform:
     rotate(-38deg)
@@ -18429,7 +18452,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 /* navbar black */
 
-.navbar{
+.site-header .navbar{
     background:#050505 !important;
     height:100px !important;
 }
@@ -18437,40 +18460,40 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 /* logo area */
 
-.brand{
+.site-header .brand{
     background:#050505 !important;
 }
 
 
 /* menu */
 
-.desktop-nav{
+.site-header .desktop-nav{
     background:#050505 !important;
 }
 
 
-.nav-link{
+.site-header .nav-link{
     color:#ffffff !important;
     font-size:18px !important;
     font-weight:700 !important;
 }
 
 
-.nav-plus{
+.site-header .nav-plus{
     color:#ffffff !important;
 }
 
 
 /* icons */
 
-.nav-actions{
+.site-header .nav-actions{
     background:#050505 !important;
 }
 
 
 /* remove quote only */
 
-.quote-btn{
+.site-header .quote-btn{
     display:none !important;
 }
 
@@ -19467,7 +19490,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 
-.navbar{
+.site-header .navbar{
 
     transition:all .3s ease;
 
@@ -23495,13 +23518,13 @@ html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-conte
     align-items:center !important;
 }
 
-.desktop-nav{
+.site-header .desktop-nav{
     flex:0 0 auto !important;
     width:auto !important;
     justify-content:flex-start !important;
 }
 
-.nav-actions{
+.site-header .nav-actions{
     flex:0 0 auto !important;
     margin-left:10px !important;
     padding-left:0 !important;
@@ -23512,14 +23535,14 @@ html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-conte
 
 /* ===== FINAL NAVBAR ALIGNMENT ===== */
 
-.desktop-nav{
+.site-header .desktop-nav{
     justify-content:flex-start !important;
     margin-left:20px !important;
     margin-right:0 !important;
     flex:0 0 auto !important;
 }
 
-.nav-actions{
+.site-header .nav-actions{
     margin-left:0 !important;
     padding-left:0 !important;
     border-left:none !important;
@@ -23530,7 +23553,7 @@ html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-conte
 
 /* ===== FINAL NAVBAR FIX : CONTACT + SEARCH + CART ===== */
 
-.desktop-nav{
+.site-header .desktop-nav{
     flex:0 0 auto !important;
     width:auto !important;
     justify-content:flex-start !important;
@@ -23538,7 +23561,7 @@ html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-conte
     margin:0 18px 0 65px !important;
 }
 
-.nav-actions{
+.site-header .nav-actions{
     flex:0 0 auto !important;
     display:flex !important;
     align-items:center !important;
