@@ -23998,3 +23998,72 @@ display:none !important;
 }
 
 }
+/* ===============================
+   ORIGINAL PRINTENT MOBILE HERO
+================================ */
+
+@media only screen and (max-width:768px){
+
+.hero,
+.exact-printent-hero{
+
+height:470px !important;
+min-height:470px !important;
+overflow:hidden !important;
+position:relative !important;
+}
+
+.exact-hero-bg,
+.exact-hero-shade{
+
+position:absolute !important;
+inset:0 !important;
+}
+
+.exact-hero-bg{
+
+background-size:cover !important;
+background-position:center top !important;
+}
+
+.exact-hero-inner{
+
+position:absolute !important;
+
+top:54% !important;
+left:24px !important;
+right:24px !important;
+
+transform:translateY(-50%) !important;
+}
+
+.hero-line-one{
+
+font-size:36px !important;
+line-height:1.05 !important;
+}
+
+.hero-line-two{
+
+margin-top:8px !important;
+
+font-size:58px !important;
+line-height:.9 !important;
+}
+
+.exact-hero-contact{
+
+margin-top:18px !important;
+
+width:170px !important;
+height:52px !important;
+
+font-size:17px !important;
+}
+
+.exact-hero-info{
+
+display:none !important;
+}
+
+}
