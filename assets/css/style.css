@@ -24067,3 +24067,18 @@ display:none !important;
 }
 
 }
+@media(max-width:768px){
+
+.hero-grid,
+.hero-media{
+
+height:470px !important;
+min-height:470px !important;
+}
+
+.hero-image-card{
+
+height:470px !important;
+}
+
+}
