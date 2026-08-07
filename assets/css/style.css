@@ -195,7 +195,7 @@ button{
 }
 
 .quote-btn b{
-  font-size:18px;
+  font-size:16px;
 }
 
 
@@ -369,7 +369,7 @@ button{
 
 .experience-card strong{
   font-family:"Oswald";
-  font-size:58px;
+  font-size:54px;
   line-height:.8;
 }
 
@@ -441,7 +441,7 @@ button{
 
 .marquee-track b{
   color:#f4c400;
-  font-size:20px;
+  font-size:17px;
 }
 
 @keyframes marquee{
@@ -456,7 +456,7 @@ button{
 ===================================================== */
 
 .intro-section{
-  padding:120px 0;
+  padding:90px 0;
   background:#fff;
 }
 
@@ -635,7 +635,7 @@ button{
 }
 
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .container{
     width:min(100% - 36px,1320px);
@@ -847,7 +847,7 @@ button{
   background:#f5c400;
   color:#171717;
 
-  font-size:20px;
+  font-size:17px;
 
   transition:.3s;
 }
@@ -895,7 +895,7 @@ button{
 }
 
 .stat sup{
-  font-size:20px;
+  font-size:17px;
 }
 
 .stat span{
@@ -967,7 +967,7 @@ button{
   color:#f5c400;
 
   font-family:Georgia,serif;
-  font-size:90px;
+  font-size:74px;
   line-height:1;
 }
 
@@ -1202,7 +1202,7 @@ button{
   color:#fff;
 
   font-family:"Oswald";
-  font-size:20px;
+  font-size:17px;
 }
 
 
@@ -1240,7 +1240,7 @@ button{
    MOBILE
 ===================================================== */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .projects-head{
     grid-template-columns:1fr;
@@ -1762,7 +1762,7 @@ img{
 
 .why-item h3{
   font-family:"Oswald";
-  font-size:20px;
+  font-size:17px;
   font-weight:500;
 }
 
@@ -1783,7 +1783,7 @@ img{
 ===================================================== */
 
 .process-section{
-  padding:120px 0 130px;
+  padding:90px 0 130px;
 
   background:#171717;
   color:#fff;
@@ -1892,7 +1892,7 @@ img{
 
 .process-card h3{
   font-family:"Oswald";
-  font-size:21px;
+  font-size:16px;
   font-weight:500;
 }
 
@@ -1960,7 +1960,7 @@ img{
    RESPONSIVE
 ===================================================== */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .why-grid{
     grid-template-columns:1fr;
@@ -2023,7 +2023,7 @@ img{
   }
 
   .brands-row span{
-    font-size:21px;
+    font-size:16px;
   }
 
 }
@@ -2130,12 +2130,12 @@ img{
   margin-top:230px !important;
   color:#f5c400;
   font-family:"Oswald";
-  font-size:20px;
+  font-size:17px;
 }
 
 .price strong{
   font-family:"Oswald";
-  font-size:72px;
+  font-size:54px;
   line-height:.9;
   font-weight:600;
 }
@@ -2200,7 +2200,7 @@ img{
 }
 
 .price-card > a b{
-  font-size:18px;
+  font-size:16px;
 }
 
 .price-card:not(.featured) > a:hover{
@@ -2353,7 +2353,7 @@ img{
    RESPONSIVE
 ===================================================== */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .pricing-head,
   .blog-head{
@@ -2496,12 +2496,12 @@ img{
   margin-top:230px !important;
   color:#f5c400;
   font-family:"Oswald";
-  font-size:20px;
+  font-size:17px;
 }
 
 .price strong{
   font-family:"Oswald";
-  font-size:72px;
+  font-size:54px;
   line-height:.9;
   font-weight:600;
 }
@@ -2566,7 +2566,7 @@ img{
 }
 
 .price-card > a b{
-  font-size:18px;
+  font-size:16px;
 }
 
 .price-card:not(.featured) > a:hover{
@@ -2719,7 +2719,7 @@ img{
    RESPONSIVE
 ===================================================== */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .pricing-head,
   .blog-head{
@@ -2947,7 +2947,7 @@ body{
 .printent-whatsapp img{
   width:30px;
   height:30px;
-  object-fit:contain;
+  object-fit:cover;
 }
 
 .printent-whatsapp:hover{
@@ -2981,7 +2981,7 @@ body{
   display:grid;
   place-items:center;
 
-  font-size:18px;
+  font-size:16px;
   cursor:pointer;
 
   opacity:0;
@@ -3094,7 +3094,7 @@ body{
    MOBILE POLISH
 ========================================================= */
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .hero-grid{
     min-height:auto;
@@ -3191,7 +3191,7 @@ section{
 }
 
 .brand img{
-  object-fit:contain;
+  object-fit:cover;
 }
 
 
@@ -3392,7 +3392,7 @@ button:focus-visible{
    MOBILE HEADER FIX
 ========================================================= */
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   body.menu-open{
     overflow:hidden;
@@ -3827,7 +3827,7 @@ img[loading="lazy"]{
    MOBILE
 ========================================================= */
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .hero{
     padding-bottom:0;
@@ -4349,7 +4349,7 @@ body{
 }
 
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .hero::after{
     display:none;
@@ -4880,7 +4880,7 @@ html{
    MOBILE PERFORMANCE
 ========================================================= */
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .reveal{
     filter:none;
@@ -4932,7 +4932,7 @@ html{
   transform:translateX(0);
 }
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .site-header.header-hidden{
     transform:none;
@@ -5179,7 +5179,7 @@ body:not(.page-ready)
    TABLET
 ========================================================= */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .hero-content::before{
     width:300px;
@@ -5482,7 +5482,7 @@ section:hover
    RESPONSIVE IMAGE OPTIMIZATION
 ========================================================= */
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .hero h1 em::after{
     display:none;
@@ -5828,7 +5828,7 @@ img[loading="lazy"].image-loaded{
    TABLET
 ========================================================= */
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .hero-grid{
     display:block;
@@ -6185,7 +6185,7 @@ html{
 @media(min-width:1500px){
 
   .container{
-    max-width:1400px;
+    max-width:1320px;
   }
 
   .hero-grid{
@@ -6203,7 +6203,7 @@ html{
    TABLET
 ========================================================= */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .projects-section,
   .why-section,
@@ -6255,7 +6255,7 @@ html{
   }
 
   .price strong{
-    font-size:64px;
+    font-size:54px;
   }
 
   .footer-column{
@@ -6653,7 +6653,7 @@ section:hover .section-label > span{
    TABLET
 ========================================================= */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   section:hover .section-label > span{
     width:initial;
@@ -6995,7 +6995,7 @@ section:hover .section-label > span{
    MOBILE DISABLE HEAVY MOTION
 ========================================================= */
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .hero-image-card img,
   .hero-image-card:hover img{
@@ -7373,7 +7373,7 @@ button.is-pressed{
    MOBILE VIEWPORT
 ========================================================= */
 
-@media(max-width:850px){
+@media(max-width:610px){
 
   .hero{
     min-height:
@@ -7933,7 +7933,7 @@ button.is-pressed{
   display:block;
   width:150px;
   max-height:55px;
-  object-fit:contain;
+  object-fit:cover;
 }
 
 
@@ -9449,12 +9449,12 @@ button.is-pressed{
 }
 
 .brand img{
-  width:190px!important;
+  width:155px!important;
   height:auto!important;
   max-height:64px!important;
 
-  object-fit:contain!important;
-  object-position:left center!important;
+  object-fit:cover!important;
+  object-position:center center!important;
 }
 
 
@@ -9501,7 +9501,7 @@ button.is-pressed{
     "Times New Roman",
     serif!important;
 
-  font-size:18px!important;
+  font-size:17px!important;
   font-weight:400!important;
 
   letter-spacing:0!important;
@@ -9616,7 +9616,7 @@ button.is-pressed{
   display:flex!important;
   align-items:center!important;
 
-  gap:12px!important;
+  gap:6px!important;
 
   border-left:
     1px solid rgba(255,255,255,.16)!important;
@@ -9895,7 +9895,7 @@ button.is-pressed{
 
   /* navbar thoda taller */
   .navbar{
-    height:104px!important;
+    height:64px!important;
   }
 
   /* navigation ko available width do */
@@ -9908,7 +9908,7 @@ button.is-pressed{
     align-items:stretch!important;
     justify-content:center!important;
 
-    gap:12px!important;
+    gap:6px!important;
   }
 
   /* EACH MENU ITEM — bigger + more breathing room */
@@ -9924,10 +9924,10 @@ button.is-pressed{
   .desktop-nav > .nav-item > .nav-link{
     height:100%!important;
 
-    padding-left:25px!important;
-    padding-right:25px!important;
+    padding-left:8px!important;
+    padding-right:8px!important;
 
-    font-size:20px!important;
+    font-size:17px!important;
     line-height:1!important;
 
     display:flex!important;
@@ -9940,10 +9940,10 @@ button.is-pressed{
   .desktop-nav > .nav-link{
     height:100%!important;
 
-    padding-left:25px!important;
-    padding-right:25px!important;
+    padding-left:8px!important;
+    padding-right:8px!important;
 
-    font-size:20px!important;
+    font-size:17px!important;
 
     display:flex!important;
     align-items:center!important;
@@ -9974,12 +9974,12 @@ button.is-pressed{
 
   /* logo side ko thoda aur room */
   .brand{
-    width:330px!important;
-    flex:0 0 330px!important;
+    width:155px!important;
+    flex:0 0 155px!important;
   }
 
   .brand img{
-    width:205px!important;
+    width:120px!important;
   }
 
 }
@@ -9987,7 +9987,7 @@ button.is-pressed{
 
 /* 1100–1400px screens pe overflow prevent */
 
-@media(min-width:1101px) and (max-width:1400px){
+@media(min-width:1101px) and (max-width:1320px){
 
   .brand{
     width:270px!important;
@@ -9995,7 +9995,7 @@ button.is-pressed{
   }
 
   .brand img{
-    width:190px!important;
+    width:155px!important;
   }
 
   .desktop-nav{
@@ -10221,9 +10221,9 @@ body.navbar-fixed-active
     width:100%!important;
     max-width:none!important;
 
-    height:96px!important;
+    height:64px!important;
 
-    padding:0 70px!important;
+    padding:0 28px!important;
 
     display:flex!important;
     align-items:center!important;
@@ -10253,11 +10253,11 @@ body.navbar-fixed-active
   ========================= */
 
   .brand{
-    width:330px!important;
-    min-width:330px!important;
-    flex:0 0 330px!important;
+    width:155px!important;
+    min-width:155px!important;
+    flex:0 0 155px!important;
 
-    height:96px!important;
+    height:64px!important;
 
     margin:0!important;
     padding:0!important;
@@ -10272,16 +10272,16 @@ body.navbar-fixed-active
 
 
   .brand img{
-    width:205px!important;
-    max-width:205px!important;
+    width:120px!important;
+    max-width:120px!important;
 
     height:auto!important;
     max-height:68px!important;
 
     margin:0!important;
 
-    object-fit:contain!important;
-    object-position:left center!important;
+    object-fit:cover!important;
+    object-position:center center!important;
   }
 
 
@@ -10293,7 +10293,7 @@ body.navbar-fixed-active
     flex:0 0 auto!important;
 
     width:auto!important;
-    height:96px!important;
+    height:64px!important;
 
     margin:0 0 0 65px!important;
     padding:0!important;
@@ -10309,7 +10309,7 @@ body.navbar-fixed-active
   /* dropdown item wrappers */
 
   .desktop-nav > .nav-item{
-    height:96px!important;
+    height:64px!important;
 
     display:flex!important;
     align-items:stretch!important;
@@ -10326,7 +10326,7 @@ body.navbar-fixed-active
   .desktop-nav > .nav-item > .nav-link,
   .desktop-nav > .nav-link{
 
-    height:96px!important;
+    height:64px!important;
 
     padding:0 21px!important;
 
@@ -10341,7 +10341,7 @@ body.navbar-fixed-active
       "Times New Roman",
       serif!important;
 
-    font-size:21px!important;
+    font-size:16px!important;
     font-weight:400!important;
 
     line-height:1!important;
@@ -10410,7 +10410,7 @@ body.navbar-fixed-active
   .nav-actions{
     flex:0 0 auto!important;
 
-    height:96px!important;
+    height:64px!important;
 
     margin-left:24px!important;
 
@@ -10478,8 +10478,8 @@ body.navbar-fixed-active
 @media(min-width:1450px){
 
   .navbar{
-    padding-left:85px!important;
-    padding-right:85px!important;
+    padding-left:28px!important;
+    padding-right:28px!important;
   }
 
   .brand{
@@ -10489,8 +10489,8 @@ body.navbar-fixed-active
   }
 
   .brand img{
-    width:220px!important;
-    max-width:220px!important;
+    width:155px!important;
+    max-width:155px!important;
   }
 
   .desktop-nav{
@@ -10500,10 +10500,10 @@ body.navbar-fixed-active
   .desktop-nav > .nav-item > .nav-link,
   .desktop-nav > .nav-link{
 
-    padding-left:25px!important;
-    padding-right:25px!important;
+    padding-left:8px!important;
+    padding-right:8px!important;
 
-    font-size:22px!important;
+    font-size:17px!important;
   }
 
 }
@@ -10540,13 +10540,13 @@ body.navbar-fixed-active
     padding:
       0 13px!important;
 
-    font-size:18px!important;
+    font-size:17px!important;
   }
 
   .nav-actions{
     margin-left:10px!important;
     padding-left:15px!important;
-    gap:12px!important;
+    gap:6px!important;
   }
 
 }
@@ -11989,7 +11989,7 @@ body.navbar-fixed-active
   }
 
   .exact-hero-title .hero-line-one{
-    font-size:64px !important;
+    font-size:54px !important;
     line-height:1.05 !important;
     font-weight:400 !important;
   }
@@ -12122,7 +12122,7 @@ body.navbar-fixed-active
     display:flex !important;
     align-items:center !important;
 
-    gap:28px !important;
+    gap:22px !important;
   }
 
   .hero-info-copy{
@@ -12269,7 +12269,7 @@ body.navbar-fixed-active
 
   /* Second line */
   .hero-line-two{
-    margin-left:0 !important;
+    margin-left:-15px !important;
   }
 
   /* Move description + button + clients LEFT */
@@ -12318,7 +12318,7 @@ letter-spacing:-2px !important;
 .exact-hero-title .hero-line-two{
 font-size:126px !important;
 line-height:.92 !important;
-margin-left:0 !important;
+margin-left:-15px !important;
 letter-spacing:-4px !important;
 }
 
@@ -12340,7 +12340,7 @@ right:21% !important;
 .exact-hero-info{
     top:54% !important;
     right:7% !important;
-    gap:28px !important;
+    gap:22px !important;
 }
 
 .hero-info-copy{
@@ -12479,7 +12479,7 @@ right:21% !important;
 
 /* Bigger 2845+ */
 .hero-client strong{
-    font-size:72px !important;
+    font-size:54px !important;
 }
 
 /* Bigger Satisfied Clients */
@@ -12508,7 +12508,7 @@ right:21% !important;
 
 .hero-info-copy{
     width:340px !important;
-    font-size:18px !important;
+    font-size:16px !important;
     line-height:1.65 !important;
     text-align:right !important;
 }
@@ -12526,12 +12526,12 @@ right:21% !important;
 }
 
 .hero-client strong{
-    font-size:64px !important;
+    font-size:54px !important;
     line-height:1 !important;
 }
 
 .hero-client span{
-    font-size:18px !important;
+    font-size:16px !important;
     margin-top:8px !important;
 }
 
@@ -12606,7 +12606,7 @@ right:21% !important;
 }
 .exact-hero-title .hero-line-two{
     font-size:115px !important;
-    margin-left:0 !important;
+    margin-left:-15px !important;
 }
 .exact-hero-promo{
     position:fixed !important;
@@ -12651,10 +12651,10 @@ right:21% !important;
     top:56% !important;
 }
 .hero-info-copy{
-    font-size:18px !important;
+    font-size:16px !important;
 }
 .hero-client strong{
-    font-size:58px !important;
+    font-size:54px !important;
 }
 .hero-client span{
     font-size:19px !important;
@@ -12678,7 +12678,7 @@ right:21% !important;
     font-size:80px !important;
 }
 .hero-client span{
-    font-size:22px !important;
+    font-size:16px !important;
 }
 .exact-hero-contact{
     top:70% !important;
@@ -12735,12 +12735,12 @@ border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:22px;
+font-size:16px;
 }
 
 .badge-top span{
 display:block;
-font-size:18px;
+font-size:16px;
 font-weight:700;
 }
 
@@ -12767,7 +12767,7 @@ color:#111;
 
 .badge-bottom p{
 margin-top:230px !important;
-font-size:18px;
+font-size:16px;
 line-height:1.45;
 color:#555;
 }
@@ -12811,7 +12811,7 @@ border-radius:50%;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:22px;
+font-size:16px;
 }
 
 .buy-text{
@@ -12849,7 +12849,7 @@ color:#666;
 
 /* FIX HERO HEIGHT */
 .exact-printent-hero{
-    height:100vh !important;
+    height:82vh !important;
     min-height:920px !important;
     overflow:hidden !important;
 }
@@ -12864,8 +12864,8 @@ main > section:first-child{
 
 .exact-printent-hero{
     position:relative !important;
-    height:100vh !important;
-    min-height:100vh !important;
+    height:82vh !important;
+    min-height:82vh !important;
     overflow:hidden !important;
 }
 
@@ -12982,7 +12982,7 @@ z-index:999999 !important;
   margin:0;
 
   font-family:Georgia, "Times New Roman", serif;
-  font-size:72px;
+  font-size:54px;
   line-height:1.04;
   font-weight:400;
   letter-spacing:-2.5px;
@@ -13257,7 +13257,7 @@ z-index:999999 !important;
   }
 
   .pss-title{
-    font-size:58px;
+    font-size:54px;
   }
 
   .pss-intro{
@@ -13335,7 +13335,7 @@ z-index:999999 !important;
   }
 
   .pss-card-bottom h3{
-    font-size:21px;
+    font-size:16px;
   }
 
   .pss-card-bottom > span{
@@ -13564,7 +13564,7 @@ input[type="submit"],
 
 .moving-service-bottom h3{
   margin:0;
-  font-size:21px;
+  font-size:16px;
   line-height:1.2;
   font-weight:500;
 }
@@ -13577,7 +13577,7 @@ input[type="submit"],
   background:#ff6848;
   display:grid;
   place-items:center;
-  font-size:20px;
+  font-size:17px;
   color:#fff;
   transition:transform .3s ease;
 }
@@ -13606,7 +13606,7 @@ input[type="submit"],
 
 /* responsive */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .moving-services-showcase{
     padding:75px 0;
@@ -13756,7 +13756,7 @@ input[type="submit"],
    MOBILE
 ========================================================= */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .moving-service-card.is-active{
     flex-basis:88vw;
@@ -13918,7 +13918,7 @@ input[type="submit"],
    MOBILE / TOUCH
 ========================================================= */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .moving-services-track{
     animation-duration:16s !important;
@@ -13930,7 +13930,7 @@ input[type="submit"],
   }
 
   .moving-service-bottom h3{
-    font-size:22px;
+    font-size:16px;
   }
 
   .moving-service-card:hover .moving-service-bottom,
@@ -14057,11 +14057,11 @@ input[type="submit"],
 }
 
 /* MOBILE */
-@media(max-width:900px){
+@media(max-width:610px){
 
   .moving-service-bottom{
     grid-template-columns:1fr 45px !important;
-    column-gap:12px !important;
+    column-gap:5px !important;
   }
 
   .moving-service-bottom > span{
@@ -14135,7 +14135,7 @@ input[type="submit"],
 }
 
 /* Mobile */
-@media(max-width:900px){
+@media(max-width:610px){
 
   .moving-service-description{
     font-size:16px !important;
@@ -14199,7 +14199,7 @@ input[type="submit"],
 
 /* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .since-1996-showcase{
     padding:65px 20px;
@@ -14447,7 +14447,7 @@ input[type="submit"],
 
   font-family:Georgia, "Times New Roman", serif;
   font-size:105px;
-  line-height:2.4;
+  line-height:1.7.4;
   word-spacing:110px;
 
   color:rgba(255,105,75,.035);
@@ -14540,7 +14540,7 @@ input[type="submit"],
 
 .pae-service-title{
   font-family:Georgia, "Times New Roman", serif;
-  font-size:20px;
+  font-size:17px;
   line-height:1.3;
 }
 
@@ -14666,7 +14666,7 @@ input[type="submit"],
 
   font-family:Georgia, "Times New Roman", serif;
 
-  font-size:58px;
+  font-size:54px;
   line-height:.95;
 
   font-weight:400;
@@ -14684,7 +14684,7 @@ input[type="submit"],
 
   font-family:Arial, sans-serif;
 
-  font-size:18px;
+  font-size:16px;
   font-weight:500;
 }
 
@@ -15199,7 +15199,7 @@ input[type="submit"],
   margin:0 0 14px;
 
   font-family:Georgia, "Times New Roman", serif;
-  font-size:22px;
+  font-size:16px;
   line-height:1.2;
   font-weight:400;
 
@@ -15296,7 +15296,7 @@ input[type="submit"],
   }
 
   .cpe-count strong{
-    font-size:100px;
+    font-size:74px;
   }
 
   .cpe-grid{
@@ -15777,7 +15777,7 @@ input[type="submit"],
    RESPONSIVE
 ========================================================= */
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .happy-customer-section{
     min-height:690px;
@@ -15833,7 +15833,7 @@ input[type="submit"],
   }
 
   .happy-quote{
-    font-size:21px;
+    font-size:16px;
   }
 
   .happy-author{
@@ -15841,7 +15841,7 @@ input[type="submit"],
   }
 
   .happy-author strong{
-    font-size:20px;
+    font-size:17px;
   }
 
   .happy-author span{
@@ -15961,7 +15961,7 @@ input[type="submit"],
   line-height:1.6;
 }
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .shipping-rates-exact{
     grid-template-columns:1fr;
@@ -16103,7 +16103,7 @@ input[type="submit"],
   line-height:1.6;
 }
 
-@media(max-width:900px){
+@media(max-width:610px){
 
   .shipping-rates-exact{
     grid-template-columns:1fr;
@@ -16522,7 +16522,7 @@ section.shipping-rates-exact .sre-content p{
   }
 
   .ppe-plan-count strong{
-    font-size:90px;
+    font-size:74px;
   }
 
   .ppe-card-body{
@@ -16611,7 +16611,7 @@ section.shipping-rates-exact .sre-content p{
 }
 
 .ppe-grid{
-  gap:28px !important;
+  gap:22px !important;
 }
 
 .ppe-card-body{
@@ -16678,11 +16678,11 @@ section.shipping-rates-exact .sre-content p{
   }
 
   .ppe-plan-count strong{
-    font-size:100px !important;
+    font-size:74px !important;
   }
 
   .ppe-price strong{
-    font-size:90px !important;
+    font-size:74px !important;
   }
 }
 
@@ -16743,7 +16743,7 @@ section.shipping-rates-exact .sre-content p{
 }
 
 .ppe-price > span{
-  font-size:18px !important;
+  font-size:16px !important;
   margin-left:10px !important;
   margin-bottom:11px !important;
 }
@@ -16773,16 +16773,16 @@ section.shipping-rates-exact .sre-content p{
 .ppe-start{
   height:74px !important;
   flex-basis:74px !important;
-  font-size:18px !important;
+  font-size:16px !important;
 }
 
 .ppe-start b{
-  font-size:22px !important;
+  font-size:16px !important;
 }
 
 @media(max-width:1000px){
   .ppe-head h2{
-    font-size:58px !important;
+    font-size:54px !important;
   }
 
   .ppe-plan-count strong{
@@ -16790,7 +16790,7 @@ section.shipping-rates-exact .sre-content p{
   }
 
   .ppe-price strong{
-    font-size:100px !important;
+    font-size:74px !important;
   }
 
   .ppe-card-body{
@@ -16867,7 +16867,7 @@ html body .ppe-pricing .ppe-card-body{
 
 /* Reference screenshot jaisi spacing */
 html body .ppe-pricing{
-  padding-top:80px !important;
+  padding-top:110px !important;
   padding-bottom:100px !important;
 }
 
@@ -17923,7 +17923,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 .pef-top-left p{
-  font-size:21px !important;
+  font-size:16px !important;
 }
 
 .pef-contact-box h3{
@@ -17943,12 +17943,12 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 .pef-column p{
-  font-size:18px !important;
+  font-size:16px !important;
   line-height:1.75 !important;
 }
 
 .pef-column li a{
-  font-size:18px !important;
+  font-size:16px !important;
 }
 
 .pef-copyright{
@@ -18321,7 +18321,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 .pef-top-left p{
-  font-size:21px !important;
+  font-size:16px !important;
 }
 
 .pef-contact-box h3{
@@ -18341,12 +18341,12 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 }
 
 .pef-column p{
-  font-size:18px !important;
+  font-size:16px !important;
   line-height:1.75 !important;
 }
 
 .pef-column li a{
-  font-size:18px !important;
+  font-size:16px !important;
 }
 
 .pef-copyright{
@@ -18405,7 +18405,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 .completed-projects-exact .cpe-grid{
 
-    gap:28px !important;
+    gap:22px !important;
 
 }
 
@@ -18431,7 +18431,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 .navbar{
     background:#050505 !important;
-    height:100px !important;
+    height:72px !important;
 }
 
 
@@ -18451,7 +18451,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 .nav-link{
     color:#ffffff !important;
-    font-size:18px !important;
+    font-size:16px !important;
     font-weight:700 !important;
 }
 
@@ -18528,7 +18528,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
     width:100% !important;
 
-    height:100px !important;
+    height:72px !important;
 
     display:flex !important;
 
@@ -18545,7 +18545,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 .navbar .brand{
 
-    height:100px !important;
+    height:72px !important;
 
     display:flex !important;
 
@@ -18586,7 +18586,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
     color:#fff !important;
 
-    font-size:18px !important;
+    font-size:16px !important;
 
     font-weight:700 !important;
 
@@ -18855,7 +18855,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 .nav-plus{
 
-    font-size:18px !important;
+    font-size:16px !important;
 
     font-weight:700 !important;
 
@@ -18991,7 +18991,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
 .nav-plus{
 
-    font-size:18px !important;
+    font-size:16px !important;
 
 }
 
@@ -19097,7 +19097,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
     height:22px !important;
 
-    object-fit:contain !important;
+    object-fit:cover !important;
 
 }
 
@@ -19206,7 +19206,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
     height:24px !important;
 
-    object-fit:contain !important;
+    object-fit:cover !important;
 
     display:block !important;
 
@@ -19238,7 +19238,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
     height:28px !important;
 
-    object-fit:contain !important;
+    object-fit:cover !important;
 
 }
 
@@ -19264,7 +19264,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
     justify-content:center !important;
 
-    gap:12px !important;
+    gap:5px !important;
 
     flex-direction:row !important;
 
@@ -19372,7 +19372,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
     margin:8px 0 0;
 
-    font-size:22px;
+    font-size:16px;
 
     line-height:1.2;
 
@@ -19411,7 +19411,7 @@ html body .ppe-pricing .ppe-card:hover .ppe-card-body{
 
     margin:10px 0 0;
 
-    font-size:18px;
+    font-size:16px;
 
     color:#444;
 
@@ -20489,7 +20489,7 @@ body{
 
         margin:0 !important;
 
-        font-size:58px !important;
+        font-size:54px !important;
         font-weight:400 !important;
         line-height:1 !important;
 
@@ -20665,7 +20665,7 @@ body{
 
         color:#fff !important;
 
-        font-size:58px !important;
+        font-size:54px !important;
         font-weight:400 !important;
         line-height:1 !important;
 
@@ -21131,7 +21131,7 @@ body{
         min-width:1px !important;
         flex:0 0 1px !important;
 
-        height:100px !important;
+        height:72px !important;
 
         margin:0 30px 0 0 !important;
         padding:0 !important;
@@ -21636,14 +21636,14 @@ body{
 
   /* Better quality... text */
   #home.exact-printent-hero .hero-info-copy{
-    font-size:18px !important;
+    font-size:16px !important;
     line-height:1.55 !important;
     font-weight:400 !important;
   }
 
   /* 2,845+ */
   #home.exact-printent-hero .hero-client strong{
-    font-size:64px !important;
+    font-size:54px !important;
     line-height:1 !important;
     font-weight:400 !important;
   }
@@ -23514,16 +23514,16 @@ html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-conte
 
 .desktop-nav{
     justify-content:flex-start !important;
-    margin-left:20px !important;
+    margin-left:10px !important;
     margin-right:0 !important;
     flex:0 0 auto !important;
 }
 
 .nav-actions{
-    margin-left:0 !important;
+    margin-left:-15px !important;
     padding-left:0 !important;
     border-left:none !important;
-    gap:12px !important;
+    gap:5px !important;
 }
 
 
@@ -23534,14 +23534,14 @@ html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-conte
     flex:0 0 auto !important;
     width:auto !important;
     justify-content:flex-start !important;
-    gap:42px !important;
-    margin:0 18px 0 65px !important;
+    gap:22px !important;
+    margin:0 0 0 25px !important;
 }
 
 .nav-actions{
     flex:0 0 auto !important;
     display:flex !important;
     align-items:center !important;
-    gap:12px !important;
-    margin-left:0 !important;
+    gap:5px !important;
+    margin-left:-15px !important;
 }
