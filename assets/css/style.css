@@ -23545,3 +23545,174 @@ html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-conte
     gap:5px !important;
     margin-left:-15px !important;
 }
+
+/* ===== ORIGINAL PRINTENT NAV ARROW ===== */
+
+.nav-link{
+    display:flex !important;
+    align-items:center !important;
+    gap:5px !important;
+}
+
+.nav-plus{
+    width:8px !important;
+    height:8px !important;
+    display:inline-block !important;
+    position:relative !important;
+    flex:none !important;
+    margin-top:1px !important;
+}
+
+.nav-plus::before{
+    content:"" !important;
+    position:absolute !important;
+    inset:0 !important;
+    border-top:1.5px solid currentColor !important;
+    border-right:1.5px solid currentColor !important;
+    transform:rotate(45deg) scale(.72) !important;
+    transform-origin:center !important;
+}
+
+
+/* ===== ORIGINAL PRINTENT NAV ARROW ===== */
+
+.nav-link{
+    display:flex !important;
+    align-items:center !important;
+    gap:5px !important;
+}
+
+.nav-plus{
+    width:8px !important;
+    height:8px !important;
+    display:inline-block !important;
+    position:relative !important;
+    flex:none !important;
+    margin-top:1px !important;
+}
+
+.nav-plus::before{
+    content:"" !important;
+    position:absolute !important;
+    inset:0 !important;
+    border-top:1.5px solid currentColor !important;
+    border-right:1.5px solid currentColor !important;
+    transform:rotate(45deg) scale(.72) !important;
+    transform-origin:center !important;
+}
+
+
+/* =========================================================
+   PRINTENT MOBILE HERO + NAVBAR FIX
+   ========================================================= */
+
+@media (max-width:768px){
+
+  .printent-topbar{
+    display:none !important;
+  }
+
+  .navbar{
+    height:72px !important;
+    padding:0 18px !important;
+    align-items:center !important;
+  }
+
+  .brand img{
+    height:38px !important;
+    width:auto !important;
+  }
+
+  .desktop-nav{
+    display:none !important;
+  }
+
+  .exact-printent-hero{
+    min-height:100svh !important;
+    height:100svh !important;
+    overflow:hidden !important;
+  }
+
+  .exact-hero-bg{
+    background-position:72% center !important;
+    background-size:cover !important;
+  }
+
+  .exact-hero-shade{
+    background:linear-gradient(
+      90deg,
+      rgba(0,0,0,.82) 0%,
+      rgba(0,0,0,.45) 45%,
+      rgba(0,0,0,.10) 100%
+    ) !important;
+  }
+
+  .exact-hero-inner{
+    width:100% !important;
+    height:100% !important;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    align-items:flex-start !important;
+    padding:95px 22px 40px !important;
+    box-sizing:border-box !important;
+  }
+
+  .exact-hero-title{
+    width:100% !important;
+  }
+
+  .hero-line{
+    font-size:46px !important;
+    line-height:.95 !important;
+    letter-spacing:-2px !important;
+  }
+
+  .hero-line-two span{
+    display:inline !important;
+  }
+
+  .exact-hero-info{
+    width:100% !important;
+    margin-top:28px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    gap:18px !important;
+  }
+
+  .hero-info-copy{
+    font-size:15px !important;
+    line-height:1.7 !important;
+  }
+
+  .hero-info-divider{
+    width:70px !important;
+    height:1px !important;
+  }
+
+  .hero-client strong{
+    font-size:26px !important;
+  }
+
+  .exact-hero-contact{
+    margin-top:26px !important;
+    padding:14px 22px !important;
+  }
+
+  .exact-slider-arrow{
+    width:46px !important;
+    height:46px !important;
+    bottom:18px !important;
+  }
+
+  .exact-slider-left{
+    left:18px !important;
+  }
+
+  .exact-slider-right{
+    right:18px !important;
+  }
+
+}
+
