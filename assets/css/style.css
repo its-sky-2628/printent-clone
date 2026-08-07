@@ -23716,3 +23716,64 @@ html body #projects.completed-projects-exact .cpe-grid .cpe-card .cpe-card-conte
 
 }
 
+
+/* ===========================================================
+   FINAL MOBILE OVERRIDE (beats desktop absolute positioning)
+   =========================================================== */
+
+@media (max-width:768px){
+
+#home.exact-printent-hero,
+#home.exact-printent-hero .exact-hero-inner,
+#home.exact-printent-hero .exact-hero-title,
+#home.exact-printent-hero .exact-hero-info,
+#home.exact-printent-hero .exact-hero-contact{
+
+    position:relative !important;
+    inset:auto !important;
+    top:auto !important;
+    right:auto !important;
+    left:auto !important;
+    bottom:auto !important;
+
+    transform:none !important;
+    translate:none !important;
+
+    margin:0 !important;
+}
+
+#home.exact-printent-hero .exact-hero-inner{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    align-items:flex-start !important;
+
+    width:100% !important;
+    height:100% !important;
+
+    padding:92px 22px 38px !important;
+}
+
+#home.exact-printent-hero .exact-hero-title{
+    width:100% !important;
+}
+
+#home.exact-printent-hero .hero-line{
+    font-size:44px !important;
+    line-height:.96 !important;
+}
+
+#home.exact-printent-hero .exact-hero-info{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    gap:18px !important;
+    margin-top:24px !important;
+}
+
+#home.exact-printent-hero .exact-hero-contact{
+    margin-top:24px !important;
+}
+
+}
+
