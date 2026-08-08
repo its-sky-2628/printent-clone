@@ -21435,3 +21435,112 @@ html body .moving-services-showcase .moving-services-track {
 .cpe-card {
     margin-bottom: 0 !important;
 }
+/* ===== VIEW FULL PROJECT — BIGGER + OUTSIDE ===== */
+
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project {
+    height: 92px !important;
+    min-height: 92px !important;
+
+    /* niche bahar niklega */
+    bottom: -28px !important;
+
+    /* left-right same */
+    left: 18px !important;
+    right: 18px !important;
+
+    transform: none !important;
+}
+
+/* hover par bhi same position */
+#completed-projects.completed-projects-exact
+.cpe-card:hover > .cpe-view-project {
+    bottom: -48px !important;
+    transform: none !important;
+}
+/* ===== VIEW FULL PROJECT — CENTER TEXT + UNDERLINE + ARROW ===== */
+
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project {
+    position: absolute !important;
+
+    left: 18px !important;
+    right: 18px !important;
+    bottom: -28px !important;
+
+    height: 92px !important;
+    min-height: 92px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 55px 0 25px !important;
+
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+
+    font-size: 23px !important;
+    font-weight: 700 !important;
+
+    transform: none !important;
+
+    border: none !important;
+    outline: none !important;
+
+    z-index: 9999 !important;
+}
+
+
+/* TEXT */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project b {
+    position: relative !important;
+
+    display: inline-block !important;
+
+    right: auto !important;
+    top: auto !important;
+
+    transform: none !important;
+
+    color: #fff !important;
+
+    font-size: 2px !important;
+    font-weight: 700 !important;
+
+    padding-bottom: 6px !important;
+}
+
+
+
+
+
+/* ARROW */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project::after {
+    content: "↗" !important;
+
+    position: absolute !important;
+
+    right: 115px !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    color: #fff !important;
+
+    font-size: 23px !important;
+    font-weight: 1200 !important;
+
+    line-height: 1 !important;
+}
+
+
+/* HOVER SAME POSITION */
+#completed-projects.completed-projects-exact
+.cpe-card:hover > .cpe-view-project {
+    bottom: -28px !important;
+    transform: none !important;
+}
