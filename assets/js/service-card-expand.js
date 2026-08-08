@@ -1,92 +1,21 @@
-(() => {
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".moving-service-card");
 
-  const showcase =
-    document.querySelector(".moving-services-showcase");
+  cards.forEach(function (card) {
+    card.addEventListener("click", function (e) {
+      e.preventDefault();
 
-  if(!showcase) return;
+      const isAlreadyActive = card.classList.contains("is-active");
 
-  const cards =
-    [...showcase.querySelectorAll(".moving-service-card")];
+      // pehle sab cards se is-active hata do (ek time pe sirf ek open)
+      cards.forEach(function (c) {
+        c.classList.remove("is-active");
+      });
 
-  if(!cards.length) return;
-
-
-  function closeAll(){
-
-    cards.forEach(card => {
-      card.classList.remove("is-active");
-      card.setAttribute("aria-expanded","false");
-    });
-
-  }
-
-
-  function openCard(card){
-
-    closeAll();
-
-    card.classList.add("is-active");
-    card.setAttribute("aria-expanded","true");
-
-  }
-
-
-  cards.forEach(card => {
-
-    card.setAttribute("tabindex","0");
-    card.setAttribute("role","button");
-    card.setAttribute("aria-expanded","false");
-
-
-    /* Desktop — mouse touches card = OPEN */
-
-    card.addEventListener("mouseenter", () => {
-      openCard(card);
-    });
-
-
-    /* Desktop — mouse leaves = CLOSE */
-
-    card.addEventListener("mouseleave", () => {
-
-      card.classList.remove("is-active");
-
-      card.setAttribute(
-        "aria-expanded",
-        "false"
-      );
-
-    });
-
-
-    /* Mobile / touch */
-
-    card.addEventListener("click", () => {
-
-      const active =
-        card.classList.contains("is-active");
-
-      closeAll();
-
-      if(!active){
-        openCard(card);
+      // agar ye pehle se open nahi tha, to ise open karo
+      if (!isAlreadyActive) {
+        card.classList.add("is-active");
       }
-
     });
-
-
-    card.addEventListener("keydown", event => {
-
-      if(
-        event.key === "Enter" ||
-        event.key === " "
-      ){
-        event.preventDefault();
-        openCard(card);
-      }
-
-    });
-
   });
-
-})();
+});

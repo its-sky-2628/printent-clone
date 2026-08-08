@@ -19,7 +19,7 @@ window.addEventListener(
   () => {
 
     if (window.scrollY > 120) {
-      header?.classList.add("scrolled");
+      /* navbar should scroll away with the page */
     } else {
       header?.classList.remove("scrolled");
     }
@@ -2553,4 +2553,21 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+/* ===== NAVBAR CLICK ACTIVE ORANGE LINE ===== */
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll("#desktopNav .nav-item > a.nav-link");
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", function () {
+
+      navLinks.forEach(function (item) {
+        item.classList.remove("active");
+      });
+
+      this.classList.add("active");
+    });
+  });
+});
 
