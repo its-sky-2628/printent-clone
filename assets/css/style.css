@@ -20909,13 +20909,20 @@ html body .since-1996-showcase{
 
 }
 /* ===== HERO POSITION TEST ===== */
+/* ===== HERO TITLE — MATCH REFERENCE ===== */
 
 @media (min-width: 1200px) {
+
     #home.exact-printent-hero .exact-hero-title {
         position: absolute !important;
-        top: 265px !important;
+        top: 275px !important;
         left: 43% !important;
         transform: none !important;
         margin-top: 0 !important;
     }
+
+    #home.exact-printent-hero .exact-hero-title .hero-line-two {
+        top: 90px !important;
+    }
+
 }
