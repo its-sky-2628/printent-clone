@@ -18904,3 +18904,46 @@ body {
     object-fit: cover !important;
 }
 
+
+/* ===== FIX CONTACT / SEARCH / CART SPACING ===== */
+
+/* second navigation area containing search + cart */
+.navbar > .desktop-nav:nth-of-type(2){
+    display:flex !important;
+    align-items:center !important;
+    justify-content:flex-start !important;
+    gap:28px !important;
+    padding-left:30px !important;
+    position:relative !important;
+}
+
+/* search ko Contact Us ke upar se hatao */
+.navbar .search-wrapper{
+    position:relative !important;
+    display:inline-block !important;
+    left:0 !important;
+    margin-left:0 !important;
+    flex:0 0 32px !important;
+}
+
+/* cart ko bhi normal position par lao */
+.navbar .nav-actions{
+    position:relative !important;
+    left:0 !important;
+    margin-left:0 !important;
+    padding-left:0 !important;
+    display:flex !important;
+    align-items:center !important;
+    flex:0 0 auto !important;
+}
+
+/* Contact Us aur search ke beech proper breathing space */
+.navbar .contact-dropdown-parent{
+    margin-right:30px !important;
+}
+
+/* search aur cart ke beech bhi gap */
+.navbar .search-wrapper + .nav-actions{
+    margin-left:18px !important;
+}
+
