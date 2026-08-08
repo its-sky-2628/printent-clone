@@ -21544,3 +21544,31 @@ html body .moving-services-showcase .moving-services-track {
     bottom: -28px !important;
     transform: none !important;
 }
+/* IMAGE — left 100% clipped = image invisible */
+#completed-projects.completed-projects-exact .cpe-card::before {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+
+    background-image: var(--project-image) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+
+    /* LEFT 100% clipped */
+    clip-path: inset(0 0 0 100%) !important;
+
+    transition: clip-path .6s cubic-bezier(.65,0,.35,1) !important;
+
+    z-index: 5 !important;
+    pointer-events: none !important;
+}
+
+/* HOVER — LEFT → RIGHT */
+#completed-projects.completed-projects-exact .cpe-card:hover::before {
+    clip-path: inset(0 0 0 0) !important;
+}
