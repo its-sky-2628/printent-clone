@@ -1856,123 +1856,8 @@ function toggleSearchBox() {
 ===================================================== -->
 
 
-
-
-
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/service-card-expand.js" defer></script>
-
-
-<script>
-(function () {
-
-  function startStatCounters() {
-
-    const targets = [2845, 1565, 4568, 3845];
-
-    const allStrong = Array.from(document.querySelectorAll("strong"));
-
-    const counters = allStrong.filter(el => {
-      if (el.dataset.fixedClientCount === "true") return false;
-      const n = parseInt(el.textContent.replace(/\D/g, ""), 10);
-      return targets.includes(n);
-    });
-
-    console.log("STAT COUNTERS FOUND:", counters.length);
-
-    if (!counters.length) return;
-
-    counters.forEach(el => {
-      const target = parseInt(
-        el.textContent.replace(/\D/g, ""),
-        10
-      );
-
-      el.dataset.counterTarget = target;
-      el.innerHTML = '0<sup>+</sup>';
-    });
-
-
-    function animate(el) {
-
-      if (el.dataset.animated === "true") return;
-
-      el.dataset.animated = "true";
-
-      const target = Number(el.dataset.counterTarget);
-
-      const duration = 2200;
-      const start = performance.now();
-
-      function frame(now) {
-
-        const progress =
-          Math.min((now - start) / duration, 1);
-
-        const ease =
-          1 - Math.pow(1 - progress, 3);
-
-        const value =
-          Math.floor(target * ease);
-
-        el.innerHTML =
-          value.toLocaleString() +
-          '<sup>+</sup>';
-
-        if (progress < 1) {
-          requestAnimationFrame(frame);
-        } else {
-          el.innerHTML =
-            target.toLocaleString() +
-            '<sup>+</sup>';
-        }
-      }
-
-      requestAnimationFrame(frame);
-    }
-
-
-    const observer = new IntersectionObserver(entries => {
-
-      entries.forEach(entry => {
-
-        if (!entry.isIntersecting) return;
-
-        const el = entry.target;
-
-        setTimeout(() => {
-          animate(el);
-        }, Number(el.dataset.delay || 0));
-
-        observer.unobserve(el);
-
-      });
-
-    }, {
-      threshold: 0.15
-    });
-
-
-    counters.forEach((el, i) => {
-      el.dataset.delay = i * 100;
-      observer.observe(el);
-    });
-
-  }
-
-
-  if (document.readyState === "loading") {
-    document.addEventListener(
-      "DOMContentLoaded",
-      startStatCounters
-    );
-  } else {
-    startStatCounters();
-  }
-
-})();
-</script>
-
 
 <!-- FLOATING BUY BOX START -->
 
@@ -2416,6 +2301,25 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 </style>
+<div class="pae-stat">
+  <strong data-target="2845">0<sup>+</sup></strong>
+  <span>Satisfied Clients</span>
+</div>
+
+<div class="pae-stat">
+  <strong data-target="1565">0<sup>+</sup></strong>
+  <span>Completed Delivery</span>
+</div>
+
+<div class="pae-stat">
+  <strong data-target="4568">0<sup>+</sup></strong>
+  <span>Awards Winner</span>
+</div>
+
+<div class="pae-stat">
+  <strong data-target="3845">0<sup>+</sup></strong>
+  <span>Team Members</span>
+</div>
 
 
 <style>

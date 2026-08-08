@@ -21572,3 +21572,70 @@ html body .moving-services-showcase .moving-services-track {
 #completed-projects.completed-projects-exact .cpe-card:hover::before {
     clip-path: inset(0 0 0 0) !important;
 }
+/* =====================================================
+   FINAL FIX — STATS NUMBERS PERFECTLY ALIGNED
+===================================================== */
+
+/* Number wrapper */
+.stats-section .stat{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+}
+
+/* MAIN NUMBER */
+.stats-section .stat strong{
+    position:relative !important;
+    display:block !important;
+
+    width:100% !important;
+    height:58px !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    font-family:"Oswald", sans-serif !important;
+    font-size:55px !important;
+    line-height:58px !important;
+    font-weight:600 !important;
+
+    text-align:center !important;
+}
+
+/* Remove the unwanted dot/pseudo element */
+.stats-section .stat strong::after{
+    display:none !important;
+    content:none !important;
+}
+
+/* + sign */
+.stats-section .stat sup{
+    position:relative !important;
+
+    display:inline-block !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    font-size:17px !important;
+    line-height:1 !important;
+
+    vertical-align:top !important;
+    top:2px !important;
+}
+
+/* LABEL */
+.stats-section .stat span{
+    display:block !important;
+
+    margin:8px 0 0 0 !important;
+    padding:0 !important;
+
+    font-size:10px !important;
+    line-height:14px !important;
+    font-weight:800 !important;
+
+    text-align:center !important;
+}

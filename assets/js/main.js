@@ -27,79 +27,6 @@ window.addEventListener(
   },
   { passive: true }
 );
-
-
-/* =====================================================
-   COUNTER ANIMATION
-===================================================== */
-
-const stats = document.querySelectorAll(".stat strong");
-
-const counterObserver = new IntersectionObserver(
-  entries => {
-
-    entries.forEach(entry => {
-
-      if (!entry.isIntersecting) return;
-
-      const element = entry.target;
-
-      const original = element.textContent.trim();
-
-      const target =
-        parseInt(original.replace(/\D/g,"")) || 0;
-
-      const suffix =
-        original.includes("%")
-          ? "%"
-          : "+";
-
-      let start = 0;
-
-      const duration = 1300;
-
-      const startTime = performance.now();
-
-      function update(now){
-
-        const progress =
-          Math.min(
-            (now - startTime) / duration,
-            1
-          );
-
-        const eased =
-          1 - Math.pow(1-progress,3);
-
-        start =
-          Math.floor(target * eased);
-
-        element.innerHTML =
-          start +
-          `<sup>${suffix}</sup>`;
-
-        if(progress < 1){
-        }
-
-      }
-
-
-      counterObserver.unobserve(element);
-
-    });
-
-  },
-  {
-    threshold:.4
-  }
-);
-
-stats.forEach(stat =>
-  counterObserver.observe(stat)
-);
-
-
-
 /* =====================================================
    SCROLL REVEAL
 ===================================================== */
@@ -2551,23 +2478,84 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+/* =====================================================
+   FINAL STATS COUNTER
+   ALWAYS START FROM 0
+   NO NaN
+   USES data-target DIRECTLY
+===================================================== */
 
-
-
-
-/* ===== NAVBAR CLICK ACTIVE ORANGE LINE ===== */
 document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll("#desktopNav .nav-item > a.nav-link");
 
-  navLinks.forEach(function (link) {
-    link.addEventListener("click", function () {
+    const counters = document.querySelectorAll(
+        ".pae-stat strong[data-target]"
+    );
 
-      navLinks.forEach(function (item) {
-        item.classList.remove("active");
-      });
+    if (!counters.length) return;
 
-      this.classList.add("active");
+    counters.forEach(function (counter, index) {
+
+        // Target directly HTML ke data-target se
+        const target = Number(counter.dataset.target);
+
+        // Invalid target hua to 0
+        const finalTarget =
+            Number.isFinite(target) ? target : 0;
+
+        // ALWAYS 0 se start
+        counter.innerHTML = "0<sup>+</sup>";
+
+        let startTime = null;
+
+        const duration = 1600;
+
+        function animateCounter(timestamp) {
+
+            if (startTime === null) {
+                startTime = timestamp;
+            }
+
+            const progress = Math.min(
+                (timestamp - startTime) / duration,
+                1
+            );
+
+            // Smooth ease-out
+            const eased =
+                1 - Math.pow(1 - progress, 3);
+
+            const currentValue = Math.floor(
+                finalTarget * eased
+            );
+
+            counter.innerHTML =
+                currentValue.toLocaleString("en-US") +
+                "<sup>+</sup>";
+
+            if (progress < 1) {
+
+                requestAnimationFrame(
+                    animateCounter
+                );
+
+            } else {
+
+                // Final exact value
+                counter.innerHTML =
+                    finalTarget.toLocaleString("en-US") +
+                    "<sup>+</sup>";
+            }
+        }
+
+        // Har counter ka thoda stagger
+        setTimeout(function () {
+
+            requestAnimationFrame(
+                animateCounter
+            );
+
+        }, index * 100);
+
     });
-  });
-});
 
+});
