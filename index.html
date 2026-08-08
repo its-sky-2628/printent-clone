@@ -648,7 +648,7 @@ header.site-header {
 
         <a href="#services" class="nav-link">
           Services
-          <span class="nav-arrow">↘</span>
+          <span class="nav-plus"></span>
         </a>
 
         <div class="nav-dropdown nav-dropdown-small">
@@ -989,13 +989,8 @@ function toggleSearchBox() {
 
     <div class="exact-hero-title">
 
-        <div class="hero-line hero-line-one"
-             style="
-                 font-size:98px !important;
-                 line-height: 1.05 !important;
-                 transform: translateX(-85px) !important;
-             ">
-            Breathing life
+        <div class="hero-line hero-line-one">
+    Breathing life
         </div>
 
         <div class="hero-line hero-line-two">
@@ -1092,7 +1087,7 @@ function toggleSearchBox() {
         </div>
         <div class="moving-service-bottom">
           <h3>Pamphlet design</h3>
-          <p class="moving-service-description">We offer a complete range of digital printing services, created with quality, precision and professional finishing.</p>
+          <p class="moving-service-description">Our energetic and experienced employees strive to deliver </p>
           <span>↘</span>
         </div>
       </article>
@@ -1103,7 +1098,7 @@ function toggleSearchBox() {
         </div>
         <div class="moving-service-bottom">
           <h3>Stickers printing design</h3>
-          <p class="moving-service-description">Premium sticker printing solutions with sharp details, vibrant colours and durable professional finishing.</p>
+          <p class="moving-service-description">Surface printing is most often</p>
           <span>↘</span>
         </div>
       </article>
@@ -2462,4 +2457,129 @@ document.addEventListener("DOMContentLoaded", function () {
     transform: translateY(-30px) !important;
 }
 </style>
+<style id="SERVICE-CARD-FINAL-CLEAN">
 
+/* Section ka neeche wala extra padding hata do — yahi blank gap ki wajah thi */
+html body .moving-services-showcase{
+  padding-bottom:50px !important;
+}
+html body .moving-services-viewport{
+  overflow:hidden !important;
+  padding-bottom:0 !important;
+}
+html body .moving-services-track{
+  margin-bottom:0 !important;
+  align-items:flex-start !important;
+}
+
+/* CARD — fixed height, koi scale nahi */
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card{
+  display:flex !important;
+  flex-direction:column !important;
+  height:605px !important;
+  max-height:605px !important;
+  min-height:0 !important;
+  flex:0 0 clamp(300px, 27vw, 440px) !important;
+  width:clamp(300px, 27vw, 440px) !important;
+  overflow:hidden !important;
+  cursor:pointer !important;
+  transform:none !important;
+}
+
+/* IMAGE — flex:1, panel bada hote hi ye khud chhota (bottom se crop) hota hai */
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card .moving-service-image.moving-service-image{
+  flex:1 1 auto !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  overflow:hidden !important;
+}
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card .moving-service-image img{
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center top !important;
+  transform:none !important;
+  transition:none !important;
+}
+
+/* PANEL */
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card .moving-service-bottom.moving-service-bottom{
+  position:static !important;
+  flex:0 0 auto !important;
+  min-height:105px !important;
+  height:auto !important;
+  max-height:none !important;
+  padding:18px 30px !important;
+  display:grid !important;
+  grid-template-columns:1fr 40px !important;
+  align-items:center !important;
+  background:linear-gradient(105deg,#ff9138,#ff7a45,#ff6267) !important;
+  color:#fff !important;
+  transition:min-height .4s cubic-bezier(.22,.61,.36,1),
+             padding .4s cubic-bezier(.22,.61,.36,1) !important;
+}
+
+/* TITLE — bada + bold */
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card .moving-service-bottom h3{
+  grid-column:1 !important;
+  margin:0 !important;
+  font-family:Georgia,serif !important;
+  font-size:28px !important;
+  font-weight:700 !important;
+  line-height:1.2 !important;
+  color:#fff !important;
+}
+
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card .moving-service-bottom > span{
+  grid-column:2 !important;
+  justify-self:end !important;
+  font-size:26px !important;
+  color:#fff !important;
+  transition:transform .3s ease !important;
+  transform:none !important;
+}
+
+/* DESCRIPTION — bada + bold, normal state hidden */
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card .moving-service-description.moving-service-description{
+  grid-column:1 / -1 !important;
+  max-height:0 !important;
+  opacity:0 !important;
+  overflow:hidden !important;
+  margin:0 !important;
+  padding:0 !important;
+  font-size:16px !important;
+  font-weight:600 !important;
+  line-height:1.45 !important;
+  color:#fff !important;
+  transition:max-height .4s ease, opacity .3s ease, margin-top .4s ease !important;
+}
+
+/* ===== EXPAND — hover (desktop) + is-active (mobile) ===== */
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card:hover .moving-service-bottom,
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card.is-active .moving-service-bottom{
+  min-height:195px !important;
+  padding:20px 30px 24px !important;
+}
+
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card:hover .moving-service-description,
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card.is-active .moving-service-description{
+  max-height:110px !important;
+  opacity:1 !important;
+  margin-top:8px !important;
+}
+
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card:hover .moving-service-bottom > span,
+html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card.is-active .moving-service-bottom > span{
+  transform:rotate(-45deg) !important;
+}
+
+@media(max-width:610px){
+  html body .moving-services-showcase .moving-service-card.moving-service-card.moving-service-card{
+    height:555px !important;
+    flex-basis:78vw !important;
+    width:78vw !important;
+  }
+}
+
+</style>
