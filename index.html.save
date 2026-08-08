@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+c
+
+
   <meta name="theme-color" content="#171717">
 
 <style id="second-hero-exact-css">
@@ -458,19 +461,9 @@
       <span class="shipping-fire">♨</span>
       <span>Free shipping on all orders $50+</span>
 
-      <a href="#services"
-   class="topbar-shop"
-   style="
-       background: #000 !important;
-       color: #fff !important;
-       padding: 6px 12px !important;
-       border-radius: 3px;
-       display: inline-block;
-       font-weight: 600;
-       text-decoration: none;
-   ">
-    Shop Now!
-</a>
+      <a href="#services" class="topbar-shop">
+        Shop Now!
+      </a>
     </div>
 
     <div class="printent-topbar-right">
@@ -591,74 +584,122 @@
       </div>
 
 
-                  <!-- SERVICES -->
-      <div class="nav-item has-dropdown">
+      <!-- SERVICES -->
+      <div class="nav-item has-dropdown mega-parent">
 
         <a href="#services" class="nav-link">
           Services
-          <span class="nav-arrow">↘</span>
+          <span class="nav-plus"></span>
+        </a>
+
+        <div class="nav-mega">
+
+          <div class="mega-intro">
+            <span class="mega-label">WHAT WE DO</span>
+
+            <h3>
+              Creative printing
+              <br>
+              solutions.
+            </h3>
+
+            <p>
+              High-quality printing services created
+              to make brands stand out.
+            </p>
+
+            <a href="#services" class="mega-view">
+              VIEW ALL SERVICES
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="mega-links">
+
+            <a href="#services">
+              <span class="mega-num">01</span>
+              <div>
+                <strong data-fixed-client-count="true">2,845+</strong>
+                <small>Fast, flexible and high quality</small>
+              </div>
+              <b>↗</b>
+            </a>
+
+            <a href="#services">
+              <span class="mega-num">02</span>
+              <div>
+                <strong>Offset Printing</strong>
+                <small>Premium large-volume printing</small>
+              </div>
+              <b>↗</b>
+            </a>
+
+            <a href="#services">
+              <span class="mega-num">03</span>
+              <div>
+                <strong>Packaging</strong>
+                <small>Packaging that gets noticed</small>
+              </div>
+              <b>↗</b>
+            </a>
+
+            <a href="#services">
+              <span class="mega-num">04</span>
+              <div>
+                <strong>Brand Materials</strong>
+                <small>Professional branded collateral</small>
+              </div>
+              <b>↗</b>
+            </a>
+
+          </div>
+
+          <div class="mega-feature">
+
+            <div class="mega-feature-image">
+              <img
+                src="assets/images/menu-01.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+
+            <span>FEATURED SERVICE</span>
+
+            <h4>
+              Printing that
+              makes an impact.
+            </h4>
+
+            <a href="#contact">
+              START A PROJECT ↗
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- PORTFOLIO -->
+      <div class="nav-item has-dropdown">
+
+        <a href="#projects" class="nav-link">
+          Portfolio
+          <span class="nav-plus"></span>
         </a>
 
         <div class="nav-dropdown nav-dropdown-small">
-
-          <a href="#services">Bag Printing Design</a>
-          <a href="#services">Business Card Design</a>
-          <a href="#services">T-Shirt Printing Design</a>
-          <a href="#services">Pamphlet Design</a>
-          <a href="#services">Stickers Printing Design</a>
-          <a href="#services">Flyer Poster Printing</a>
-
+          <a href="#projects">Portfolio Grid <b>↗</b></a>
+          <a href="#projects">Portfolio Masonry <b>↗</b></a>
+          <a href="#projects">Project Details <b>↗</b></a>
         </div>
 
       </div>
 
-<!-- PORTFOLIO -->
-<div class="nav-item portfolio-scratch-parent">
 
-  <a href="#projects" class="nav-link">
-    Portfolio
-    <span class="nav-plus"></span>
-  </a>
-
-  <div class="portfolio-scratch-dropdown">
-
-    <div class="portfolio-scratch-col">
-
-      <h3>Portfolio Page</h3>
-
-      <a href="#projects">Portfolio Style-1</a>
-      <a href="#projects">Portfolio Style-2</a>
-      <a href="#projects">Portfolio Style-3</a>
-      <a href="#projects">Portfolio Full Style</a>
-      <a href="#projects">2 Columns – Modern</a>
-
-    </div>
-
-    <div class="portfolio-scratch-col portfolio-scratch-middle">
-
-      <h3>Portfolio Single Style</h3>
-
-      <a href="#projects">Single Style One</a>
-      <a href="#projects">Single Style Two</a>
-      <a href="#projects">Single Style Three</a>
-
-    </div>
-
-    <div class="portfolio-scratch-image">
-
-      <img
-        src="assets/images/menu-01.png"
-        alt="Portfolio"
-      >
-
-    </div>
-
-  </div>
-
-</div>
-
-
-<!-- BLOG -->
+      <!-- BLOG -->
       <div class="nav-item has-dropdown">
 
         <a href="#blog" class="nav-link">
@@ -697,143 +738,89 @@
     </nav>
 
 
-    <nav class="desktop-nav" id="desktopNav">
+    <div class="nav-actions">
 
-   <style>
-.search-wrapper {
-    position: relative;
-    display: inline-block;
-    left: -255px;
-}
-
-/* SEARCH ICON */
-#searchToggle {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    position: relative;
-    cursor: pointer;
-    text-decoration: none !important;
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-}
-
-/* Magnifying glass circle */
-#searchToggle::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2.5px solid #ffffff;
-    border-radius: 50%;
-    top: 1px;
-    left: 1px;
-    box-sizing: border-box;
-    transition: border-color 0.2s ease;
-}
-
-/* Magnifying glass handle */
-#searchToggle::after {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 2.5px;
-    background: #ffffff;
-    border-radius: 2px;
-    transform: rotate(45deg);
-    left: 19px;
-    top: 21px;
-    transition: background 0.2s ease;
-}
-
-/* CLICK = ORANGE */
-#searchToggle.active::before {
-    border-color: #ff6b35 !important;
-}
-
-#searchToggle.active::after {
-    background: #ff6b35 !important;
-}
-
-
-/* SEARCH BOX */
-#searchBox {
-    display: none;
-    position: absolute;
-    top: 45px;
-    right: -10px;
-    width: 450px;
-    height: 70px;
-    background: #ffffff;
-    padding: 15px 20px;
-    box-sizing: border-box;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    z-index: 99999;
-}
-
-#searchBox input {
-    width: 100%;
-    height: 40px;
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    font-size: 15px;
-    color: #333;
-    padding: 0 5px;
-}
-</style>
-
-
-<!-- SEARCH -->
-<div class="search-wrapper">
-
-    <span id="searchToggle"
-          onclick="toggleSearchBox()">
-    </span>
-
-    <div id="searchBox">
-
-        <input
-            type="text"
-            placeholder="Search"
-            autocomplete="off"
+      <!-- SEARCH -->
+      <button
+        class="search-btn"
+        id="navSearchButton"
+        type="button"
+        aria-label="Search"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          width="27"
+          height="27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
         >
+          <circle
+            cx="11"
+            cy="11"
+            r="7"
+            stroke="currentColor"
+            stroke-width="1.7"
+          />
+          <path
+            d="M16.2 16.2L21 21"
+            stroke="currentColor"
+            stroke-width="1.7"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+
+      <!-- CART -->
+      <button
+        class="cart-btn"
+        type="button"
+        aria-label="Shopping cart"
+      >
+        <svg
+          viewBox="0 0 32 32"
+          width="29"
+          height="29"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M3 5H7L9.5 20H24.5L28 9H8"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 20C9 20 8.3 20.8 8.3 21.8C8.3 22.8 9.1 23.5 10.1 23.5H25"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+          />
+          <circle cx="12" cy="27" r="1.5" fill="currentColor"/>
+          <circle cx="24" cy="27" r="1.5" fill="currentColor"/>
+        </svg>
+
+        <small class="cart-count">0</small>
+      </button>
+
+      <a href="#contact" class="quote-btn">
+        GET A QUOTE
+        <b>↗</b>
+      </a>
+
+      <button
+        class="menu-btn"
+        aria-label="Menu"
+        type="button"
+      >
+        <i></i>
+        <i></i>
+        <i></i>
+      </button>
 
     </div>
-
-</div>
-
-
-<script>
-function toggleSearchBox() {
-
-    const box = document.getElementById("searchBox");
-    const icon = document.getElementById("searchToggle");
-
-    if (box.style.display === "none" || box.style.display === "") {
-
-        box.style.display = "block";
-        icon.classList.add("active");
-
-    } else {
-
-        box.style.display = "none";
-        icon.classList.remove("active");
-
-    }
-}
-</script>
-
-  <div class="nav-actions" style="font-size: 32px; font-weight: 900; line-height: 1; position: relative; left: -279px;">
-    🛒
-</div>
-
-
-
-</nav>
 
   </div>
 
@@ -933,61 +920,37 @@ function toggleSearchBox() {
         <div class="exact-hero-bg"></div>
 
         <div class="exact-hero-shade"></div>
+
         <div class="exact-hero-inner">
+          <div class="exact-hero-title">
+            <div class="hero-line hero-line-one">Breathing life</div>
 
-    <div class="exact-hero-title">
+              <div class="hero-line hero-line-two">
+                into <span>your print</span>
+              </div>
+          </div>
 
-        <div class="hero-line hero-line-one"
-             style="
-                 font-size:98px !important;
-                 line-height: 1.05 !important;
-                 transform: translateX(-85px) !important;
-             ">
-            Breathing life
+          <div class="exact-hero-info">
+            <div class="hero-info-copy">
+              Better quality, higher service, and higher
+              <br />
+              turnaround time, simply higher.
+            </div>
+
+            <div class="hero-info-divider"></div>
+
+            <div class="hero-client">
+              <strong data-fixed-client-count="true">2,845+</strong>
+
+              <span> Satisfied Clients </span>
+            </div>
+          </div>
+
+          <a href="#contact" class="exact-hero-contact">
+            <span>Contact Us</span>
+            <b>↗</b>
+          </a>
         </div>
-
-        <div class="hero-line hero-line-two">
-            into <span>your print</span>
-        </div>
-
-    </div>
-
-
-    <div class="exact-hero-info">
-
-        <div class="hero-info-copy"
-     style="
-        color: #fff !important;
-        font-size: 20px !important;
-        font-weight: 700 !important;
-        line-height: 1.4 !important;
-        white-space: nowrap !important;
-        width: max-content !important;
-        max-width: none !important;
-     ">
-    Better quality, higher service, and higher
-    <br />
-    turnaround time, simply higher.
-</div>
-
-        <div class="hero-info-divider"></div>
-
-        <div class="hero-client">
-            <strong data-fixed-client-count="true">2,845+</strong>
-            <span>Satisfied Clients</span>
-        </div>
-
-    </div>
-
-
-    <a href="#contact"
-   class="exact-hero-contact"
-   style="transform: translateX(120px) !important;">
-    <span>Contact Us</span>
-    <b>↗</b>
-</a>
-
-</div>
 
         <button
           class="exact-slider-arrow exact-slider-left"
