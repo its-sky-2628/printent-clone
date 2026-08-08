@@ -20557,3 +20557,207 @@ body{
     color:#ff704d !important;
 }
 
+
+/* =========================================================
+   FINAL NAVBAR ARROW — ORIGINAL PRINTENT STYLE
+   ========================================================= */
+
+/* Arrow container */
+#desktopNav .nav-item > a.nav-link > span.nav-plus{
+    display:inline-block !important;
+
+    width:auto !important;
+    height:auto !important;
+
+    margin-left:3px !important;
+    padding:0 !important;
+
+    font-size:0 !important;
+    line-height:1 !important;
+
+    color:currentColor !important;
+
+    transform:none !important;
+}
+
+/* Tiny diagonal arrow */
+#desktopNav .nav-item > a.nav-link > span.nav-plus::after{
+    content:"↘" !important;
+
+    display:inline-block !important;
+
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-size:11px !important;
+    font-weight:400 !important;
+
+    line-height:1 !important;
+
+    width:auto !important;
+    height:auto !important;
+
+    margin:0 !important;
+    padding:0 !important;
+
+    color:currentColor !important;
+
+    transform:none !important;
+    transform-origin:center !important;
+
+    -webkit-text-stroke:0 !important;
+
+    transition:
+        transform .25s ease,
+        color .25s ease !important;
+}
+
+/* Tiny movement on hover */
+#desktopNav .nav-item:hover > a.nav-link > span.nav-plus::after{
+    transform:translate(1px,1px) !important;
+}
+
+/* Keep nav text + arrow very close */
+#desktopNav .nav-item > a.nav-link{
+    gap:2px !important;
+}
+
+
+/* =========================================================
+   CUSTOM NAVBAR ARROW — REPLACE OLD ARROW COMPLETELY
+   ========================================================= */
+
+#desktopNav .nav-item > a.nav-link > span.nav-plus{
+    position:relative !important;
+
+    display:inline-block !important;
+
+    width:10px !important;
+    height:10px !important;
+
+    margin-left:3px !important;
+    padding:0 !important;
+
+    font-size:0 !important;
+
+    transform:none !important;
+}
+
+/* remove old character */
+#desktopNav .nav-item > a.nav-link > span.nav-plus::after{
+    content:"" !important;
+
+    position:absolute !important;
+
+    top:1px !important;
+    left:0 !important;
+
+    width:6px !important;
+    height:6px !important;
+
+    border-right:1.5px solid currentColor !important;
+    border-bottom:1.5px solid currentColor !important;
+
+    transform:rotate(45deg) !important;
+
+    background:none !important;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease !important;
+}
+
+/* tiny hover movement */
+#desktopNav .nav-item:hover > a.nav-link > span.nav-plus::after{
+    transform:rotate(45deg) translate(1px,1px) !important;
+}
+
+/* text + arrow spacing */
+#desktopNav .nav-item > a.nav-link{
+    gap:2px !important;
+}
+/* ===== CLEAN REPLACEMENT — purani saari .moving-service-card
+   hover/click waali CSS blocks delete karke sirf ye use karo ===== */
+
+.moving-service-card{
+  display:flex;
+  flex-direction:column;
+  height:605px;                 /* fixed total height */
+  flex:0 0 clamp(300px, 27vw, 440px);
+  width:clamp(300px, 27vw, 440px);
+  overflow:hidden;
+  cursor:pointer;
+}
+
+/* IMAGE — flex:1 = jitni jagah bache utni le, panel grow hote hi khud chhota ho jayega */
+.moving-service-image{
+  flex:1 1 auto;
+  min-height:0;                 /* zaroori hai taaki flex shrink kaam kare */
+  overflow:hidden;
+}
+.moving-service-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transform:none !important;    /* image par koi zoom/scale nahi */
+}
+
+/* PANEL — normal state */
+.moving-service-bottom{
+  flex:0 0 auto;
+  min-height:105px;
+  padding:18px 30px;
+  display:grid;
+  grid-template-columns:1fr 40px;
+  align-items:center;
+  background:linear-gradient(105deg,#ff9138,#ff7a45,#ff6267);
+  color:#fff;
+  transition:min-height .4s cubic-bezier(.22,.61,.36,1),
+             padding .4s cubic-bezier(.22,.61,.36,1);
+}
+
+.moving-service-bottom h3{
+  grid-column:1;
+  margin:0;
+  font-family:Georgia,serif;
+  font-size:22px;
+  font-weight:400;
+}
+
+.moving-service-bottom > span{
+  grid-column:2;
+  justify-self:end;
+  font-size:26px;
+  transition:transform .3s ease;
+}
+
+/* DESCRIPTION — hidden by default */
+.moving-service-description{
+  grid-column:1 / -1;
+  max-height:0;
+  opacity:0;
+  overflow:hidden;
+  margin:0;
+  font-size:14px;
+  line-height:1.5;
+  transition:max-height .4s ease, opacity .3s ease, margin-top .4s ease;
+}
+
+/* ===== EXPAND ON HOVER (desktop) ===== */
+.moving-service-card:hover .moving-service-bottom,
+.moving-service-card.is-active .moving-service-bottom{
+  min-height:170px;
+  padding:20px 30px 24px;
+}
+
+.moving-service-card:hover .moving-service-description,
+.moving-service-card.is-active .moving-service-description{
+  max-height:90px;
+  opacity:1;
+  margin-top:8px;
+}
+
+/* arrow ↘ → thoda niche-right shift, subtle */
+.moving-service-card:hover .moving-service-bottom > span,
+.moving-service-card.is-active .moving-service-bottom > span{
+  transform:translate(3px,3px);
+}
