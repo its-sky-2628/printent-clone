@@ -18150,10 +18150,9 @@ height:470px !important;
 
 }
 /* ===== HERO FINAL OVERRIDE ===== */
-
 #home.exact-printent-hero .exact-hero-inner{
     left:9% !important;
-    top:50% !important;
+    top:54% !important;
     transform:translateY(-50%) !important;
 }
 
@@ -20815,32 +20814,19 @@ html body .since-1996-showcase{
     flex-shrink: 0 !important;
 }
 /* =========================================================
-   HERO — FINAL RESPONSIVE POSITION FIX
-   MacBook + Windows Laptop
+   HERO TITLE — FINAL FIX
    ========================================================= */
 
-/* DESKTOP / LAPTOP */
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
 
-    #home.exact-printent-hero {
-        position: relative !important;
-        overflow: hidden !important;
-    }
-
-    /* Hero content positioning area */
     #home.exact-printent-hero .exact-hero-title {
         position: absolute !important;
 
-        /*
-           viewport ke according position
-           fixed px nahi
-        */
-        top: 18vh !important;
-        left: 38% !important;
-        right: auto !important;
+        top: 155px !important;
+        left: 43% !important;
 
-        width: 62% !important;
-        height: auto !important;
+        width: 57% !important;
+        height: 210px !important;
 
         margin: 0 !important;
         padding: 0 !important;
@@ -20848,276 +20834,88 @@ html body .since-1996-showcase{
         transform: none !important;
     }
 
-
-    /* =========================
-       BREATHING LIFE
-       ========================= */
-
-    #home.exact-printent-hero .hero-line-one {
-        position: relative !important;
+    /* Breathing life */
+    #home.exact-printent-hero .exact-hero-title .hero-line-one {
+        position: absolute !important;
 
         top: 0 !important;
-        left: 0 !important;
+        left: 245px !important;
 
         margin: 0 !important;
         padding: 0 !important;
 
-        width: max-content !important;
-
-        font-size: clamp(68px, 5.4vw, 86px) !important;
+        font-size: 76px !important;
         line-height: 1 !important;
         letter-spacing: -2px !important;
 
         white-space: nowrap !important;
-
         transform: none !important;
     }
 
+    /* into your print */
+    #home.exact-printent-hero .exact-hero-title .hero-line-two {
+        position: absolute !important;
 
-    /* =========================
-       INTO YOUR PRINT
-       ========================= */
-
-    #home.exact-printent-hero .hero-line-two {
-        position: relative !important;
-
-        /*
-           second line ko first line ke
-           just neeche rakho
-        */
-        top: 8px !important;
-        left: -12% !important;
+        top: 72px !important;
+        left: 0 !important;
 
         margin: 0 !important;
         padding: 0 !important;
 
-        width: max-content !important;
-
-        font-size: clamp(82px, 6.8vw, 108px) !important;
-        line-height: .92 !important;
+        font-size: 105px !important;
+        line-height: .95 !important;
         letter-spacing: -4px !important;
 
         white-space: nowrap !important;
-
         transform: none !important;
     }
 
-
-    /* ORANGE TEXT */
-    #home.exact-printent-hero .hero-line-two span {
+    #home.exact-printent-hero .exact-hero-title .hero-line-two span {
         color: #ff704d !important;
     }
+}
+/* ===== FINAL HERO TITLE POSITION — MATCH REFERENCE ===== */
 
+@media (min-width: 1200px) {
 
-    /* =========================
-       DESCRIPTION + CLIENTS
-       ========================= */
-
-    #home.exact-printent-hero .exact-hero-info {
-        position: absolute !important;
-
-        top: 56% !important;
-        left: 43% !important;
-        right: auto !important;
-
-        width: 520px !important;
-        height: 105px !important;
-
-        display: flex !important;
-        align-items: center !important;
-
-        margin: 0 !important;
-        padding: 0 !important;
-
-        transform: none !important;
-    }
-
-
-    /* DESCRIPTION */
-    #home.exact-printent-hero .hero-info-copy {
-        width: 300px !important;
-        min-width: 300px !important;
-
-        margin: 0 !important;
-        padding: 0 25px 0 0 !important;
-
-        font-size: 16px !important;
-        line-height: 1.55 !important;
-
-        text-align: right !important;
-    }
-
-
-    /* DIVIDER */
-    #home.exact-printent-hero .hero-info-divider {
-        width: 1px !important;
-        height: 105px !important;
-
-        margin: 0 28px 0 0 !important;
-
-        flex: 0 0 1px !important;
-    }
-
-
-    /* CLIENT */
-    #home.exact-printent-hero .hero-client {
-        width: 170px !important;
-        flex: 0 0 170px !important;
-
-        margin: 0 !important;
-        padding: 0 !important;
-
-        transform: none !important;
-    }
-
-
-    #home.exact-printent-hero .hero-client strong {
-        font-size: 54px !important;
-        line-height: 1 !important;
-
-        margin: 0 !important;
-    }
-
-
-    #home.exact-printent-hero .hero-client span {
-        margin-top: 8px !important;
-
-        font-size: 15px !important;
-        line-height: 1.2 !important;
-    }
-
-
-    /* =========================
-       CONTACT BUTTON
-       ========================= */
-
-    #home.exact-printent-hero .exact-hero-contact {
-        position: absolute !important;
-
-        top: 70% !important;
-        left: 54% !important;
-        right: auto !important;
-
-        width: 155px !important;
-        height: 50px !important;
-
-        margin: 0 !important;
-
-        transform: none !important;
-    }
+    #home.exact-printent-hero .exact-hero-title .hero-line-one {
+    transform: translate(140px, 35px) !important;
 }
 
-
-/* =========================================================
-   1200px – 1399px
-   WINDOWS LAPTOP RANGE
-   ========================================================= */
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-
-    #home.exact-printent-hero .exact-hero-title {
-        top: 16vh !important;
-        left: 35% !important;
-        width: 65% !important;
-    }
-
-    #home.exact-printent-hero .hero-line-one {
-        font-size: 72px !important;
-    }
-
-    #home.exact-printent-hero .hero-line-two {
-        font-size: 88px !important;
-        left: -10% !important;
-        top: 6px !important;
-    }
-
-    #home.exact-printent-hero .exact-hero-info {
-        top: 55% !important;
-        left: 42% !important;
-    }
-
-    #home.exact-printent-hero .exact-hero-contact {
-        top: 69% !important;
-        left: 53% !important;
-    }
+#home.exact-printent-hero .exact-hero-title .hero-line-two {
+    transform: translate(40px, 51px) !important;
 }
+   
+    
 
-
-/* =========================================================
-   1400px+
-   MACBOOK / LARGE DESKTOP
-   ========================================================= */
-
-@media (min-width: 1400px) {
-
-    #home.exact-printent-hero .exact-hero-title {
-        top: 17vh !important;
-        left: 39% !important;
-        width: 61% !important;
-    }
-
-    #home.exact-printent-hero .hero-line-one {
-        font-size: 82px !important;
-    }
-
-    #home.exact-printent-hero .hero-line-two {
-        font-size: 104px !important;
-        left: -11% !important;
-        top: 8px !important;
-    }
-
-    #home.exact-printent-hero .exact-hero-info {
-        top: 55% !important;
-        left: 44% !important;
-    }
-
-    #home.exact-printent-hero .exact-hero-contact {
-        top: 69% !important;
-        left: 55% !important;
-    }
 }
+/* ===== FORCE HERO TITLE DOWN ===== */
 
-
-/* =========================================================
-   TABLET / MOBILE
-   ========================================================= */
-
-@media (max-width: 1024px) {
+@media (min-width: 1200px) {
 
     #home.exact-printent-hero .exact-hero-title {
-        position: absolute !important;
-
-        top: 45% !important;
-        left: 8% !important;
-        right: auto !important;
-
-        width: 84% !important;
-
-        transform: translateY(-50%) !important;
+        top: 190px !important;
     }
 
-    #home.exact-printent-hero .hero-line-one {
-        font-size: clamp(42px, 7vw, 70px) !important;
-        margin: 0 !important;
-        transform: none !important;
-    }
-
-    #home.exact-printent-hero .hero-line-two {
-        font-size: clamp(55px, 9vw, 90px) !important;
-        margin: 8px 0 0 !important;
-
-        left: 0 !important;
+    #home.exact-printent-hero .exact-hero-title .hero-line-one {
         top: 0 !important;
+        transform: none !important;
     }
 
-    #home.exact-printent-hero .exact-hero-info {
-        display: none !important;
+    #home.exact-printent-hero .exact-hero-title .hero-line-two {
+        top: 72px !important;
+        transform: none !important;
     }
 
-    #home.exact-printent-hero .exact-hero-contact {
-        left: 8% !important;
-        right: auto !important;
-        top: auto !important;
-        bottom: 8% !important;
+}
+/* ===== HERO POSITION TEST ===== */
+
+@media (min-width: 1200px) {
+    #home.exact-printent-hero .exact-hero-title {
+        position: absolute !important;
+        top: 315px !important;
+        left: 43% !important;
+        transform: none !important;
+        margin-top: 0 !important;
     }
 }
