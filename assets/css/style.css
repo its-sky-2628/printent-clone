@@ -20910,13 +20910,18 @@ html body .since-1996-showcase{
 }
 /* ===== HERO POSITION TEST ===== */
 /* ===== HERO TITLE — MATCH REFERENCE ===== */
+/* ===== HERO TITLE — RESPONSIVE VERTICAL POSITION ===== */
 
 @media (min-width: 1200px) {
 
     #home.exact-printent-hero .exact-hero-title {
         position: absolute !important;
-        top: 275px !important;
+
+        /* viewport height ke according move hoga */
+        top: 28vh !important;
+
         left: 43% !important;
+
         transform: none !important;
         margin-top: 0 !important;
     }
