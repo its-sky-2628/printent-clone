@@ -20931,3 +20931,507 @@ html body .since-1996-showcase{
     }
 
 }
+/* ===== REMOVE EMPTY SPACE BELOW MOVING CARDS ===== */
+
+html body .moving-services-showcase .moving-services-viewport {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+    min-height: 0 !important;
+}
+
+html body .moving-services-showcase {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+html body .moving-services-showcase .moving-services-track {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+/* =========================================================
+   FINAL PROJECT HOVER — VIDEO STYLE
+   ========================================================= */
+
+/* PROJECT SECTION */
+#completed-projects.completed-projects-exact {
+    position: relative !important;
+    overflow: visible !important;
+    padding-bottom: 100px !important;
+}
+
+/* GRID */
+#completed-projects.completed-projects-exact .cpe-grid {
+    overflow: visible !important;
+}
+
+/* NORMAL CARD */
+#completed-projects.completed-projects-exact .cpe-card {
+    position: relative !important;
+    overflow: visible !important;
+    min-height: 520px !important;
+    height: 520px !important;
+    z-index: 1 !important;
+}
+
+/* HOVERED CARD ABOVE EVERYTHING */
+#completed-projects.completed-projects-exact .cpe-card:hover {
+    z-index: 100 !important;
+}
+
+
+/* =========================================================
+   IMAGE — HIDDEN IN NORMAL STATE
+   ========================================================= */
+
+#completed-projects.completed-projects-exact .cpe-card::before {
+    content: "" !important;
+
+    position: absolute !important;
+
+    left: 18px !important;
+    right: 18px !important;
+
+    top: 24px !important;
+    bottom: 56px !important;
+
+    background-image: var(--project-image) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    transform: translateY(35px) scale(.96) !important;
+
+    transition:
+        opacity .45s ease,
+        transform .55s cubic-bezier(.22,.61,.36,1),
+        visibility .45s ease !important;
+
+    z-index: 20 !important;
+
+    pointer-events: none !important;
+}
+
+
+/* =========================================================
+   HOVER — IMAGE COMES OUT
+   ========================================================= */
+
+#completed-projects.completed-projects-exact .cpe-card:hover::before {
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: translateY(0) scale(1) !important;
+}
+
+
+/* =========================================================
+   NORMAL TEXT
+   ========================================================= */
+
+#completed-projects.completed-projects-exact .cpe-card-content {
+    position: absolute !important;
+
+    left: 20px !important;
+    right: 20px !important;
+    bottom: 55px !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition:
+        opacity .25s ease,
+        visibility .25s ease !important;
+
+    z-index: 5 !important;
+}
+
+
+/* HOVER — TEXT DISAPPEARS BEHIND IMAGE */
+
+#completed-projects.completed-projects-exact
+.cpe-card:hover .cpe-card-content {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+
+/* =========================================================
+   NORMAL ARROW
+   ========================================================= */
+
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-right-arrow {
+    position: absolute !important;
+
+    right: 28px !important;
+    bottom: 28px !important;
+
+    z-index: 10 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition:
+        opacity .2s ease,
+        visibility .2s ease !important;
+}
+
+
+/* HOVER — ARROW HIDE */
+
+#completed-projects.completed-projects-exact
+.cpe-card:hover > .cpe-right-arrow {
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+
+/* =========================================================
+   ORANGE VIEW FULL PROJECT BAR
+   ========================================================= */
+
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project {
+
+    position: absolute !important;
+
+    left: 18px !important;
+    right: 18px !important;
+
+    bottom: 0 !important;
+
+    width: auto !important;
+
+    height: 56px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    padding: 0 25px !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff9638 0%,
+            #ff7855 55%,
+            #ff5d67 100%
+        ) !important;
+
+    color: #fff !important;
+
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    transform: translateY(25px) !important;
+
+    transition:
+        opacity .35s ease,
+        transform .45s cubic-bezier(.22,.61,.36,1),
+        visibility .35s ease !important;
+
+    z-index: 30 !important;
+}
+
+
+/* HOVER — ORANGE BAR APPEARS */
+
+#completed-projects.completed-projects-exact
+.cpe-card:hover > .cpe-view-project {
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: translateY(0) !important;
+}
+
+
+/* ARROW INSIDE ORANGE BAR */
+
+#completed-projects.completed-projects-exact
+.cpe-view-project b {
+    position: absolute !important;
+
+    right: 22px !important;
+    top: 50% !important;
+
+    transform: translateY(-50%) !important;
+
+    color: #fff !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:700px) {
+
+    #completed-projects.completed-projects-exact {
+        padding-bottom: 70px !important;
+    }
+
+    #completed-projects.completed-projects-exact .cpe-card {
+        min-height: 390px !important;
+        height: 390px !important;
+    }
+
+    #completed-projects.completed-projects-exact
+    .cpe-card::before {
+        left: 12px !important;
+        right: 12px !important;
+        top: 15px !important;
+        bottom: 56px !important;
+    }
+
+}
+/* =========================================================
+   FINAL — PROJECT CARDS HEIGHT + BOTTOM PROJECT BAR
+   ========================================================= */
+
+@media (min-width: 1025px){
+
+    /* Cards ko lamba karo */
+    #completed-projects.completed-projects-exact .cpe-card{
+        height: 620px !important;
+        min-height: 620px !important;
+    }
+
+    /* Grid bhi same height rakho */
+    #completed-projects.completed-projects-exact .cpe-grid{
+        min-height: 620px !important;
+    }
+
+    /* IMAGE — upar se start, orange bar ke just upar end */
+    #completed-projects.completed-projects-exact .cpe-card::before{
+        top: 24px !important;
+        bottom: 56px !important;
+    }
+
+    /* VIEW FULL PROJECT — bilkul bottom */
+    #completed-projects.completed-projects-exact
+    .cpe-card > .cpe-view-project{
+
+        left: 18px !important;
+        right: 18px !important;
+
+        bottom: 0 !important;
+
+        height: 56px !important;
+        min-height: 56px !important;
+
+        transform: translateY(100%) !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+
+        z-index: 999 !important;
+    }
+
+    /* Hover par bottom se slide-up */
+    #completed-projects.completed-projects-exact
+    .cpe-card:hover > .cpe-view-project{
+
+        bottom: 0 !important;
+
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+}
+
+
+/* =========================================================
+   BLACK SECTION KO EXTRA SPACE DO
+   ========================================================= */
+
+#completed-projects.completed-projects-exact{
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+/* =========================================================
+   PROJECT CARDS — FINAL CLEAN FINISH
+   ========================================================= */
+
+/* 1. CARD KA PURANA WHITE ARROW REMOVE */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-right-arrow {
+    display: none !important;
+}
+
+
+/* 2. VIEW FULL PROJECT BAR — THODA SLIM */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project {
+
+    height: 48px !important;
+    min-height: 48px !important;
+
+    padding: 0 20px !important;
+
+    font-size: 12px !important;
+    font-weight: 600 !important;
+
+    line-height: 1 !important;
+
+    text-decoration: none !important;
+    border: none !important;
+    box-shadow: none !important;
+
+    border-radius: 0 !important;
+}
+
+
+/* 3. VIEW FULL PROJECT TEXT KI UNDERLINE / LINE REMOVE */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project,
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project *,
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project a {
+
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+
+
+/* 4. BAR KE RIGHT SIDE WALA ARROW/SYMBOL REMOVE */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project b {
+
+    display: none !important;
+}
+
+
+/* 5. VIEW FULL PROJECT TEXT KO NORMAL CLASSIC LOOK */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project {
+
+    font-family: Arial, sans-serif !important;
+    letter-spacing: .3px !important;
+    text-transform: uppercase !important;
+}
+
+
+/* 6. BAR KO CARD KE BOTTOM PAR HI RAKHO */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project {
+
+    left: 18px !important;
+    right: 18px !important;
+    bottom: 0 !important;
+}
+/* ===== VIEW FULL PROJECT — BIG + NO GAP ===== */
+
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project {
+    left: 18px !important;
+    right: 18px !important;
+
+    /* card ke bilkul bottom par */
+    bottom: 0 !important;
+
+    /* bada bar */
+    height: 82px !important;
+    min-height: 82px !important;
+
+    margin: 0 !important;
+    padding: 0 28px !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    letter-spacing: .5px !important;
+
+    border: none !important;
+    border-bottom: none !important;
+}
+
+/* hover par bhi bottom par hi rahe */
+#completed-projects.completed-projects-exact
+.cpe-card:hover > .cpe-view-project {
+    bottom: 0 !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* =====================================================
+   VIEW FULL PROJECT — REMOVE GAP COMPLETELY
+   ===================================================== */
+
+#completed-projects.completed-projects-exact .cpe-card {
+    position: relative !important;
+    overflow: visible !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project {
+
+    position: absolute !important;
+
+    /* card ke andar */
+    left: 18px !important;
+    right: 18px !important;
+
+    /* IMPORTANT */
+    top: auto !important;
+    bottom: 0 !important;
+
+    width: auto !important;
+
+    height: 82px !important;
+    min-height: 82px !important;
+
+    margin: 0 !important;
+
+    padding: 0 25px !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    transform: none !important;
+
+    border: 0 !important;
+    outline: 0 !important;
+
+    z-index: 9999 !important;
+}
+
+
+/* HOVER — same exact position */
+#completed-projects.completed-projects-exact
+.cpe-card:hover > .cpe-view-project {
+
+    top: auto !important;
+    bottom: 0 !important;
+
+    transform: none !important;
+
+    margin: 0 !important;
+}
+
+
+/* Card ke neeche extra space bhi zero */
+#completed-projects.completed-projects-exact
+.cpe-grid {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+#completed-projects.completed-projects-exact
+.cpe-card {
+    margin-bottom: 0 !important;
+}
