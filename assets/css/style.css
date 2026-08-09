@@ -21639,3 +21639,237 @@ html body .moving-services-showcase .moving-services-track {
 
     text-align:center !important;
 }
+/* =========================================================
+   FINAL NAVBAR ARROW — ONLY ↘
+   ========================================================= */
+
+/* Remove EVERY old generated navbar arrow */
+#desktopNav .nav-item > a.nav-link::after,
+#desktopNav .nav-item.has-dropdown > a.nav-link::after,
+#desktopNav .nav-item.home-preview-parent > a.nav-link::after,
+#desktopNav .nav-item.pages-mega-parent > a.nav-link::after,
+#desktopNav .nav-item.portfolio-scratch-parent > a.nav-link::after,
+#desktopNav .nav-item.contact-dropdown-parent > a.nav-link::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Remove old pseudo arrow from span */
+#desktopNav .nav-item > a.nav-link > span.nav-plus::before,
+#desktopNav .nav-item > a.nav-link > span.nav-plus::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Actual ↘ arrow */
+#desktopNav .nav-item > a.nav-link > span.nav-plus {
+    display: inline-block !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin-left: 3px !important;
+    padding: 0 !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    transform: rotate(75deg) !important;
+
+    color: currentColor !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: none !important;
+    -webkit-text-stroke: 0 !important;
+}
+
+/* Small movement on hover only */
+#desktopNav .nav-item:hover > a.nav-link > span.nav-plus {
+    transform: translate(1px, 1px) !important;
+}
+/* =========================================================
+   FINAL CUSTOM NAVBAR ARROW
+   FULL CONTROL: TAIL + FEATHERS + BOLDNESS
+   ========================================================= */
+
+#desktopNav .nav-item > a.nav-link > span.nav-plus {
+
+    /* =========================
+       EASY CONTROLS
+       ========================= */
+
+    --arrow-tail-length: 11px;
+    --arrow-tail-thickness: 2px;
+
+    --arrow-feather-size: 11px;
+    --arrow-feather-thickness: 2px;
+
+    --arrow-angle: 0deg;
+
+
+    /* =========================
+       ARROW CONTAINER
+       ========================= */
+
+    position: relative !important;
+
+    display: inline-block !important;
+
+    width: 18px !important;
+    height: 16px !important;
+
+    margin-left: 3px !important;
+    padding: 0 !important;
+
+    font-size: 0 !important;
+    line-height: 0 !important;
+
+    color: currentColor !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: rotate(var(--arrow-angle)) !important;
+    transform-origin: center center !important;
+
+    -webkit-text-stroke: 0 !important;
+}
+
+
+/* =========================================================
+   TAIL
+   ========================================================= */
+
+#desktopNav .nav-item > a.nav-link > span.nav-plus::before {
+
+    content: "" !important;
+
+    position: absolute !important;
+
+    left: 0 !important;
+    top: 4px !important;
+
+    width: var(--arrow-tail-length) !important;
+    height: var(--arrow-tail-thickness) !important;
+
+    background: currentColor !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    transform: rotate(45deg) !important;
+    transform-origin: left center !important;
+
+    display: block !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   ARROW HEAD / TWO FEATHERS
+   ========================================================= */
+
+#desktopNav .nav-item > a.nav-link > span.nav-plus::after {
+
+    content: "" !important;
+
+    position: absolute !important;
+
+    right: 0 !important;
+    top: 3px !important;
+
+    width: var(--arrow-feather-size) !important;
+    height: var(--arrow-feather-size) !important;
+
+    background: transparent !important;
+
+    border-right:
+        var(--arrow-feather-thickness)
+        solid currentColor !important;
+
+    border-bottom:
+        var(--arrow-feather-thickness)
+        solid currentColor !important;
+
+    border-left: 0 !important;
+    border-top: 0 !important;
+
+    border-radius: 0 !important;
+
+    transform: rotate(0deg) !important;
+
+    display: block !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   HOVER — ONLY SMALL MOVEMENT
+   ========================================================= */
+
+#desktopNav .nav-item:hover > a.nav-link > span.nav-plus {
+
+    transform:
+        translate(1px, 1px)
+        rotate(var(--arrow-angle)) !important;
+}
+/* =========================================================
+   PORTFOLIO DROPDOWN — POLISHED LARGER SIZE
+   ========================================================= */
+
+#desktopNav .portfolio-scratch-parent .portfolio-scratch-dropdown {
+    width: 1000px !important;
+    height: 320px !important;
+
+    grid-template-columns: 300px 300px 400px !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Left + middle columns */
+#desktopNav .portfolio-scratch-parent .portfolio-scratch-col {
+    width: 300px !important;
+    height: 320px !important;
+
+    padding: 32px 30px !important;
+    box-sizing: border-box !important;
+}
+
+/* Heading */
+#desktopNav .portfolio-scratch-parent .portfolio-scratch-col h3 {
+    font-size: 21px !important;
+    margin-bottom: 24px !important;
+}
+
+/* Links */
+#desktopNav .portfolio-scratch-parent .portfolio-scratch-col a {
+    font-size: 16px !important;
+    margin-bottom: 16px !important;
+    line-height: 1.35 !important;
+}
+
+/* Right image */
+#desktopNav .portfolio-scratch-parent .portfolio-scratch-feature,
+#desktopNav .portfolio-scratch-parent .portfolio-scratch-image {
+    height: 320px !important;
+    min-height: 320px !important;
+}
+/* ===== NORMAL DROPDOWNS — LARGER ===== */
+/* Portfolio dropdown ko ye rule affect nahi karega */
+
+#desktopNav .nav-item.has-dropdown:not(.portfolio-scratch-parent) .nav-dropdown,
+#desktopNav .home-preview-parent .nav-dropdown,
+#desktopNav .contact-dropdown-parent .nav-dropdown {
+    min-width: 280px !important;
+    padding: 16px 0 !important;
+
+    background: #fff !important;
+    border-top: 0 !important;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,.18) !important;
+}
