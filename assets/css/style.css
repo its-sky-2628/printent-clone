@@ -22533,3 +22533,164 @@ html body .moving-services-showcase .moving-services-track {
     width: min(1320px, calc(100% - 60px));
     margin-inline: auto;
 }
+/* =========================================================
+   FINAL FIX — VIEW FULL PROJECT
+   ONE LINE + ARROW CLOSE
+   ========================================================= */
+
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project{
+
+    position:absolute !important;
+
+    left:18px !important;
+    right:18px !important;
+    bottom:-28px !important;
+
+    height:92px !important;
+    min-height:92px !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    /* text + arrow ke liye proper space */
+    padding:0 !important;
+
+    box-sizing:border-box !important;
+
+    white-space:nowrap !important;
+    overflow:hidden !important;
+
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-size:21px !important;
+    line-height:1 !important;
+    font-weight:700 !important;
+
+    gap:12px !important;
+
+    transform:none !important;
+}
+
+
+/* MAIN TEXT */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project b{
+
+    position:static !important;
+
+    display:inline !important;
+
+    right:auto !important;
+    top:auto !important;
+
+    transform:none !important;
+
+    padding:0 !important;
+
+    font-size:22px !important;
+    line-height:1 !important;
+    font-weight:400 !important;
+
+    color:#fff !important;
+
+    margin:0 !important;
+}
+
+
+/* Agar arrow ::after se aa raha hai */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project::after{
+
+    position:static !important;
+
+    content:"↗️" !important;
+
+    transform:none !important;
+
+    margin-left:2px !important;
+
+    font-size:22px !important;
+    line-height:1 !important;
+
+    color:#fff !important;
+
+    right:auto !important;
+    top:auto !important;
+}
+
+
+/* HOVER — SAME POSITION */
+#completed-projects.completed-projects-exact
+.cpe-card:hover > .cpe-view-project{
+
+    bottom:-28px !important;
+    transform:none !important;
+
+}
+
+
+/* MOBILE */
+@media(max-width:700px){
+
+    #completed-projects.completed-projects-exact
+    .cpe-card > .cpe-view-project{
+
+        height:72px !important;
+        min-height:72px !important;
+
+        font-size:15px !important;
+
+        gap:8px !important;
+
+        padding:0 !important;
+
+    }
+
+    #completed-projects.completed-projects-exact
+    .cpe-card > .cpe-view-project b{
+
+        font-size:18px !important;
+
+    }
+
+    #completed-projects.completed-projects-exact
+    .cpe-card > .cpe-view-project::after{
+
+        font-size:18px !important;
+
+    }
+
+}
+/* =====================================================
+   FINAL FIX — REMOVE EXTRA GRAY ARROW
+   KEEP ONLY WHITE ARROW
+   ===================================================== */
+
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project b {
+    display: none !important;
+}
+
+/* ONLY ONE WHITE ARROW */
+#completed-projects.completed-projects-exact
+.cpe-card > .cpe-view-project::after {
+    content: "↗️" !important;
+
+    position: static !important;
+
+    display: inline-block !important;
+
+    margin-left: 10px !important;
+
+    right: auto !important;
+    top: auto !important;
+
+    transform: none !important;
+
+    color: #fff !important;
+
+    font-size: 23px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+}
