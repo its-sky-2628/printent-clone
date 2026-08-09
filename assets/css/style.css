@@ -22216,3 +22216,320 @@ html body .moving-services-showcase .moving-services-track {
         font-size: 15px !important;
     }
 }
+/* =========================================================
+   FINAL RESPONSIVE FIX — COMPLETED PROJECTS
+   DESKTOP + LAPTOP + LARGE SCREENS
+   ========================================================= */
+
+.completed-projects-exact{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+}
+
+/* TOP AREA */
+.completed-projects-exact .cpe-top{
+    width:min(1420px, calc(100% - 80px));
+    margin:0 auto;
+    min-height:clamp(220px, 18vw, 275px);
+
+    display:grid;
+    grid-template-columns:minmax(0, 1.15fr) minmax(0, .85fr);
+
+    align-items:center;
+    gap:clamp(35px, 5vw, 70px);
+}
+
+/* HEADING */
+.completed-projects-exact .cpe-top h2{
+    font-size:clamp(48px, 4.3vw, 78px) !important;
+    line-height:1.06 !important;
+}
+
+/* NUMBER */
+.completed-projects-exact .cpe-count strong{
+    font-size:clamp(90px, 9vw, 160px) !important;
+}
+
+/* PROJECT GRID */
+.completed-projects-exact .cpe-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    min-height:clamp(400px, 32vw, 465px);
+}
+
+/* CARDS */
+.completed-projects-exact .cpe-card{
+    min-width:0;
+    min-height:clamp(400px, 32vw, 465px);
+
+    padding-left:clamp(20px, 2.2vw, 30px) !important;
+    padding-right:clamp(20px, 2.2vw, 30px) !important;
+}
+
+/* CARD HEADING */
+.completed-projects-exact .cpe-card h3{
+    font-size:clamp(20px, 1.7vw, 27px) !important;
+}
+
+/* DESCRIPTION */
+.completed-projects-exact .cpe-card p{
+    font-size:clamp(14px, 1.2vw, 19px) !important;
+    max-width:min(390px, 100%) !important;
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+@media (max-width:1200px){
+
+    .completed-projects-exact .cpe-top{
+        width:calc(100% - 60px);
+        gap:40px;
+    }
+
+    .completed-projects-exact .cpe-top h2{
+        font-size:clamp(42px, 5vw, 62px) !important;
+    }
+
+    .completed-projects-exact .cpe-count strong{
+        font-size:clamp(80px, 10vw, 125px) !important;
+    }
+
+    .completed-projects-exact .cpe-count-label{
+        font-size:15px !important;
+    }
+
+    .completed-projects-exact .cpe-card{
+        padding-left:20px !important;
+        padding-right:20px !important;
+    }
+
+    .completed-projects-exact .cpe-card h3{
+        font-size:22px !important;
+    }
+
+    .completed-projects-exact .cpe-card p{
+        font-size:15px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL LAPTOP / TABLET
+   ========================================================= */
+
+@media (max-width:1000px){
+
+    .completed-projects-exact .cpe-top{
+        grid-template-columns:1fr;
+        gap:35px;
+        padding:60px 0;
+    }
+
+    .completed-projects-exact .cpe-count{
+        justify-content:flex-start;
+    }
+
+    .completed-projects-exact .cpe-grid{
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+    }
+
+    .completed-projects-exact .cpe-card{
+        min-height:400px;
+    }
+}
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media (max-width:600px){
+
+    .completed-projects-exact .cpe-top{
+        width:calc(100% - 36px);
+        padding:55px 0;
+    }
+
+    .completed-projects-exact .cpe-top h2{
+        font-size:40px !important;
+    }
+
+    .completed-projects-exact .cpe-count strong{
+        font-size:75px !important;
+    }
+
+    .completed-projects-exact .cpe-grid{
+        grid-template-columns:1fr;
+    }
+
+    .completed-projects-exact .cpe-card{
+        min-height:380px;
+    }
+
+    .completed-projects-exact .cpe-card h3{
+        font-size:23px !important;
+    }
+
+    .completed-projects-exact .cpe-card p{
+        font-size:15px !important;
+    }
+}
+/* =========================================================
+   FINAL MOBILE FIX — COMPLETED PROJECTS
+   ========================================================= */
+
+@media (max-width: 768px){
+
+  .completed-projects-exact{
+    width:100%;
+    min-height:auto;
+    overflow:hidden;
+  }
+
+  /* TOP SECTION */
+  .completed-projects-exact .cpe-top{
+    width:100%;
+    min-height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:35px;
+    padding:65px 22px 50px;
+  }
+
+  /* MAIN HEADING */
+  .completed-projects-exact .cpe-top h2{
+    width:100%;
+    font-size:40px !important;
+    line-height:1.08 !important;
+  }
+
+  /* 250+ */
+  .completed-projects-exact .cpe-count{
+    width:100%;
+    justify-content:flex-start;
+    gap:16px;
+    align-items:center;
+  }
+
+  .completed-projects-exact .cpe-count strong{
+    font-size:78px !important;
+    line-height:.85 !important;
+    letter-spacing:-.06em;
+  }
+
+  .completed-projects-exact .cpe-count-label{
+    font-size:14px !important;
+    line-height:1.2 !important;
+  }
+
+  /* PROJECT CARDS */
+  .completed-projects-exact .cpe-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr;
+    min-height:auto;
+  }
+
+  .completed-projects-exact .cpe-card{
+    width:100%;
+    min-height:390px;
+    padding:30px 22px 110px !important;
+    border-right:0;
+    border-bottom:1px solid rgba(255,255,255,.22);
+  }
+
+  .completed-projects-exact .cpe-card:last-child{
+    border-bottom:0;
+  }
+
+  /* CARD TEXT */
+  .completed-projects-exact .cpe-card h3{
+    font-size:24px !important;
+    line-height:1.2 !important;
+    margin-bottom:12px !important;
+  }
+
+  .completed-projects-exact .cpe-card p{
+    max-width:100% !important;
+    font-size:15px !important;
+    line-height:1.55 !important;
+    margin-bottom:18px !important;
+  }
+
+  /* ARROW */
+  .completed-projects-exact .cpe-arrow,
+  .completed-projects-exact .cpe-right-arrow{
+    font-size:26px !important;
+  }
+
+  /* ORANGE VIEW FULL PROJECT BUTTON */
+  .completed-projects-exact .cpe-view-project{
+    left:0 !important;
+    bottom:0 !important;
+    width:100% !important;
+    height:64px !important;
+    padding:0 22px !important;
+    font-size:13px !important;
+    opacity:1 !important;
+    transform:none !important;
+  }
+
+  .completed-projects-exact .cpe-card-content{
+    padding-bottom:0 !important;
+  }
+
+}
+
+
+/* SMALL PHONES */
+@media (max-width:480px){
+
+  .completed-projects-exact .cpe-top{
+    padding:55px 18px 42px;
+    gap:28px;
+  }
+
+  .completed-projects-exact .cpe-top h2{
+    font-size:36px !important;
+  }
+
+  .completed-projects-exact .cpe-count strong{
+    font-size:68px !important;
+  }
+
+  .completed-projects-exact .cpe-count-label{
+    font-size:13px !important;
+  }
+
+  .completed-projects-exact .cpe-card{
+    min-height:360px;
+    padding:28px 18px 95px !important;
+  }
+
+  .completed-projects-exact .cpe-card h3{
+    font-size:22px !important;
+  }
+
+  .completed-projects-exact .cpe-card p{
+    font-size:14px !important;
+  }
+
+}
+.hero-title {
+    font-size: clamp(70px, 6vw, 120px);
+}
+
+.section {
+    padding: clamp(70px, 8vw, 130px) 0;
+}
+
+.container {
+    width: min(1320px, calc(100% - 60px));
+    margin-inline: auto;
+}
