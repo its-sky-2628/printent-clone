@@ -21873,3 +21873,346 @@ html body .moving-services-showcase .moving-services-track {
 
     box-shadow: 0 20px 50px rgba(0,0,0,.18) !important;
 }
+/* =========================================================
+   FINAL NAVBAR DROPDOWN — TOP → BOTTOM CURTAIN REVEAL
+   ========================================================= */
+
+/* ---------- SIMPLE DROPDOWNS ---------- */
+
+#desktopNav .nav-item > .nav-dropdown {
+
+    opacity: 1 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    /* CLOSED = top se neeche pura clipped */
+    clip-path: inset(0 0 100% 0) !important;
+
+    /* purana slide effect remove */
+    transform: translateY(0) !important;
+
+    transform-origin: top center !important;
+
+    transition:
+        clip-path .55s cubic-bezier(.77,0,.18,1),
+        visibility 0s linear .55s !important;
+
+    will-change: clip-path !important;
+}
+
+
+/* HOVER = TOP → BOTTOM FULL REVEAL */
+
+#desktopNav .nav-item:hover > .nav-dropdown {
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+
+    clip-path: inset(0 0 0 0) !important;
+
+    transform: translateY(0) !important;
+
+    transition:
+        clip-path .55s cubic-bezier(.77,0,.18,1),
+        visibility 0s linear 0s !important;
+}
+
+
+/* =========================================================
+   PAGES / PORTFOLIO MEGA MENU
+   ========================================================= */
+
+#desktopNav .pages-mega-dropdown,
+#desktopNav .portfolio-scratch-dropdown,
+#desktopNav .mega {
+
+    opacity: 1 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+
+    /* CLOSED */
+    clip-path: inset(0 0 100% 0) !important;
+
+    /* center positioning rahegi, vertical slide nahi */
+    transform: translateX(-50%) !important;
+
+    transform-origin: top center !important;
+
+    transition:
+        clip-path .6s cubic-bezier(.77,0,.18,1),
+        visibility 0s linear .6s !important;
+
+    will-change: clip-path !important;
+}
+
+
+/* HOVER — TOP → BOTTOM */
+
+#desktopNav .nav-item:hover > .pages-mega-dropdown,
+#desktopNav .nav-item:hover > .portfolio-scratch-dropdown,
+#desktopNav .nav-item:hover > .mega {
+
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+
+    clip-path: inset(0 0 0 0) !important;
+
+    transform: translateX(-50%) !important;
+
+    transition:
+        clip-path .6s cubic-bezier(.77,0,.18,1),
+        visibility 0s linear 0s !important;
+}
+
+
+/* =========================================================
+   SMALL DROPDOWN CONTENT — NO EXTRA ANIMATION
+   ========================================================= */
+
+#desktopNav .nav-dropdown a,
+#desktopNav .mega a,
+#desktopNav .pages-mega-dropdown a,
+#desktopNav .portfolio-scratch-dropdown a {
+
+    transform: none !important;
+    opacity: 1 !important;
+}
+/* =========================================================
+   PROJECT CARDS — HEADING BOLD / DESCRIPTION NORMAL
+   ========================================================= */
+
+#completed-projects.completed-projects-exact .cpe-card-content h3 {
+    font-weight: 800 !important;
+}
+
+#completed-projects.completed-projects-exact .cpe-card-content p {
+    font-weight: 400 !important;
+}
+/* =========================================================
+   FINAL HERO RESPONSIVE FIX
+   Content image ke safe area mein locked rahega
+   ========================================================= */
+
+.exact-printent-hero {
+    position: relative !important;
+    overflow: hidden !important;
+    isolation: isolate !important;
+}
+
+
+/* =========================================================
+   SLIDE 2 — DIGITAL PRINTING
+   ========================================================= */
+
+.exact-printent-hero .hero-second-slide {
+    position: absolute !important;
+    inset: 0 !important;
+    overflow: hidden !important;
+}
+
+
+/* Background */
+.exact-printent-hero .hero-second-bg {
+    position: absolute !important;
+    inset: 0 !important;
+
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    /* women always remain on right */
+    background-position: center center !important;
+}
+
+
+/* Content wrapper */
+.exact-printent-hero .hero-second-content {
+    position: absolute !important;
+
+    /* Safe left area */
+    left: clamp(70px, 10vw, 180px) !important;
+
+    /* vertically stable */
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    width: min(58vw, 850px) !important;
+    max-width: 850px !important;
+
+    z-index: 5 !important;
+}
+
+
+/* Produce the */
+.exact-printent-hero .hero-second-small {
+    font-size: clamp(42px, 4.2vw, 68px) !important;
+
+    line-height: 1.05 !important;
+    margin: 0 !important;
+
+    white-space: nowrap !important;
+}
+
+
+/* Digital printing */
+.exact-printent-hero .hero-second-big {
+    font-size: clamp(58px, 6.8vw, 112px) !important;
+
+    line-height: 1 !important;
+
+    white-space: nowrap !important;
+
+    max-width: 100% !important;
+}
+
+
+/* Bottom information */
+.exact-printent-hero .hero-second-bottom {
+    display: flex !important;
+    align-items: center !important;
+
+    margin-top: clamp(25px, 3vw, 52px) !important;
+
+    height: auto !important;
+}
+
+
+/* Description */
+.exact-printent-hero .hero-second-description {
+    width: clamp(280px, 30vw, 440px) !important;
+
+    margin: 0 !important;
+
+    font-size: clamp(13px, 1.15vw, 18px) !important;
+
+    line-height: 1.5 !important;
+
+    transform: none !important;
+}
+
+
+/* Divider */
+.exact-printent-hero .hero-second-divider {
+    height: 90px !important;
+
+    margin-left: clamp(18px, 2vw, 30px) !important;
+    margin-right: clamp(20px, 3vw, 42px) !important;
+
+    transform: none !important;
+}
+
+
+/* Button */
+.exact-printent-hero .hero-second-button {
+    min-width: clamp(145px, 13vw, 190px) !important;
+
+    height: clamp(46px, 4vw, 58px) !important;
+
+    padding: 0 24px !important;
+
+    font-size: clamp(14px, 1.25vw, 20px) !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   LAPTOP — 1025px to 1300px
+   ========================================================= */
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+
+    .exact-printent-hero .hero-second-content {
+        left: 8vw !important;
+        width: 62vw !important;
+        max-width: 720px !important;
+    }
+
+    .exact-printent-hero .hero-second-small {
+        font-size: clamp(44px, 4.5vw, 58px) !important;
+    }
+
+    .exact-printent-hero .hero-second-big {
+        font-size: clamp(58px, 6.4vw, 82px) !important;
+    }
+
+    .exact-printent-hero .hero-second-description {
+        width: 330px !important;
+        font-size: 15px !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL LAPTOP / TABLET
+   ========================================================= */
+
+@media (min-width: 701px) and (max-width: 1024px) {
+
+    .exact-printent-hero .hero-second-content {
+        left: 7vw !important;
+        width: 68vw !important;
+    }
+
+    .exact-printent-hero .hero-second-small {
+        font-size: clamp(38px, 5vw, 52px) !important;
+    }
+
+    .exact-printent-hero .hero-second-big {
+        font-size: clamp(50px, 6.5vw, 70px) !important;
+    }
+
+    .exact-printent-hero .hero-second-description {
+        width: 300px !important;
+        font-size: 14px !important;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .exact-printent-hero .hero-second-bg {
+        background-position: 62% center !important;
+    }
+
+    .exact-printent-hero .hero-second-content {
+        left: 7vw !important;
+        top: 50% !important;
+
+        width: 86vw !important;
+        max-width: none !important;
+
+        transform: translateY(-50%) !important;
+    }
+
+    .exact-printent-hero .hero-second-small {
+        font-size: clamp(30px, 8vw, 42px) !important;
+    }
+
+    .exact-printent-hero .hero-second-big {
+        font-size: clamp(42px, 11vw, 58px) !important;
+
+        white-space: normal !important;
+        max-width: 85vw !important;
+    }
+
+    .exact-printent-hero .hero-second-description,
+    .exact-printent-hero .hero-second-divider {
+        display: none !important;
+    }
+
+    .exact-printent-hero .hero-second-bottom {
+        margin-top: 25px !important;
+    }
+
+    .exact-printent-hero .hero-second-button {
+        min-width: 145px !important;
+        height: 46px !important;
+        font-size: 15px !important;
+    }
+}
